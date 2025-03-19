@@ -1,0 +1,1596 @@
+/* ==========================================================================
+Generic page styles
+========================================================================== */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #212121;
+  color: $black;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 5px 0 30px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+svg {
+  display: block;
+  max-height: 100%;
+  width: 100%;
+}
+
+iframe {
+  width: 1px;
+  min-width: 100%;
+  *width: 100%;
+  display: block;
+  border: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ==========================================================================
+GUI
+========================================================================== */
+.gui-container {
+  @include hideForGreensock;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding-bottom: 6px;
+  @include flex;
+
+  @include gtTablet {
+    padding-bottom: 10px;
+  }
+
+  .button {
+    @include gtTablet {
+      &:hover {
+        background-color: #4d4e55;
+      }
+    }
+  }
+}
+#desktop-gui-container {
+  bottom: 0;
+}
+#mobile-gui-container {
+  bottom: 56px;
+}
+
+/* =====================================
+BUTTONS
+===================================== */
+.button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-right: 6px;
+  border-radius: 4px;
+  @include flexC;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+
+  &button {
+    cursor: pointer;
+  }
+
+  @include gtTablet {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+  }
+
+  // &.enabled {}
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .text,
+  .icon {
+    @include pointerEventsNone; /* GTM / TARGET CLICK ISSUE FIX */
+  }
+
+  .text + .icon,
+  .icon + .text {
+    margin-left: 12px;
+  }
+
+  .text {
+    @include gtTablet {
+      font-size: 18px;
+    }
+  }
+
+  .icon {
+    font-size: 20px;
+
+    @include gtTablet {
+      font-size: 22px;
+    }
+  }
+
+  &.button-fs .active,
+  &.button-fs.fsActive .innate {
+    display: none;
+  }
+
+  &.button-fs .innate,
+  &.button-fs.fsActive .active {
+    display: inline-block;
+  }
+
+  &.button-gallery {
+    @include hideForGreensock;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    margin: 8px;
+    padding: 0 20px;
+    z-index: 3004;
+
+    @include gtTablet {
+      margin: 10px;
+    }
+
+    .activated {
+      display: none;
+    }
+    &.galleryOpen .innate {
+      display: none;
+    }
+    &.galleryOpen .activated {
+      display: block;
+    }
+  }
+}
+
+/* =====================================
+Welcome
+===================================== */
+#welcome-container {
+  display: none;
+}
+#container.welcome-active #welcome-container {
+  display: block;
+}
+
+/* =====================================
+FULLSCREEN EXIT BUTTON
+===================================== */
+.fs-close {
+  @include hideForGreensock;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* =====================================
+editor BUTTON
+===================================== */
+.editor {
+  .button {
+    font-size: 10px;
+
+    &.cluster {
+      background-color: transparent !important;
+    }
+
+    &.mini-button {
+      width: 60px;
+      height: 29px;
+      margin: 0;
+      display: inline-block;
+
+      &:nth-of-type(1) {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+MAIN COPY - tooltips and info-inner
+========================================================================== */
+.main-copy {
+  h2,
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  p,
+  .p {
+    font-size: 1rem;
+    line-height: 1.375;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+
+      &:focus {
+        text-decoration: none;
+      }
+
+      @include gtTablet {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+HELP SCREEN
+========================================================================== */
+#help-screen {
+  @include absoluteCover;
+  z-index: 99999999;
+  @include hideForGreensock;
+  overflow: auto;
+  @include flexC;
+  @include flexColumn;
+  background-color: rgba(54, 54, 54, 0.75);
+  text-align: center;
+
+  p {
+    line-height: 1.375;
+    font-size: 12px;
+
+    @include gtTablet {
+      font-size: 16px;
+    }
+  }
+
+  .row {
+    width: 100%;
+    @include flex;
+
+    .col {
+      width: 33.33%;
+      padding: 10px;
+      @include flex;
+    }
+  }
+
+  &.is-classic {
+    .row {
+      .col {
+        width: 50%;
+      }
+    }
+  }
+
+  .background {
+    position: relative;
+    width: 100%;
+    padding: 10px 16px;
+    background-color: $white;
+
+    @include gtTablet {
+      padding: 14px 20px;
+    }
+  }
+
+  #help-inner {
+    position: relative;
+    width: 96%;
+    max-width: 900px;
+    padding: 14px 0;
+
+    .header {
+      .col {
+        width: 100%;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+        font-size: 22px;
+
+        @include gtTablet {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .examples {
+      .button-container {
+        margin-bottom: 12px;
+        @include flexC;
+      }
+
+      .button {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+/* ============================
+INFOSPOT
+============================ */
+#info-spot {
+  @include hideForGreensock;
+  @include absoluteCover;
+  z-index: 99999999;
+
+  @include lteMobile {
+    background-color: #3b3b3b;
+  }
+
+  @include gtMobile {
+    background-color: transparentize(#3b3b3b, 0.25);
+  }
+
+  #info-inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    margin: 0 auto;
+    background-color: $white;
+    color: #212121;
+
+    @include lteMobile {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 10px 14px;
+    }
+
+    @include gtMobile {
+      top: 50%;
+      width: calc(100% - 40px);
+      max-width: 600px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 10px 30px 20px;
+    }
+
+    #info-close {
+      position: absolute;
+      z-index: 10;
+      display: block;
+      border: none;
+      font-size: 0;
+      text-align: center;
+
+      @include lteMobile {
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        color: #212121;
+      }
+
+      @include gtMobile {
+        right: 0;
+        top: 0;
+        width: 40px;
+        margin: -20px -20px 0 0;
+        background-color: #212121;
+        color: $white;
+      }
+
+      @include gtTablet {
+        -webkit-transition:
+          color 0.4s,
+          background-color 0.4s;
+        transition:
+          color 0.4s,
+          background-color 0.4s;
+      }
+
+      .text,
+      .icon {
+        @include pointerEventsNone; /* GTM / TARGET CLICK ISSUE FIX */
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .text {
+        padding: 0 8px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        @include gtMobile {
+          display: none !important;
+        }
+      }
+
+      .icon {
+        @include lteMobile {
+          font-size: 20px;
+          line-height: 50px;
+        }
+
+        @include gtMobile {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    #info-topbar {
+      padding: 10px 0;
+
+      .title {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    #info-content {
+      // p {}
+
+      iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
+    }
+  }
+
+  &.iframed {
+    #info-inner {
+      max-width: 960px;
+      padding: 0 !important;
+
+      #info-topbar {
+        .title {
+          padding: 0 20px;
+        }
+      }
+
+      #info-content {
+        position: relative;
+
+        &:before {
+          content: " ";
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          display: block;
+        }
+      }
+    }
+
+    @include lteMobile {
+      #info-close {
+        right: 0;
+        top: 0;
+        margin-right: 10px;
+      }
+
+      #info-content {
+        position: relative;
+        height: 80%;
+        height: calc(100% - 50px);
+      }
+    }
+  }
+
+  &.video {
+    #info-inner {
+      @include gtMobile {
+        #info-topbar {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: auto;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+  transform: translateX(-50%) rotate(-90deg);
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  padding: 0 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  opacity: 0;
+}
+
+.notification-dot {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.mobile-legend-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  max-width: 85vw;
+  z-index: 20;
+}
+
+.mobile-legend {
+  height: 17vh;
+  overflow-y: auto;
+  font-size: 12px;
+  position: relative;
+}
+
+.mobile-legend-fade {
+  position: fixed;
+  top: 14vh;
+  left: 0;
+  right: 15vw;
+  height: 5vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none;
+  z-index: 21; /* Ensures it stays above scrolling content */
+}
+
+.legend-floor-section {
+  margin-bottom: 1rem;
+}
+
+.legend-floor-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.legend-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.camera-number {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 20;
+}
+
+#floorplan-wrapper {
+  @include hideForGreensock;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3002;
+
+  @include lteMobile {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none !important;
+    transform: none !important;
+  }
+
+  @include gtMobile {
+    left: 10px;
+    top: 50%;
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+  }
+
+  &.open {
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+
+  #floorplan-switch-container {
+    position: absolute;
+    @include flex;
+    z-index: 10;
+    padding-bottom: 6px;
+
+    @include lteMobile {
+      right: 0;
+      bottom: 0;
+      @include flexRowReverse;
+      @include justifyEnd;
+    }
+
+    @include onlyTablet {
+      padding: 6px 6px 0;
+    }
+
+    @include gtMobile {
+      left: 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1;
+      margin-left: -1px;
+      @include flexColumn;
+      border-color: #ddd;
+      border-style: solid;
+      border-width: 1px 1px 1px 0;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background-color: $white;
+    }
+
+    @include gtTablet {
+      padding: 8px 8px 0;
+    }
+
+    .fp-switch {
+      position: relative;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 1px;
+
+      &.active {
+        background-color: $white;
+        border-color: #d1d1d1;
+        color: $rv-purple;
+      }
+
+      @include gtMobile {
+        width: 44px;
+        height: 44px;
+        margin-right: 0;
+        margin-bottom: 6px;
+      }
+
+      @include gtTablet {
+        margin-bottom: 8px;
+
+        &:hover {
+          color: #4d4e55;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    background-color: $white;
+    @include flexC;
+    @include flexColumn;
+
+    @include lteMobile {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @include onlyTablet {
+      width: 226px;
+    }
+
+    @include gtMobile {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    @include gtTablet {
+      width: 300px;
+    }
+
+    #floorplan-close-btn {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      z-index: 30;
+      margin: 0;
+
+      &.inline {
+        width: auto;
+        padding: 0 14px;
+
+        @include lteMobile {
+          .icon {
+            margin: 0;
+          }
+        }
+
+        @include gtMobile {
+          position: relative;
+          right: 0;
+          top: 0;
+          width: 100%;
+          height: 44px;
+          z-index: initial;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+
+          .text {
+            flex-grow: 1;
+          }
+
+          .icon {
+          }
+        }
+      }
+
+      &.floating {
+        @include gtMobile {
+          right: -22px;
+          top: -22px;
+          width: 44px;
+          height: 44px;
+          z-index: 1;
+        }
+      }
+    }
+
+    #floors-container {
+      position: relative;
+      width: 100%;
+      margin: 20px 0;
+
+      @include lteMobile {
+        width: 80vh;
+        max-width: 90vw;
+      }
+
+      &:before {
+        content: " ";
+        position: relative;
+        width: 100%;
+        padding-bottom: 113.92405%;
+        display: block;
+      }
+
+      #floorplans {
+        .floorplan {
+          @include absoluteCover;
+          display: none;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+
+          &.show {
+            display: block;
+          }
+
+          .camera-icon {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            @include flexC;
+            border-radius: 100%;
+            background-color: $white;
+            color: $rv-purple;
+            font-size: 26px;
+            line-height: 1;
+            transition: color 0.4s;
+
+            @include gtTablet {
+              width: 32px;
+              height: 32px;
+              font-size: 32px;
+            }
+
+            &.visited {
+              color: #3e3e3e;
+            }
+
+            &.active {
+              cursor: default;
+              color: $rv-red;
+            }
+          }
+
+          .camera-label {
+            @include hideForGreensock;
+            position: absolute;
+            left: 0;
+            top: 0;
+            -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+            z-index: 20;
+            margin-top: -16px;
+            padding: 5px 20px;
+            border-radius: 5px;
+            background-color: #3e3e3e;
+            color: $white;
+            font-size: 16px;
+            line-height: 1.5;
+            white-space: nowrap;
+            cursor: pointer;
+            pointer-events: none;
+
+            .label-after {
+              position: absolute;
+              left: 50%;
+              top: 100%;
+              width: 12px;
+              height: 12px;
+              margin-left: -6px;
+              border-color: #3e3e3e transparent transparent;
+              border-style: solid;
+              border-width: 6px 6px 0;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        @include absoluteCover;
+        overflow: hidden;
+
+        #fov-radar {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+          background: linear-gradient(
+            135deg,
+            $rv-red 0%,
+            transparentize($rv-red, 1) 50%
+          );
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+ROOM TITLES
+========================================================================== */
+#room-title {
+  @include hideForGreensock;
+  @include pointerEventsNone;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 4px;
+  background: transparentize(#000, 0.2);
+  color: $white;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 359px) {
+    padding: 0 22px;
+    font-size: 12px;
+    line-height: 32px;
+  }
+
+  @media screen and (min-width: 360px) {
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+/* ==========================================================================
+EDITOR
+========================================================================== */
+
+@keyframes pulsingGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.hotspot {
+  animation: pulsingGlow 2s infinite ease-in-out;
+
+  &.clicked {
+    animation: none !important; /* Disable the glow effect after clicking */
+  }
+}
+
+.placeholder {
+  background-color: $white;
+  cursor: pointer;
+}
+
+.placeholderButton {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 0 0 -156px;
+  display: block;
+
+  border-color: #00c496;
+  border-style: solid;
+  border-width: 3px;
+  background: #00c496;
+  color: $white;
+
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#tour-content {
+  @include relativeCover;
+  margin: 0;
+
+  #pano {
+    @include absoluteCover;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  /* ERROR TEXT*/
+  p {
+    width: 100%;
+    margin: auto;
+    display: block;
+    background-color: $black;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+#backTo360 {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #171717;
+}
+
+/* ==========================================================================
+HOTSPOTS
+========================================================================== */
+.krpanoHotspot {
+  z-index: 0 !important;
+
+  &:focus {
+    z-index: 1 !important;
+  }
+
+  @include gtTablet {
+    &:hover {
+      z-index: 1 !important;
+    }
+  }
+}
+
+.hotspot,
+.pin-hotspot {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hotspot {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  z-index: 0;
+  overflow: hidden;
+  display: block;
+  border-radius: 60px;
+
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  .icon,
+  .tooltip {
+    @include pointerEventsNone; /* GTM / TARGET CLICK ISSUE FIX */
+  }
+
+  .mainIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: block;
+
+    &:before {
+      width: 30px;
+      height: 30px;
+      margin: 15px auto;
+      display: block;
+      font-size: 28px;
+    }
+  }
+
+  .tooltip {
+    @include hideForGreensock;
+    width: 220px;
+    padding: 22px 15px;
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+.pin-hotspot {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 0;
+  border-radius: 100%;
+  background-color: rgba(#212121, 0.4);
+  box-shadow: 0 0 6px rgba(33, 33, 33, 0.5);
+  transition: background-color 0.4s ease;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: block;
+    border-radius: 100%;
+    background-color: $white;
+    transition: transform 0.4s ease;
+  }
+
+  .tooltip {
+    @include hideForGreensock;
+    position: absolute;
+    top: 50%;
+    width: 244px;
+    transform: translateY(-50%);
+    @include flex;
+    @include justifyCenter;
+    @include flexColumn;
+    box-shadow: 0 0 6px rgba(33, 33, 33, 0.5);
+    white-space: initial;
+    cursor: initial;
+
+    @include gtTablet {
+      width: 320px;
+    }
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      width: 28px;
+      height: 6px;
+      margin-top: -3px;
+      display: block;
+      box-shadow: 0 0 6px rgba(33, 33, 33, 0.5);
+      background-color: $white;
+    }
+
+    .inner {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      padding: 16px 18px;
+      background-color: $white;
+      color: #212121;
+      text-align: center;
+
+      @include gtTablet {
+        padding: 20px 22px;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      .p {
+        margin: 10px 0 0;
+        padding: 0 !important;
+        line-height: 1.25;
+
+        @include gtTablet {
+          margin-top: 14px;
+        }
+      }
+    }
+
+    &.left {
+      right: 100%;
+      margin-right: 16px;
+
+      &:before {
+        left: 100%;
+      }
+    }
+
+    &.right {
+      left: 100%;
+      margin-left: 16px;
+
+      &:before {
+        right: 100%;
+      }
+    }
+  }
+
+  &:focus {
+    background-color: rgba(#212121, 0.85);
+  }
+
+  @include gtTablet {
+    &:hover {
+      background-color: rgba(#212121, 0.85);
+
+      &:after {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+EDITOR
+========================================================================== */
+.start-position {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 500px;
+  z-index: 99;
+  margin-left: -250px;
+  padding: 12px 20px;
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.25);
+  box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.25);
+  background: #eee;
+  color: #212121;
+  font: 14px/1.25 sans-serif;
+  -moz-tab-size: 1;
+  tab-size: 2;
+
+  &:after {
+    content: attr(data-content);
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    color: #c5c4c2;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .edit-status-outer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: #777;
+    font-size: 10px;
+    text-align: right;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+
+    .set {
+      color: #3f3f3f;
+    }
+  }
+}
+
+.crosshair {
+  &:before,
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    background-color: #00c496;
+    border-radius: 100%;
+  }
+
+  &:before {
+    width: 4px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -2px;
+  }
+
+  &:after {
+    width: 40px;
+    height: 4px;
+    margin-top: -2px;
+    margin-left: -20px;
+  }
+}
+
+/* ==========================================================================
+GALLERY
+========================================================================== */
+#gallery {
+  @include hideForGreensock;
+  @include absoluteCover;
+  overflow: hidden;
+  z-index: 3003;
+  background-color: $black;
+}
+
+/* ==========================================================================
+FORWARDER
+========================================================================== */
+#forwarder {
+  @include absoluteCover;
+  z-index: 99999999;
+  @include flexC;
+  overflow: auto;
+  text-align: center;
+  @include hideForGreensock;
+
+  #forwarder-inner {
+    width: 400px;
+    margin: auto;
+    padding: 16px 20px;
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    a {
+      width: auto;
+      padding: 0 20px;
+      display: inline-block;
+      border-radius: 4px;
+      font-size: 20px;
+      line-height: 2.5;
+    }
+
+    p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+  }
+}
+
+/* ==========================================================================
+HELPER
+========================================================================== */
+.hidden {
+  display: none !important;
+}
+
+/* ==========================================================================
+MEDIA QUERIES
+========================================================================== */
+/* =========== SET MIN-WIDTH TO DISPLAY WIDTH ============= */
+/* ================= MAX VALUE OF 768px =================== */
+@include onlyTablet {
+  .camera-label {
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+}
+
+/* ================================================================================ */
+/* =========== SET TO CLIENT REDIRECT WIDTH (DISPLAY WIDTH MINUS 1px) ============= */
+/* ============================ MAX VALUE OF 767px ================================ */
+@include lteMobile {
+  .device-only {
+    display: block !important;
+  }
+  .camera-label,
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #room-title {
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+.fs-close,
+.button {
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.hotspot {
+  -webkit-transition:
+    border-radius 0.4s,
+    background-color 0.4s,
+    color 0.4s;
+  transition:
+    border-radius 0.4s,
+    background-color 0.4s,
+    color 0.4s;
+}
+
+/* ================================================================================================================
+/* ================================================================================================================
+EACH TEMPLATE NEEDS TO WRITE THESE THE STYLES BELOW
+/* ================================================================================================================
+/* ================================================================================================================
+
+
+/* =====================================
+BUTTONS
+===================================== */
+.button {
+  background-color: rgba(78, 77, 85, 0.8);
+  color: $white;
+
+  &.enabled {
+    background-color: $rv-purple;
+  }
+}
+
+/* =====================================
+FULLSCREEN EXIT BUTTON
+===================================== */
+.fs-close {
+  background-color: rgba(78, 77, 85, 0.8);
+  color: $white;
+
+  @include gtTablet {
+    &:hover {
+      background-color: #4d4e55;
+    }
+  }
+}
+
+/* ==========================================================================
+ROOM TITLES
+========================================================================== */
+// #room-title {}
+
+/* ==========================================================================
+HOTSPOTS
+========================================================================== */
+.hotspot {
+  background-color: rgba(78, 77, 85, 0.7);
+  color: $white;
+
+  @include gtTablet {
+    &:hover {
+      background-color: rgba(78, 77, 85, 0.9);
+      color: $white;
+    }
+  }
+}
+
+/* ==========================================================================
+FORWARDER
+========================================================================== */
+#forwarder {
+  background-color: $white;
+
+  #forwarder-inner {
+    a {
+      background-color: $rv-purple;
+      color: $white;
+    }
+  }
+}
+
+/* ==========================================================================
+EDITOR BOX
+========================================================================== */
+.number-prefix {
+  display: none;
+  margin-right: 4px;
+}
+
+#editor-container {
+  display: none;
+
+  &:before {
+    content: " ";
+    @include absoluteCover;
+    display: block;
+    border: 8px solid $rv-green;
+    @include pointerEventsNone;
+  }
+
+  #editor-message {
+    @include horizontalCenter;
+    top: 0;
+    background-color: $rv-dark-blue;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    @include pointerEventsNone;
+  }
+
+  #editor-crosshair {
+    &:before,
+    &:after {
+      content: " ";
+      @include screenCenter;
+      border-radius: 100%;
+      background-color: $rv-red;
+      @include pointerEventsNone;
+      opacity: 0.65;
+      @include boxShadow;
+    }
+
+    &:before {
+      width: 3px;
+      height: 52px;
+    }
+
+    &:after {
+      width: 52px;
+      height: 3px;
+    }
+  }
+
+  #editor-readout {
+    @include horizontalCenter;
+    bottom: 0;
+    width: 320px;
+    background: $rv-dark-blue;
+    color: #fff;
+    @include flexC;
+    @include flexColumn;
+
+    p {
+      margin: 0 0 4px;
+      padding: 10px 16px 8px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.142857;
+      text-align: center;
+    }
+
+    #values {
+      @include flex;
+
+      .item {
+        padding: 6px 10px 10px;
+        background-color: transparentize($white, 0.95);
+        text-align: center;
+
+        label {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 1.142857;
+        }
+
+        input {
+          width: 100%;
+          padding: 0;
+          display: block;
+          border: none;
+          background-color: transparent;
+          color: #fff;
+          font-family: monospace;
+          font-size: 20px;
+          text-align: center;
+          line-height: 1;
+          outline: none;
+          @include appearanceNone;
+        }
+      }
+    }
+  }
+}
+
+#container.editor-disabled {
+  #editor-container {
+    display: none !important;
+  }
+}
+#container.editor-enabled {
+  #editor-container {
+    display: block;
+  }
+}

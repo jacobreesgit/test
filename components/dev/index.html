@@ -1,0 +1,53 @@
+<!doctype html>
+<html prefix="og:http://ogp.me/ns#" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Building &amp; Migration Tool - RV Floorplan v{{FP_VERSION}}</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/d4e347561d.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="./inc/style.css">
+	</head>
+	<body id="migration">
+		<!-- Wrapper -->
+		<!-- Header -->
+		<header id="rv-header" class="container" role="banner">
+			<div id="header-left">
+				<a id="logo-link" href="https://www.revolutionviewing.com/?utm_source=revolution-viewing&utm_medium=referral&utm_campaign=rv-floorplan&utm_content=logo-click" target="_blank" title="Revolution Viewing Ltd. website"><img src="./inc/rv-logo.svg" width="500" height="130" alt="Revolution Viewing Logo - Green"></a>
+			</div>
+			<div id="header-right">
+				<div id="header-text">
+					<h1 class="bg-dark-blue text-white">Building &amp; Migration Tool</h1>
+				</div>
+			</div>
+		</header>
+		<!-- Notices -->
+		<div id="page-notices" class="container"></div>
+		<!-- Steps -->
+		<div id="steps-container" class="container hidden">
+			<button id="step-content" class="step clickable-step" data-type="content" title="Content"><span class="no">1.</span><span class="text">Content</span></button>
+			<button id="step-tours" class="step clickable-step" data-type="tours" title="Tours"><span class="no">2.</span><span class="text">Tours</span></button>
+			<button id="step-floors" class="step clickable-step" data-type="floors" title="Floors"><span class="no">3.</span><span class="text">Floors</span></button>
+			<button id="step-config" class="step clickable-step" data-type="config" title="Config"><span class="no">4.</span><span class="text">Config</span></button>
+			<button id="step-save" class="step" title="Save to output.json"><span class="no">5.</span><span class="text">Save</span><span class="icon far fa-save"></span></button>
+		</div>
+		<!-- Content -->
+		<main id="builder-content" class="container">
+		</main>
+		<!-- Footer -->
+		<footer id="rv-footer" class="container" role="siteinfo">
+			<p id="copyright">{{COPYRIGHT}}</p>
+		</footer>
+		<!-- Fixed -->
+		<div id="controls-container">
+			<button id="add-new-item" class="control-btn control-btn-add lg" title="Add new item"><span class="fal fa-plus fa-lg"></span></button>
+		</div>
+		<!-- Scripts -->
+		<script type="text/javascript" src="./inc/script.js"></script>
+		<script type="text/javascript">rv.start()</script>
+	</body>
+</html>

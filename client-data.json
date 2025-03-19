@@ -1,0 +1,3962 @@
+[
+  {
+    "id": "generic",
+    "name": "Revolution Viewing",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-TWVX8ZQ",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,700\" rel=\"stylesheet\" type=\"text/css\">"
+      ],
+      "client_logo_name": "client-logo.jpg"
+    },
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>",
+        "<p id=\"motion-notice\">Tilt your phone to look around</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "krpanoMouseMode": "drag"
+      },
+      "text": {
+        "clientName": "Revolution Viewing",
+        "property": "RVHQ2 - Canal Place",
+        "description": "2 Floor Office",
+        "address": "1 Canal Place, Leeds, LS12 2DU"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [27, 66]
+            },
+            {
+              "tour_id": 2,
+              "camera": [45, 65]
+            }
+          ]
+        },
+        {
+          "label": "M",
+          "tours": [
+            {
+              "tour_id": 3,
+              "camera": [33, 70]
+            },
+            {
+              "tour_id": 4,
+              "camera": [30, 50]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 5,
+              "camera": [51, 65]
+            },
+            {
+              "tour_id": 6,
+              "camera": [49, 93]
+            },
+            {
+              "tour_id": 7,
+              "camera": [46, 75]
+            },
+            {
+              "tour_id": 8,
+              "camera": [49, 51]
+            },
+            {
+              "tour_id": 9,
+              "camera": [48, 36]
+            },
+            {
+              "tour_id": 10,
+              "camera": [49, 19]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [221.8, -3.3, 92.6]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [201.8, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [241.8, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [221.8, 15]
+            },
+            {
+              "tour_id": 2,
+              "text": "RV Entrance",
+              "at": [221.8, -15, -45]
+            },
+            {
+              "heading": "Awesome new pin hotspot",
+              "text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+              "at": [221.8, 0]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Entrance",
+          "lookat": {
+            "start": [-52, -23, -44]
+          }
+        },
+        {
+          "id": 3,
+          "heading": "Meeting Room One",
+          "lookat": {
+            "start": [-122, 3, -93]
+          }
+        },
+        {
+          "id": 4,
+          "heading": "Meeting Room Two",
+          "lookat": {
+            "start": [-236, 2, -185]
+          }
+        },
+        {
+          "id": 5,
+          "heading": "1st Floor Lobby",
+          "lookat": {
+            "start": [-326, 3, -157]
+          }
+        },
+        {
+          "id": 6,
+          "heading": "1st Floor Balcony",
+          "lookat": {
+            "start": [326, 0, 13]
+          }
+        },
+        {
+          "id": 7,
+          "heading": "1st Floor General Area One",
+          "lookat": {
+            "start": [-29, 2, -74]
+          }
+        },
+        {
+          "id": 8,
+          "heading": "1st Floor Office One",
+          "lookat": {
+            "start": [-181, 2, -70]
+          }
+        },
+        {
+          "id": 9,
+          "heading": "1st Floor Office Two",
+          "lookat": {
+            "start": [-74, 4, -22]
+          }
+        },
+        {
+          "id": 10,
+          "heading": "1st Floor Office Three",
+          "lookat": {
+            "start": [286, 4, -75]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "ashberry",
+    "name": "Ashberry Homes",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-P46CPV4",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+        "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+        "<link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap\" rel=\"stylesheet\">"
+      ]
+    },
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>",
+        "<p id=\"motion-notice\">Tilt your phone to look around</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "autoR": true,
+        "krpanoMouseMode": "drag",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Ashberry Homes",
+        "property": "RVHQ2 - Canal Place"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [27, 66]
+            },
+            {
+              "tour_id": 2,
+              "camera": [45, 65]
+            }
+          ]
+        },
+        {
+          "label": "M",
+          "tours": [
+            {
+              "tour_id": 17,
+              "camera": [33, 70]
+            },
+            {
+              "tour_id": 12,
+              "camera": [30, 50]
+            },
+            {
+              "tour_id": 16,
+              "camera": [56, 56]
+            },
+            {
+              "tour_id": 11,
+              "camera": [52, 21]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [221.8, -3.3, 92.6]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [201.8, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [241.8, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [221.8, 15]
+            },
+            {
+              "tour_id": 2,
+              "text": "RV Entrance",
+              "at": [221.8, -15, -45]
+            },
+            {
+              "heading": "Awesome new pin hotspot",
+              "text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+              "at": [221.8, 0]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Entrance",
+          "lookat": {
+            "start": [-52, -23, -44]
+          }
+        },
+        {
+          "id": 17,
+          "heading": "Meeting Room One",
+          "lookat": {
+            "start": [-122, 3, -93]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Meeting Room Two",
+          "lookat": {
+            "start": [-236, 2, -185]
+          }
+        },
+        {
+          "id": 16,
+          "heading": "Shower Room",
+          "lookat": {
+            "start": [155, -15, 4]
+          }
+        },
+        {
+          "id": 11,
+          "heading": "Mezzanine",
+          "lookat": {
+            "start": [39, 0, 144]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "barratt",
+    "name": "Barratt Homes",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-TD2DSHH",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap\" rel=\"stylesheet\">"
+      ],
+      "client_logo_name": "client-logo.jpg"
+    },
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "autoR": true,
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Barratt Homes",
+        "property": "The Radleigh",
+        "description": "4 Bedroom home",
+        "floorplanText": {
+          "hide": "Hide Navigation"
+        }
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [73, 70]
+            },
+            {
+              "tour_id": 2,
+              "camera": [25, 34]
+            },
+            {
+              "tour_id": 3,
+              "camera": [50, 13]
+            },
+            {
+              "tour_id": 4,
+              "camera": [89, 24]
+            },
+            {
+              "tour_id": 5,
+              "camera": [23, 64]
+            },
+            {
+              "tour_id": 6,
+              "camera": [45, 67]
+            },
+            {
+              "tour_id": 7,
+              "camera": [42, 93]
+            },
+            {
+              "tour_id": 8,
+              "camera": [52, 1]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [35, 53]
+            },
+            {
+              "tour_id": 12,
+              "camera": [51, 74]
+            },
+            {
+              "tour_id": 13,
+              "camera": [70, 58]
+            },
+            {
+              "tour_id": 14,
+              "camera": [79, 34]
+            },
+            {
+              "tour_id": 15,
+              "camera": [26, 29]
+            },
+            {
+              "tour_id": 16,
+              "camera": [51, 22]
+            },
+            {
+              "tour_id": 17,
+              "camera": [52, 39]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [6.9, 1.6, -34.5]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [-147.8, -0.7, 0]
+            },
+            {
+              "tour_id": 3,
+              "at": [-34.3, 0.1, 0]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [117.9, 2.5, 150.5]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [207.7, 2.6, 0]
+            },
+            {
+              "tour_id": 6,
+              "at": [278, 1.3, 90]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "heading": "Dining Room",
+          "lookat": {
+            "start": [273.1, 16.7, 122.1]
+          },
+          "hotspots": [
+            {
+              "tour_id": 2,
+              "at": [356.9, 2.6, 0]
+            },
+            {
+              "tour_id": 6,
+              "at": [315.8, 2, 0]
+            },
+            {
+              "tour_id": 1,
+              "at": [265.2, 0.5, 0]
+            },
+            {
+              "tour_id": 4,
+              "at": [230.3, 3.4, 0]
+            },
+            {
+              "tour_id": 8,
+              "at": [488.8, 5.9, 0]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "heading": "Family Room",
+          "lookat": {
+            "start": [92.7, 18.0, 80.2]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [-3.8, 5.5, 0]
+            },
+            {
+              "tour_id": 1,
+              "at": [-66.9, 5.3, 0]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "heading": "Study",
+          "lookat": {
+            "start": [-21.8, 7.3, 95.6]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [191.8, 5, 0]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "heading": "Hall",
+          "lookat": {
+            "start": [-14.0, 0.0, -14.0]
+          },
+          "hotspots": [
+            {
+              "tour_id": 5,
+              "at": [-85.3, 0, 0]
+            },
+            {
+              "tour_id": 3,
+              "at": [-18.6, 2.5, 0]
+            },
+            {
+              "tour_id": 17,
+              "at": [10.3, 0, 0]
+            },
+            {
+              "tour_id": 1,
+              "at": [96.8, 0, 0]
+            },
+            {
+              "tour_id": 7,
+              "at": [194.5, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [-25.9, -11.3, -54.1],
+            "limit": {
+              "h": [-185.2, -24.5],
+              "v": [-90, 90]
+            }
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [-14.7, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "heading": "Back Exterior",
+          "lookat": {
+            "start": [-189.5, -9.0, -13.3]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [-187, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-18.2, 3.6, 113.6]
+          },
+          "hotspots": [
+            {
+              "tour_id": 17,
+              "at": [140.1, 3.4, 0]
+            },
+            {
+              "tour_id": 12,
+              "at": [275.5, 0, -90]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [114.2, -16.8, 72.4]
+          },
+          "hotspots": [
+            {
+              "tour_id": 11,
+              "at": [-2.2, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [193.0, -0.7, 69.1]
+          },
+          "hotspots": [
+            {
+              "tour_id": 17,
+              "at": [44.6, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [151.1, 1.9, 102.4]
+          },
+          "hotspots": [
+            {
+              "tour_id": 17,
+              "at": [366.1, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-193.8, 3.7, -134.3]
+          },
+          "hotspots": [
+            {
+              "tour_id": 17,
+              "at": [-393, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [69.8, 13.2, 4.4]
+          },
+          "hotspots": [
+            {
+              "tour_id": 17,
+              "at": [180.6, 0, 0]
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "heading": "Landing",
+          "lookat": {
+            "start": [-74.8, 0.3, 33.1]
+          },
+          "hotspots": [
+            {
+              "tour_id": 11,
+              "at": [-96.8, 0, 0]
+            },
+            {
+              "tour_id": 15,
+              "at": [-48.2, 0, 0]
+            },
+            {
+              "tour_id": 16,
+              "at": [20, 0, 0]
+            },
+            {
+              "tour_id": 14,
+              "at": [122, 0, 0]
+            },
+            {
+              "tour_id": 13,
+              "at": [190.7, 0, 0]
+            },
+            {
+              "tour_id": 6,
+              "at": [220.5, 8, 180]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "bellway",
+    "name": "Bellway Homes",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-KRKBJWS",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+        "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+        "<link href=\"https://fonts.googleapis.com/css2?family=Mada:wght@400;600&display=swap\" rel=\"stylesheet\">"
+      ],
+      "client_logo_name": "client-logo.png"
+    },
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>",
+        "<p id=\"motion-notice\">Tilt your phone to look around</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "autoR": true,
+        "krpanoMouseMode": "drag",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Bellway Homes",
+        "property": "RVHQ2 - Canal Place"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [27, 66]
+            },
+            {
+              "tour_id": 2,
+              "camera": [45, 65]
+            }
+          ]
+        },
+        {
+          "label": "M",
+          "tours": [
+            {
+              "tour_id": 17,
+              "camera": [33, 70]
+            },
+            {
+              "tour_id": 12,
+              "camera": [30, 50]
+            },
+            {
+              "tour_id": 16,
+              "camera": [56, 56]
+            },
+            {
+              "tour_id": 11,
+              "camera": [52, 21]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [221.8, -3.3, 92.6]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [201.8, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [241.8, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [221.8, 15]
+            },
+            {
+              "tour_id": 2,
+              "text": "RV Entrance",
+              "at": [221.8, -15, -45]
+            },
+            {
+              "heading": "Awesome new pin hotspot",
+              "text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+              "at": [221.8, 0]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Entrance",
+          "lookat": {
+            "start": [-52, -23, -44]
+          }
+        },
+        {
+          "id": 17,
+          "heading": "Meeting Room One",
+          "lookat": {
+            "start": [-122, 3, -93]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Meeting Room Two",
+          "lookat": {
+            "start": [-236, 2, -185]
+          }
+        },
+        {
+          "id": 16,
+          "heading": "Shower Room",
+          "lookat": {
+            "start": [155, -15, 4]
+          }
+        },
+        {
+          "id": 11,
+          "heading": "Mezzanine",
+          "lookat": {
+            "start": [39, 0, 144]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "bloor",
+    "name": "Bloor Homes",
+    "client_embed_width": 1060,
+    "gtm_code": "GTM-MHVR3CB",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {},
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "classic": true,
+        "startScreen": false,
+        "gallery": true,
+        "autoR": "start",
+        "panoType": "cube"
+      },
+      "text": {
+        "title": "Bloor Homes",
+        "floorplanText": {
+          "hide": "Hide Navigation"
+        }
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [42, 71]
+            },
+            {
+              "tour_id": 2,
+              "camera": [60, 25]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [78, 68]
+            },
+            {
+              "tour_id": 12,
+              "camera": [64, 31]
+            },
+            {
+              "tour_id": 13,
+              "camera": [34, 53]
+            },
+            {
+              "tour_id": 14,
+              "camera": [79, 52]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [168, 0, 57]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [206, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [310.1, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [113.8, 0]
+            },
+            {
+              "tour_id": 2,
+              "at": [71.5, -5, -90]
+            },
+            {
+              "tour_id": 11,
+              "at": [71.5, 5, 90]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [89, 0, 19]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [-107, 0, -45]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-94, 0, 70]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [7, 0, -13]
+          }
+        },
+        {
+          "id": 13,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [14, 0, 98]
+          }
+        },
+        {
+          "id": 14,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [14, 0, 74]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "bovis",
+    "name": "Bovis Homes",
+    "client_embed_width": 600,
+    "gtm_code": "GTM-PL4NX75",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "client_logo_name": "360-tour-icon.png",
+      "forwarder_btn_text": "Start virtual tour",
+      "head_font": [
+        "<link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap\" rel=\"stylesheet\">",
+        "<style>@font-face { font-family: \"Bovis Sans\"; src: url(\"./css/BovisSans-Regular.woff2\") format(\"woff2\"), url(\"./css/BovisSans-Regular.woff\") format(\"woff\"); }</style>"
+      ]
+    },
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "startScreen": false,
+        "autoR": true,
+        "krpanoMouseMode": "drag",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Bovis Homes",
+        "property": "The Sheringham",
+        "floorplanText": {
+          "hide": "Hide Navigation"
+        }
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [67, 73]
+            },
+            {
+              "tour_id": 2,
+              "camera": [68, 35]
+            },
+            {
+              "tour_id": 3,
+              "camera": [50, 51]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [51, 37]
+            },
+            {
+              "tour_id": 12,
+              "camera": [70, 74]
+            },
+            {
+              "tour_id": 13,
+              "camera": [30, 72]
+            },
+            {
+              "tour_id": 14,
+              "camera": [37, 42]
+            },
+            {
+              "tour_id": 15,
+              "camera": [41, 21]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [20, -1, -140]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [-29.1, 3.8]
+            },
+            {
+              "content_id": 2,
+              "at": [34, -2.4]
+            },
+            {
+              "content_id": 3,
+              "at": [-1.1, 4.2]
+            },
+            {
+              "tour_id": 3,
+              "at": [-214.7, 5.3, -90]
+            },
+            {
+              "heading": "Awesome new pin hotspot",
+              "text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+              "at": [51.1, -2.1],
+              "direction": "right"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [-80, -2, 14]
+          }
+        },
+        {
+          "id": 3,
+          "heading": "Hall",
+          "lookat": {
+            "start": [11, 7, -104]
+          },
+          "hotspots": [
+            {
+              "tour_id": 2,
+              "at": [-178.7, 4.1, -90]
+            },
+            {
+              "tour_id": 1,
+              "at": [-143.2, 4.1, 90]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [76, 1, -49]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-301, 0, 158]
+          }
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [17, -1, 133]
+          }
+        },
+        {
+          "id": 14,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [-54, 1, 12]
+          }
+        },
+        {
+          "id": 15,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [1, 6, -72]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "charles-church",
+    "name": "Charles Church",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-WBWDD33",
+    "index_php": {
+      "custom": true,
+      "filename": "index"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,700\" rel=\"stylesheet\" type=\"text/css\">"
+      ],
+      "client_logo_name": "client-logo.jpg"
+    },
+    "welcome_html": {
+      "p": [
+        "<p class=\"showhome-desc\">X bedroom home</p>",
+        "<p id=\"more-info-text\">For more information, please contact our sales executive at the development.</p>"
+      ],
+      "start_btn_text": "Start the tour"
+    },
+    "global_json": {
+      "settings": {
+        "gallery": true,
+        "stillsNumber": 24,
+        "autoR": "start",
+        "generic": false,
+        "panoType": "cube",
+        "ccph": true
+      },
+      "text": {
+        "clientName": "Charles Church",
+        "title": "Charles Church | Showhome | The Oakland",
+        "coins": "0",
+        "dateCreated": "April 2017",
+        "urlid": "great-woodcote-park-10069",
+        "region": "South West",
+        "development": "Great Woodcote Park",
+        "property": "The Oakland",
+        "conversion": "south-west/great-woodcote-park/the-oakland",
+        "description": "5 Bedroom Home",
+        "address": "Admiral Way, Off Topsham Road, Exeter, Devon, EX2 7GA",
+        "phone": "01392 349 475",
+        "template": "Premier"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [46, 48]
+            },
+            {
+              "tour_id": 2,
+              "camera": [69, 45]
+            },
+            {
+              "tour_id": 3,
+              "camera": [73, 75]
+            },
+            {
+              "tour_id": 4,
+              "camera": [15, 44]
+            },
+            {
+              "tour_id": 5,
+              "camera": [32, 28.5]
+            },
+            {
+              "tour_id": 6,
+              "camera": [26, 56]
+            },
+            {
+              "tour_id": 7,
+              "camera": [28, 74]
+            },
+            {
+              "tour_id": 8,
+              "camera": [54, 69]
+            },
+            {
+              "tour_id": 9,
+              "camera": [53, 95]
+            },
+            {
+              "tour_id": 10,
+              "camera": [62, 8]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [30, 21]
+            },
+            {
+              "tour_id": 12,
+              "camera": [78.5, 46]
+            },
+            {
+              "tour_id": 13,
+              "camera": [48, 88]
+            },
+            {
+              "tour_id": 14,
+              "camera": [33, 73]
+            },
+            {
+              "tour_id": 15,
+              "camera": [15, 74]
+            },
+            {
+              "tour_id": 16,
+              "camera": [17.5, 55.5]
+            },
+            {
+              "tour_id": 17,
+              "camera": [13, 41]
+            },
+            {
+              "tour_id": 18,
+              "camera": [84, 74]
+            },
+            {
+              "tour_id": 19,
+              "camera": [71, 73]
+            },
+            {
+              "tour_id": 20,
+              "camera": [50, 60]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [-91, -27, -114]
+          },
+          "hotspots": [
+            {
+              "tour_id": 9,
+              "at": [57.8, 2.9, 4]
+            },
+            {
+              "tour_id": 10,
+              "at": [-99.1, 5.7, -8]
+            },
+            {
+              "tour_id": 8,
+              "at": [41.8, 12.8]
+            },
+            {
+              "content_id": 4,
+              "at": [-64.4, 1.8]
+            },
+            {
+              "content_id": 5,
+              "at": [-127.5, 4.9]
+            },
+            {
+              "content_id": 6,
+              "at": [9.2, 1.2]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [42, 4, -91]
+          }
+        },
+        {
+          "id": 3,
+          "heading": "Family Room",
+          "lookat": {
+            "start": [-61, 5, -163]
+          }
+        },
+        {
+          "id": 4,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [-68, -1, -16]
+          }
+        },
+        {
+          "id": 5,
+          "heading": "Dining Area",
+          "lookat": {
+            "start": [54, 3, 88]
+          }
+        },
+        {
+          "id": 6,
+          "heading": "Utility",
+          "lookat": {
+            "start": [-58, 4, 138]
+          }
+        },
+        {
+          "id": 7,
+          "heading": "Study",
+          "lookat": {
+            "start": [13, 1, 99]
+          }
+        },
+        {
+          "id": 8,
+          "heading": "Hall",
+          "lookat": {
+            "start": [238, 1, 32]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [9.3, 16.7]
+            },
+            {
+              "tour_id": 9,
+              "at": [-138.1, 4.8]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [-125, -12, -117],
+            "limit": {
+              "h": [-200, -125]
+            }
+          },
+          "hotspots": [
+            {
+              "tour_id": 8,
+              "at": [-114.1, 0.9]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "heading": "Back Exterior",
+          "lookat": {
+            "start": [-56, -8, 136]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [-61.5, 2.5]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-37, 1, 58]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [-178.4, 2.7]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-338, 6, -108]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [-60.3, 4.5]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [0, 0, -69]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [29.2, 4.5]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-98, 2, 24]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [99.5, 4.1]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [15, 9, 82]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [99.5, 4.1]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [-24, 11, 32]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [-105.7, 5.8]
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [54, 2, 97]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [-105.7, 5.8]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [41, -8, 25]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [-105.7, 5.8]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [40, 9, -171]
+          },
+          "hotspots": [
+            {
+              "tour_id": 20,
+              "at": [-105.7, 5.8]
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "heading": "Landing",
+          "lookat": {
+            "start": [0, 4, 27]
+          },
+          "hotspots": [
+            {
+              "tour_id": 8,
+              "at": [287.1, 36.4]
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "id": 4,
+          "type": "article",
+          "heading": "Example Infospot",
+          "text": "Spacious front-facing lounge showcasing our beautiful feature bay window. With plenty of natural light and an exquisite blend of comfort and style, this is the perfect space to relax with the family."
+        },
+        {
+          "id": 5,
+          "type": "gallery",
+          "heading": "Example Galleryspot",
+          "galleryId": 1
+        },
+        {
+          "id": 6,
+          "type": "video",
+          "heading": "The Sherborne",
+          "youtubeId": "z6tjHzL2UJU"
+        }
+      ]
+    }
+  },
+  {
+    "id": "countryside",
+    "name": "Countryside Properties",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-PPC92B2",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap\" rel=\"stylesheet\">"
+      ],
+      "client_logo_name": "client-logo.jpg"
+    },
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "classic": true,
+        "autoR": true,
+        "krpanoMouseMode": "drag",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Countryside Properties",
+        "property": "RVHQ2 - Canal Place"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [27, 66]
+            },
+            {
+              "tour_id": 2,
+              "camera": [45, 65]
+            }
+          ]
+        },
+        {
+          "label": "M",
+          "tours": [
+            {
+              "tour_id": 17,
+              "camera": [33, 70]
+            },
+            {
+              "tour_id": 12,
+              "camera": [30, 50]
+            },
+            {
+              "tour_id": 16,
+              "camera": [56, 56]
+            },
+            {
+              "tour_id": 11,
+              "camera": [52, 21]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [221.8, -3.3, 92.6]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [201.8, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [241.8, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [221.8, 15]
+            },
+            {
+              "tour_id": 2,
+              "text": "RV Entrance",
+              "at": [221.8, -15, -45]
+            },
+            {
+              "heading": "Awesome new pin hotspot",
+              "text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+              "at": [221.8, 0]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Entrance",
+          "lookat": {
+            "start": [-52, -23, -44]
+          }
+        },
+        {
+          "id": 17,
+          "heading": "Meeting Room One",
+          "lookat": {
+            "start": [-122, 3, -93]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Meeting Room Two",
+          "lookat": {
+            "start": [-236, 2, -185]
+          }
+        },
+        {
+          "id": 16,
+          "heading": "Shower Room",
+          "lookat": {
+            "start": [155, -15, 4]
+          }
+        },
+        {
+          "id": 11,
+          "heading": "Mezzanine",
+          "lookat": {
+            "start": [39, 0, 144]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "crest-nicholson",
+    "name": "Crest Nicholson",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-PJWZKJR",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link rel=\"stylesheet\" href=\"https://use.typekit.net/jhp1dyq.css\">"
+      ],
+      "forwarder_btn_text": "Start virtual tour"
+    },
+    "welcome_html": {
+      "p": [
+        "<p class=\"showhome-desc\">A contemporary 4 bedroom home</p>",
+        "<p id=\"more-info-text\">For further information please contact our Sales Executives.</p>",
+        "<p id=\"motion-notice\">Tilt your device to look around</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "autoR": "start",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Crest Nicholson",
+        "property": "The Aylesbury",
+        "description": "A contemporary 4 bedroom home"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [53, 74]
+            },
+            {
+              "tour_id": 2,
+              "camera": [35, 27]
+            },
+            {
+              "tour_id": 3,
+              "camera": [60, 27]
+            },
+            {
+              "tour_id": 4,
+              "camera": [72, 45]
+            },
+            {
+              "tour_id": 5,
+              "camera": [29, 44]
+            },
+            {
+              "tour_id": 6,
+              "camera": [92, 45]
+            },
+            {
+              "tour_id": 7,
+              "camera": [9, 58]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [45, 35]
+            },
+            {
+              "tour_id": 12,
+              "camera": [42, 68]
+            },
+            {
+              "tour_id": 13,
+              "camera": [70, 74]
+            },
+            {
+              "tour_id": 14,
+              "camera": [62, 29]
+            },
+            {
+              "tour_id": 15,
+              "camera": [70, 50]
+            },
+            {
+              "tour_id": 16,
+              "camera": [27, 49]
+            },
+            {
+              "tour_id": 17,
+              "camera": [56, 50]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Living Room",
+          "lookat": {
+            "start": [-118.7, 7.4, -53.3]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [-98, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [-78, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [-58, 0]
+            },
+            {
+              "tour_id": 4,
+              "at": [-33, -4, -90]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [10.0, 10.4, 25.9]
+          }
+        },
+        {
+          "id": 3,
+          "heading": "Dining Area",
+          "lookat": {
+            "start": [-36.2, 17.7, -77.6]
+          }
+        },
+        {
+          "id": 4,
+          "heading": "Hall",
+          "lookat": {
+            "start": [-11.0, -2.5, 102.6]
+          }
+        },
+        {
+          "id": 5,
+          "heading": "Utility",
+          "lookat": {
+            "start": [116.8, 10.1, -59.5]
+          }
+        },
+        {
+          "id": 6,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [59.6, -10.4, -197.9]
+          }
+        },
+        {
+          "id": 7,
+          "heading": "Back Exterior",
+          "lookat": {
+            "start": [-39.0, -2.0, -107.6]
+          }
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom 1",
+          "lookat": {
+            "start": [-93.2, 5.9, -49.4]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom 2",
+          "lookat": {
+            "start": [-83.6, 9.9, 65.8]
+          }
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom 3",
+          "lookat": {
+            "start": [175.4, 5.8, -66.8]
+          }
+        },
+        {
+          "id": 14,
+          "heading": "Bedroom 4",
+          "lookat": {
+            "start": [-183.6, 7.8, -162.2]
+          }
+        },
+        {
+          "id": 15,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [135.7, 14.8, 157.0]
+          }
+        },
+        {
+          "id": 16,
+          "heading": "En Suite",
+          "lookat": {
+            "start": [254.3, 13.7, 90.5]
+          }
+        },
+        {
+          "id": 17,
+          "heading": "Landing",
+          "lookat": {
+            "start": [-169.2, 15.5, -36.8]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "linden",
+    "name": "Linden Homes",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-WLWZJC2",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+        "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+        "<link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap\" rel=\"stylesheet\">"
+      ],
+      "client_logo_name": "client-logo.png"
+    },
+    "welcome_html": {
+      "p": [
+        "<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+        "<p>For further information, book an appointment today and view our stunning show homes.</p>",
+        "<p id=\"motion-notice\">Tilt your phone to look around</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "autoR": true,
+        "krpanoMouseMode": "drag",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Bellway Homes",
+        "property": "RVHQ2 - Canal Place"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [27, 66]
+            },
+            {
+              "tour_id": 2,
+              "camera": [45, 65]
+            }
+          ]
+        },
+        {
+          "label": "M",
+          "tours": [
+            {
+              "tour_id": 17,
+              "camera": [33, 70]
+            },
+            {
+              "tour_id": 12,
+              "camera": [30, 50]
+            },
+            {
+              "tour_id": 16,
+              "camera": [56, 56]
+            },
+            {
+              "tour_id": 11,
+              "camera": [52, 21]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [221.8, -3.3, 92.6]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [201.8, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [241.8, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [221.8, 15]
+            },
+            {
+              "tour_id": 2,
+              "text": "RV Entrance",
+              "at": [221.8, -15, -45]
+            },
+            {
+              "heading": "Awesome new pin hotspot",
+              "text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+              "at": [221.8, 0]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Entrance",
+          "lookat": {
+            "start": [-52, -23, -44]
+          }
+        },
+        {
+          "id": 17,
+          "heading": "Meeting Room One",
+          "lookat": {
+            "start": [-122, 3, -93]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Meeting Room Two",
+          "lookat": {
+            "start": [-236, 2, -185]
+          }
+        },
+        {
+          "id": 16,
+          "heading": "Shower Room",
+          "lookat": {
+            "start": [155, -15, 4]
+          }
+        },
+        {
+          "id": 11,
+          "heading": "Mezzanine",
+          "lookat": {
+            "start": [39, 0, 144]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "miller",
+    "name": "Miller Homes",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-N7RPTZP",
+    "index_php": {
+      "custom": true,
+      "filename": "index"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,700\" rel=\"stylesheet\" type=\"text/css\">"
+      ],
+      "client_logo_name": "client-logo.jpg"
+    },
+    "welcome_html": {
+      "p": [
+        "<p class=\"showhome-desc\">X bedroom home</p>",
+        "<p id=\"more-info-text\">For more information, please contact our sales adviser at the development.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "gallery": true,
+        "stillsNumber": 24,
+        "autoR": "start",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Miller Homes",
+        "property": "The Willesley",
+        "description": "3 Bedroom Home",
+        "address": "East Wick Road, Gilston, Hertfordshire, CM20 2QR",
+        "phone": "0808 163 3085",
+        "moreinfo": "https://www.millerhomes.co.uk/new-homes/south-west/highfields-tetbury"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [72.5, 33.4]
+            },
+            {
+              "tour_id": 2,
+              "camera": [18.5, 62.5]
+            },
+            {
+              "tour_id": 3,
+              "camera": [42, 64]
+            },
+            {
+              "tour_id": 4,
+              "camera": [26, 32]
+            },
+            {
+              "tour_id": 5,
+              "camera": [35, 93]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [61, 66]
+            },
+            {
+              "tour_id": 12,
+              "camera": [23.5, 49.5]
+            },
+            {
+              "tour_id": 13,
+              "camera": [18, 35]
+            },
+            {
+              "tour_id": 14,
+              "camera": [47, 71]
+            },
+            {
+              "tour_id": 15,
+              "camera": [75, 30]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [98, 11, -93]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [110.7, 2.2, 45]
+            },
+            {
+              "content_id": 2,
+              "at": [28.3, -1.1]
+            },
+            {
+              "content_id": 3,
+              "at": [151.7, -6.6]
+            },
+            {
+              "content_id": 4,
+              "at": [63.4, -1]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [98, 6, -353]
+          },
+          "hotspots": [
+            {
+              "tour_id": 4,
+              "at": [21.2, 10.3]
+            },
+            {
+              "tour_id": 3,
+              "at": [36, 2.3, 45]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "heading": "Hall",
+          "lookat": {
+            "start": [100, 0, -270]
+          },
+          "hotspots": [
+            {
+              "tour_id": 4,
+              "at": [57.2, 7.5]
+            },
+            {
+              "tour_id": 1,
+              "at": [174.1, 8.8]
+            },
+            {
+              "tour_id": 5,
+              "at": [232.7, 6.7]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "heading": "Dining Area",
+          "lookat": {
+            "start": [193, 15, 256]
+          },
+          "hotspots": [
+            {
+              "tour_id": 2,
+              "at": [86.4, 12.7]
+            },
+            {
+              "tour_id": 3,
+              "at": [45.8, 10.5]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [88, -5, 73],
+            "limit": {
+              "h": [80, 180]
+            }
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [86.1, 5.5]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [41, 5, -13]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [186, 9, -14]
+          }
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-64, 20, -34]
+          }
+        },
+        {
+          "id": 14,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [41, 1, 82]
+          }
+        },
+        {
+          "id": 15,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [-136, 27, -300]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 2,
+          "type": "article",
+          "heading": "Example Infospot",
+          "text": "Spacious front-facing lounge showcasing our beautiful feature bay window. With plenty of natural light and an exquisite blend of comfort and style, this is the perfect space to relax with the family."
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "Example Galleryspot",
+          "galleryId": 1
+        },
+        {
+          "id": 4,
+          "type": "video",
+          "heading": "Revolution Viewing - Showreel - 2017",
+          "youtubeId": "09MwULHxy5U"
+        }
+      ]
+    }
+  },
+  {
+    "id": "persimmon-homes",
+    "name": "Persimmon Homes",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-WMBR3GJ",
+    "index_php": {
+      "custom": true,
+      "filename": "index"
+    },
+    "index_html": {
+      "head_font": [
+        "<script src=\"https://use.typekit.net/sau0vod.js\"></script>",
+        "<script>try{Typekit.load({ async: true });}catch(e){}</script>"
+      ],
+      "client_logo_name": "client-logo.png"
+    },
+    "welcome_html": {
+      "p": [
+        "<p class=\"showhome-desc\">X bedroom home</p>",
+        "<p id=\"more-info-text\">For more information, please contact our sales advisor at the development.</p>"
+      ],
+      "start_btn_text": "Start the tour"
+    },
+    "global_json": {
+      "settings": {
+        "autoR": "start",
+        "panoType": "cube",
+        "ccph": true
+      },
+      "text": {
+        "clientName": "Persimmon Homes",
+        "coins": "0",
+        "dateCreated": "April 2017",
+        "urlid": "abbeyvale-10640",
+        "region": "South West",
+        "development": "Abbeyvale",
+        "property": "The Winster",
+        "conversion": "south-west/abbeyvale/the-winster",
+        "description": "4 Bedroom Home",
+        "address": "Bishops Hull Road, Bishops Hull, Taunton, Somerset, TA1 5ER",
+        "phone": "01525 305 317",
+        "template": "Premier"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [75.5, 73]
+            },
+            {
+              "tour_id": 2,
+              "camera": [45, 24]
+            },
+            {
+              "tour_id": 3,
+              "camera": [68, 28]
+            },
+            {
+              "tour_id": 4,
+              "camera": [44, 73]
+            },
+            {
+              "tour_id": 5,
+              "camera": [70, 93]
+            },
+            {
+              "tour_id": 6,
+              "camera": [69, 5]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [68, 58]
+            },
+            {
+              "tour_id": 12,
+              "camera": [34.5, 67]
+            },
+            {
+              "tour_id": 13,
+              "camera": [31, 32]
+            },
+            {
+              "tour_id": 14,
+              "camera": [75, 27]
+            },
+            {
+              "tour_id": 15,
+              "camera": [28, 46]
+            },
+            {
+              "tour_id": 16,
+              "camera": [53, 77]
+            },
+            {
+              "tour_id": 17,
+              "camera": [54, 34]
+            },
+            {
+              "tour_id": 18,
+              "camera": [52, 23]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [57, 5, 44]
+          },
+          "hotspots": [
+            {
+              "tour_id": 4,
+              "at": [-60.9, 5.1, 5]
+            },
+            {
+              "content_id": 2,
+              "at": [40, 11.7]
+            },
+            {
+              "content_id": 3,
+              "at": [102.6, 10.1]
+            },
+            {
+              "content_id": 4,
+              "at": [217.3, 2.2]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [-8, 4, 7]
+          },
+          "hotspots": [
+            {
+              "tour_id": 4,
+              "at": [188.8, 6.6]
+            },
+            {
+              "tour_id": 3,
+              "at": [117.5, 11.2]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "heading": "Dining Room",
+          "lookat": {
+            "start": [46, 0, -8]
+          },
+          "hotspots": [
+            {
+              "tour_id": 2,
+              "at": [-86.9, 14.7]
+            },
+            {
+              "tour_id": 6,
+              "at": [7.4, 6.5, -10]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "heading": "Hall",
+          "lookat": {
+            "start": [-50, -3, -50]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [40.8, 7.5, -5]
+            },
+            {
+              "tour_id": 5,
+              "at": [119.8, 4.2]
+            },
+            {
+              "tour_id": 2,
+              "at": [-55.7, 3.9]
+            },
+            {
+              "tour_id": 17,
+              "at": [-28.4, -8.1, -35]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [-48, -9, -30],
+            "limit": {
+              "h": [-72, -45]
+            }
+          },
+          "hotspots": [
+            {
+              "tour_id": 4,
+              "at": [-45.9, 0.7, -25]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "heading": "Back Exterior",
+          "lookat": {
+            "start": [151, -4, -12],
+            "panlimit": {
+              "h": [130, 250]
+            }
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [135.3, 5.9]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-18, 5, -144]
+          }
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-245, 1, -137]
+          }
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-7, 8, 45]
+          }
+        },
+        {
+          "id": 14,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [22, 5, -98]
+          }
+        },
+        {
+          "id": 15,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [-13, -15, 25]
+          }
+        },
+        {
+          "id": 16,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [-3, 2, 112]
+          }
+        },
+        {
+          "id": 17,
+          "heading": "Landing",
+          "lookat": {
+            "start": [-15, 5, 108]
+          }
+        },
+        {
+          "id": 18,
+          "heading": "Study",
+          "lookat": {
+            "start": [-59, 0, -20]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 2,
+          "type": "article",
+          "heading": "Example Infospot",
+          "text": "Spacious front-facing lounge showcasing our beautiful feature bay window. With plenty of natural light and an exquisite blend of comfort and style, this is the perfect space to relax with the family."
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "Example Galleryspot",
+          "galleryId": 1
+        },
+        {
+          "id": 4,
+          "type": "video",
+          "heading": "The Sherborne",
+          "youtubeId": "z6tjHzL2UJU"
+        }
+      ]
+    }
+  },
+  {
+    "id": "story",
+    "name": "Story Homes",
+    "client_embed_width": 768,
+    "gtm_code": "GTM-MTKTVFL",
+    "index_php": {
+      "custom": true,
+      "filename": "index"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"https://fonts.googleapis.com/css?family=Lato:400,700&display=swap\" rel=\"stylesheet\">",
+        "<link rel=\"stylesheet\" href=\"https://use.typekit.net/vlj8ivz.css\">"
+      ],
+      "client_logo_name": "client-logo.jpg",
+      "google_analytics_tracking_code": "UA-3045538-1"
+    },
+    "welcome_html": {
+      "p": [
+        "<p class=\"showhome-desc\">X bedroom home</p>",
+        "<p id=\"more-info-text\">For more information, please contact our sales executive at the development.</p>"
+      ],
+      "start_btn_text": "Start the tour"
+    },
+    "global_json": {
+      "settings": {
+        "fov": 85,
+        "autoR": true,
+        "panoType": "cube"
+      },
+      "text": {
+        "property": "The Malborough",
+        "clientName": "Story Homes",
+        "description": "2 Bedroom Apartment",
+        "address": "Shotley Bridge, Consett, DH8 0UA",
+        "phone": "07977 093487",
+        "moreinfo": "https://www.storyhomes.co.uk/developments/the-woodlands/"
+      },
+      "floors": [
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [55, 74]
+            },
+            {
+              "tour_id": 2,
+              "camera": [32, 66.2]
+            },
+            {
+              "tour_id": 3,
+              "camera": [73.4, 39]
+            },
+            {
+              "tour_id": 4,
+              "camera": [37, 32]
+            },
+            {
+              "tour_id": 5,
+              "camera": [54.5, 25]
+            },
+            {
+              "tour_id": 6,
+              "camera": [52, 49]
+            },
+            {
+              "tour_id": 7,
+              "camera": [30.5, 44]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [63.1, 4.9, -26.5]
+          },
+          "hotspots": [
+            {
+              "tour_id": 2,
+              "at": [-93.5, 10.9]
+            },
+            {
+              "tour_id": 3,
+              "at": [12.3, 3.2, -45]
+            },
+            {
+              "content_id": 3,
+              "at": [-15, 0]
+            },
+            {
+              "content_id": 4,
+              "at": [-5, 0]
+            },
+            {
+              "content_id": 5,
+              "at": [5, 0]
+            },
+            {
+              "heading": "Contemporary kitchen layout and style",
+              "text": "Choose from a range of colours and finishes",
+              "at": [45, -8]
+            },
+            {
+              "heading": "Contemporary kitchen layout and style",
+              "text": "Choose from a range of colours and finishes",
+              "direction": "right",
+              "at": [45, 8]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [-57.7, 2.0, -26.2]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [91.5, 11.4]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "heading": "Hall",
+          "lookat": {
+            "start": [-147.6, -0.3, -51.1]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [-228.4, 6, 45]
+            },
+            {
+              "tour_id": 4,
+              "at": [-141.8, 7]
+            },
+            {
+              "tour_id": 5,
+              "at": [-127.2, 2.1, 90]
+            },
+            {
+              "tour_id": 6,
+              "at": [-154.2, 2.1, -90]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [100.3, 4.3, 92.8]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [190.5, 6.9]
+            },
+            {
+              "tour_id": 7,
+              "at": [302.1, 8.1]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-68.2, 4.4, -135.8]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [30.7, 11.4, -90]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [-18.6, 24.3, 161.7]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [179.6, 9.4, 90]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "heading": "En-suite",
+          "lookat": {
+            "start": [-11.3, -11.5, 109.3]
+          },
+          "hotspots": [
+            {
+              "tour_id": 4,
+              "at": [127.1, 12.4]
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "id": 3,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 4,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 5,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "taylor-wimpey",
+    "name": "Taylor Wimpey",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-N2KQ92X",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,700\" rel=\"stylesheet\" type=\"text/css\">"
+      ],
+      "client_logo_name": "client-logo.jpg"
+    },
+    "welcome_html": {
+      "p": [
+        "<p class=\"showhome-desc\">X bedroom home</p>",
+        "<p id=\"more-info-text\">For more information, please contact our sales executive at the development.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "gallery": true,
+        "autoR": "start",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Taylor Wimpey",
+        "property": "The Shelford",
+        "description": "4 Bedroom Home"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [63, 70]
+            },
+            {
+              "tour_id": 2,
+              "camera": [35, 35]
+            },
+            {
+              "tour_id": 3,
+              "camera": [73, 23]
+            },
+            {
+              "tour_id": 4,
+              "camera": [24, 55]
+            },
+            {
+              "tour_id": 5,
+              "camera": [23, 76]
+            },
+            {
+              "tour_id": 6,
+              "camera": [42, 75]
+            },
+            {
+              "tour_id": 7,
+              "camera": [41, 91]
+            },
+            {
+              "tour_id": 8,
+              "camera": [47, 5]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [67, 80]
+            },
+            {
+              "tour_id": 12,
+              "camera": [30, 60]
+            },
+            {
+              "tour_id": 13,
+              "camera": [79, 40]
+            },
+            {
+              "tour_id": 14,
+              "camera": [24, 37]
+            },
+            {
+              "tour_id": 15,
+              "camera": [55, 29]
+            },
+            {
+              "tour_id": 16,
+              "camera": [50, 42]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [161, 4, 96]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [-28.7, 5.2, 5]
+            },
+            {
+              "content_id": 1,
+              "at": [159.2, 7.2]
+            },
+            {
+              "content_id": 3,
+              "at": [109, 3.3]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [-128, 7, -81]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [76.2, 5.6, 45]
+            },
+            {
+              "tour_id": 3,
+              "at": [-4.7, 6.4]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "heading": "Dining Room",
+          "lookat": {
+            "start": [-276, 1, -144]
+          },
+          "hotspots": [
+            {
+              "tour_id": 2,
+              "at": [109.3, 4.9]
+            },
+            {
+              "tour_id": 8,
+              "at": [176.2, 4.3, 45]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "heading": "Cloak",
+          "lookat": {
+            "start": [-194, 11, -136]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [-40.6, 6.3, 65]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "heading": "Study",
+          "lookat": {
+            "start": [-148, 13, -24]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [49.9, 5.5, 65]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "heading": "Hall",
+          "lookat": {
+            "start": [130, 1, 103]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [222.4, 5.3, -5]
+            },
+            {
+              "tour_id": 7,
+              "at": [268.9, 8.9, 5]
+            },
+            {
+              "tour_id": 5,
+              "at": [52.9, 9.4, -20]
+            },
+            {
+              "tour_id": 4,
+              "at": [79, 4.7, -45]
+            },
+            {
+              "tour_id": 2,
+              "at": [98.9, 3.3]
+            },
+            {
+              "tour_id": 16,
+              "at": [128.4, -10.2, -35]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [100, -4, 70]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [109.8, 0.6, -10]
+            },
+            {
+              "content_id": 2,
+              "at": [153.5, -0.9]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "heading": "Back Exterior",
+          "lookat": {
+            "start": [-32, -2.4, -210.9]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [-44.6, 6.4]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-96, 3, -169]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [-178.4, 2.7]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-209, 2, -84]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [-60.3, 4.5]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-209, 6, 113]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [29.2, 4.5]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [0, 5, -5]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [99.5, 4.1]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [70, 15, 90]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [-105.7, 5.8]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "heading": "Landing",
+          "lookat": {
+            "start": [247, 1, 104]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [287.1, 36.4]
+            },
+            {
+              "tour_id": 11,
+              "at": [251.8, 4.3]
+            },
+            {
+              "tour_id": 12,
+              "at": [338.9, 3.9]
+            },
+            {
+              "tour_id": 13,
+              "at": [178.6, 4.6]
+            },
+            {
+              "tour_id": 14,
+              "at": [5.6, 4.4]
+            },
+            {
+              "tour_id": 15,
+              "at": [141.7, 6.9]
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "Preedy Place - Local Area",
+          "youtubeId": "T1ELvyozjUM"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "taylor-wimpey-central-london",
+    "name": "Taylor Wimpey - Central London",
+    "client_embed_width": 1100,
+    "gtm_code": "GTM-N2KQ92X",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link rel=\"stylesheet\" href=\"https://use.typekit.net/jov5ksh.css\">"
+      ],
+      "client_logo_name": "client-logo.png",
+      "welcomeTemplate": "twcl"
+    },
+    "welcome_html": {
+      "p": [
+        "<h1 class=\"showhome-desc\"></h1>",
+        "<p id=\"more-info-text\">For more information, please speak to a member of our sales team.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "gallery": true,
+        "autoR": "start",
+        "panoType": "cube"
+      },
+      "text": {
+        "clientName": "Taylor Wimpey - Central London",
+        "property": "Folio Gardens",
+        "description": "Welcome to the Folio Gardens, 2 bedroom show home."
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [63, 70]
+            },
+            {
+              "tour_id": 2,
+              "camera": [35, 35]
+            },
+            {
+              "tour_id": 3,
+              "camera": [73, 23]
+            },
+            {
+              "tour_id": 4,
+              "camera": [24, 55]
+            },
+            {
+              "tour_id": 5,
+              "camera": [23, 76]
+            },
+            {
+              "tour_id": 6,
+              "camera": [42, 75]
+            },
+            {
+              "tour_id": 7,
+              "camera": [41, 91]
+            },
+            {
+              "tour_id": 8,
+              "camera": [47, 5]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 11,
+              "camera": [67, 80]
+            },
+            {
+              "tour_id": 12,
+              "camera": [30, 60]
+            },
+            {
+              "tour_id": 13,
+              "camera": [79, 40]
+            },
+            {
+              "tour_id": 14,
+              "camera": [24, 37]
+            },
+            {
+              "tour_id": 15,
+              "camera": [55, 29]
+            },
+            {
+              "tour_id": 16,
+              "camera": [50, 42]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Lounge",
+          "lookat": {
+            "start": [161, 4, 96]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [-28.7, 5.2, 5]
+            },
+            {
+              "content_id": 1,
+              "at": [159.2, 7.2]
+            },
+            {
+              "content_id": 3,
+              "at": [109, 3.3]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Kitchen",
+          "lookat": {
+            "start": [-128, 7, -81]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [76.2, 5.6, 45]
+            },
+            {
+              "tour_id": 3,
+              "at": [-4.7, 6.4]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "heading": "Dining Room",
+          "lookat": {
+            "start": [-276, 1, -144]
+          },
+          "hotspots": [
+            {
+              "tour_id": 2,
+              "at": [109.3, 4.9]
+            },
+            {
+              "tour_id": 8,
+              "at": [176.2, 4.3, 45]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "heading": "Cloak",
+          "lookat": {
+            "start": [-194, 11, -136]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [-40.6, 6.3, 65]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "heading": "Study",
+          "lookat": {
+            "start": [-148, 13, -24]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [49.9, 5.5, 65]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "heading": "Hall",
+          "lookat": {
+            "start": [130, 1, 103]
+          },
+          "hotspots": [
+            {
+              "tour_id": 1,
+              "at": [222.4, 5.3, -5]
+            },
+            {
+              "tour_id": 7,
+              "at": [268.9, 8.9, 5]
+            },
+            {
+              "tour_id": 5,
+              "at": [52.9, 9.4, -20]
+            },
+            {
+              "tour_id": 4,
+              "at": [79, 4.7, -45]
+            },
+            {
+              "tour_id": 2,
+              "at": [98.9, 3.3]
+            },
+            {
+              "tour_id": 16,
+              "at": [128.4, -10.2, -35]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [100, -4, 70]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [109.8, 0.6, -10]
+            },
+            {
+              "content_id": 2,
+              "at": [153.5, -0.9]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "heading": "Back Exterior",
+          "lookat": {
+            "start": [-32, -2.4, -210.9]
+          },
+          "hotspots": [
+            {
+              "tour_id": 3,
+              "at": [-44.6, 6.4]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-96, 3, -169]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [-178.4, 2.7]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-209, 2, -84]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [-60.3, 4.5]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [-209, 6, 113]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [29.2, 4.5]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "heading": "Bedroom",
+          "lookat": {
+            "start": [0, 5, -5]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [99.5, 4.1]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "heading": "Bathroom",
+          "lookat": {
+            "start": [70, 15, 90]
+          },
+          "hotspots": [
+            {
+              "tour_id": 16,
+              "at": [-105.7, 5.8]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "heading": "Landing",
+          "lookat": {
+            "start": [247, 1, 104]
+          },
+          "hotspots": [
+            {
+              "tour_id": 6,
+              "at": [287.1, 36.4]
+            },
+            {
+              "tour_id": 11,
+              "at": [251.8, 4.3]
+            },
+            {
+              "tour_id": 12,
+              "at": [338.9, 3.9]
+            },
+            {
+              "tour_id": 13,
+              "at": [178.6, 4.6]
+            },
+            {
+              "tour_id": 14,
+              "at": [5.6, 4.4]
+            },
+            {
+              "tour_id": 15,
+              "at": [141.7, 6.9]
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "Preedy Place - Local Area",
+          "youtubeId": "T1ELvyozjUM"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "taylor-wimpey-london",
+    "name": "Taylor Wimpey - London",
+    "client_embed_width": 1100,
+    "gtm_code": "",
+    "index_php": {
+      "custom": false,
+      "filename": "ps"
+    },
+    "index_html": {
+      "head_font": [
+        "<link href=\"https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Noto+Sans:wght@400;600;700&display=swap\" rel=\"stylesheet\">"
+      ],
+      "client_logo_name": "client-logo.jpg"
+    },
+    "welcome_html": {
+      "p": [
+        "<h1 class=\"showhome-desc\"></h1>",
+        "<p id=\"more-info-text\">For more information, please speak to a member of our sales team.</p>"
+      ],
+      "start_btn_text": "Start virtual tour"
+    },
+    "global_json": {
+      "settings": {
+        "autoR": "start"
+      },
+      "text": {
+        "clientName": "Taylor Wimpey - London",
+        "property": "Coronation Square"
+      },
+      "floors": [
+        {
+          "label": "G",
+          "tours": [
+            {
+              "tour_id": 1,
+              "camera": [27, 66]
+            },
+            {
+              "tour_id": 2,
+              "camera": [45, 65]
+            }
+          ]
+        },
+        {
+          "label": "M",
+          "tours": [
+            {
+              "tour_id": 3,
+              "camera": [33, 70]
+            },
+            {
+              "tour_id": 4,
+              "camera": [30, 50]
+            }
+          ]
+        },
+        {
+          "label": "1",
+          "tours": [
+            {
+              "tour_id": 5,
+              "camera": [51, 65]
+            },
+            {
+              "tour_id": 6,
+              "camera": [49, 93]
+            },
+            {
+              "tour_id": 7,
+              "camera": [46, 75]
+            },
+            {
+              "tour_id": 8,
+              "camera": [49, 51]
+            },
+            {
+              "tour_id": 9,
+              "camera": [48, 36]
+            },
+            {
+              "tour_id": 10,
+              "camera": [49, 19]
+            }
+          ]
+        }
+      ],
+      "tours": [
+        {
+          "id": 1,
+          "heading": "Front Exterior",
+          "lookat": {
+            "start": [221.8, -3.3, 92.6]
+          },
+          "hotspots": [
+            {
+              "content_id": 1,
+              "at": [201.8, 0]
+            },
+            {
+              "content_id": 2,
+              "at": [241.8, 0]
+            },
+            {
+              "content_id": 3,
+              "at": [221.8, 15]
+            },
+            {
+              "tour_id": 2,
+              "text": "RV Entrance",
+              "at": [221.8, -15, -45]
+            },
+            {
+              "heading": "Awesome new pin hotspot",
+              "text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+              "at": [221.8, 0]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "Entrance",
+          "lookat": {
+            "start": [-52, -23, -44]
+          }
+        },
+        {
+          "id": 3,
+          "heading": "Meeting Room One",
+          "lookat": {
+            "start": [-122, 3, -93]
+          }
+        },
+        {
+          "id": 4,
+          "heading": "Meeting Room Two",
+          "lookat": {
+            "start": [-236, 2, -185]
+          }
+        },
+        {
+          "id": 5,
+          "heading": "1st Floor Lobby",
+          "lookat": {
+            "start": [-326, 3, -157]
+          }
+        },
+        {
+          "id": 6,
+          "heading": "1st Floor Balcony",
+          "lookat": {
+            "start": [326, 0, 13]
+          }
+        },
+        {
+          "id": 7,
+          "heading": "1st Floor General Area One",
+          "lookat": {
+            "start": [-29, 2, -74]
+          }
+        },
+        {
+          "id": 8,
+          "heading": "1st Floor Office One",
+          "lookat": {
+            "start": [-181, 2, -70]
+          }
+        },
+        {
+          "id": 9,
+          "heading": "1st Floor Office Two",
+          "lookat": {
+            "start": [-74, 4, -22]
+          }
+        },
+        {
+          "id": 10,
+          "heading": "1st Floor Office Three",
+          "lookat": {
+            "start": [286, 4, -75]
+          }
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "type": "article",
+          "heading": "[Text Content]",
+          "text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions."
+        },
+        {
+          "id": 2,
+          "type": "video",
+          "heading": "[Video Title]",
+          "youtubeId": "AmuV5v80noI"
+        },
+        {
+          "id": 3,
+          "type": "gallery",
+          "heading": "[Gallery Title]",
+          "galleryId": 1
+        }
+      ]
+    }
+  }
+]

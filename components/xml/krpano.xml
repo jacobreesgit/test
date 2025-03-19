@@ -1,0 +1,92 @@
+<krpano onstart="action(start);">
+  <!-- Gyro -->
+  <plugin
+    name="gyro"
+    url="%FIRSTXML%/../js/gyro2.js"
+    keep="true"
+    enabled="false"
+  />
+
+  <!-- VR set up -->
+  <include url="%FIRSTXML%/webvr.xml" />
+  <action name="rv_onentervr" type="Javascript" devices="html5"><![CDATA[
+    try {rv.enterVrActions();} catch (error) {}
+  ]]></action>
+
+  <action name="rv_onexitvr" type="Javascript" devices="html5"><![CDATA[
+    try {rv.exitVrActions();} catch (error) {}
+  ]]></action>
+
+  <action name="start">
+    set(display.autofullscreen, false);
+    ifnot(contextRV, set(contextRV, true));
+    set(layer[glassMeter].x, get(middleOffset));
+    set(layer[clickdrag].x, get(middleOffset));
+    ifnot(contextRV, set(contextmenu.item[rvrightclick].caption, ""); set(contextmenu.item[rvrightclick].onclick, ""); );
+  </action>
+
+  <autorotate enabled="false" waittime="3.0" speed="14" />
+
+  <control
+    keycodesin="107,187"
+    keycodesout="109,189"
+  />
+
+  <events onloadcomplete="tween(layer[glassMeter].alpha, 0.0, 0.5);" onviewchanged="rvViewChange()" />
+
+  <contextmenu fullscreen="false" versioninfo="false"><item name="rvrightclick" caption="RV Floorplan v{{FP_VERSION}}" onclick="openurl('https://www.revolutionviewing.com/', _blank)"/><item name="rvtcopyright" caption="{{COPYRIGHT}}" enabled="false" separator="true"/></contextmenu>
+  <!-- Glass Meter -->
+  <layer name="glassMeter" scale="0.5" enabled="false" alpha="0" align="center" x="0" y="50" url="%FIRSTXML%/../images/gui/glassmeter-bg.png" onclick="action(glassMeterLoad)" visible="true" keep="true"/>
+  <layer name="glassMeterBar" scale="0.5" parent="glassMeter" align="center" x="-67" y="12" edge="left" url="%FIRSTXML%/../images/gui/glassmeter-bar.png" onclick="" visible="true" keep="true"/>
+  <!-- Misc -->
+  <layer name="clickdrag" keep="true" devices="desktop" enabled="false" align="centre" x="0" y="-50" url="%FIRSTXML%/../images/gui/clicknDrag.png"  alpha="0"  scale="0.5" onclick="" />
+  <layer name="clickdrag" keep="true" devices="!desktop" enabled="false" align="centre" x="0" y="-50" url="%FIRSTXML%/../images/gui/touchnDrag.png"  alpha="0"  scale="0.5" onclick="" />
+
+  <!-- Actions -->
+  <action name="rvViewChange" type="Javascript" devices="html5"><![CDATA[
+    try { rv.viewchangeHandler() } catch (error) {}
+  ]]></action>
+
+  <action name="glassMeterAppear">
+    tween(layer[glassMeter].alpha, 0.8, 0.5);
+    action(glassMeterLoad);
+  </action>
+
+  <action name="glassMeterLoad">
+    mul(loaderProgress, get(progress.progress), 100);
+    div(perLoader, 134, 100);
+    mul(glassMeterSize, get(loaderProgress), get(perLoader));
+    set(layer[glassMeterBar].width, get(glassMeterSize));
+
+    ifnot(progress.progress GE 1,
+      delayedcall(0.01, glassMeterLoad());
+    ,
+      tween(layer[clickdrag].y, 0, 0.5);
+    );
+  </action>
+
+  <action name="clickdrag_run">
+    ifnot(secondLoad,
+      delayedcall(1, tween(layer[clickdrag].alpha, 1, 4); );
+      delayedcall(5, tween(layer[clickdrag].alpha, 0, 4); );
+      delayedcall(9,
+        removelayer(clickdrag);
+        tween(layer[glassMeter].y, 0);
+      );
+    ,
+      removelayer(clickdrag);
+      set(layer[glassMeter].y, 0);
+    );
+    if(device.tablet, set(layer[clickdrag].scale, 0.5); );
+  </action>
+
+  <progress showload="none" showwait="none" />
+
+  <!-- VR FOLLOWING MENU -->
+  <events
+    name="vr_events"
+    onviewchanged=""
+    keep="true"
+  />
+
+</krpano>

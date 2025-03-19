@@ -1,0 +1,288 @@
+/*page-surround.css*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*================================== GENERIC ================================*/
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+	position: relative;
+	min-height: 900px;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $white;
+	background-image: url(http://www.revolutionviewing.co.uk/persimmon-homes/gui-update-files/rose-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+	color: #505050;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+iframe {
+	border: 0;
+	display: block;
+}
+
+img {
+	border: none;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+.clearL {
+	clear: left;
+}
+.clearB {
+	clear: both;
+}
+.clearR {
+	clear: right;
+}
+
+/*================================== CONTAINER ================================*/
+.containerBehindMain {
+	background-repeat: no-repeat;
+	left: 0;
+	margin: 0 auto;
+	max-width: 96%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 1050px;
+}
+
+.containerMain {
+	background-color:#FFF;
+	background-position: 982px 15px;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 2px 2px 10px 5px #adadad;
+	box-shadow: 2px 2px 10px 5px #adadad;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=-45, Color='#adadad')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=-45, Color='#adadad');
+	margin: 0;
+}
+
+/*================================== HEADER ================================*/
+.page-header {
+	font-size: 0;
+}
+#contactDetailsBox,
+#clientLogo {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 8px 0;
+	padding: 0 10px;
+}
+
+#contactDetailsBox {
+	padding: 5px 10px;
+	width: 60%
+}
+
+#development {
+	font-family: "clarendon-text-pro",Georgia,"Times New Roman",Times,serif;
+	font-size: 38px;
+	font-weight: 400;
+	margin: 0;
+}
+
+#development a,
+#development a:hover,
+#development a:visited {
+	color: #0f8263;
+}
+
+.showhome-address {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 4px 0 0;
+}
+
+#property {
+	font-size: 12px;
+	margin: 10px 0 0;
+}
+
+
+#clientLogo {
+	margin-bottom: 0;
+	text-align: right;
+	width: 40%;
+}
+#clientLogo img {
+	display: inline-block;
+}
+
+
+/*================================== BODY ================================*/
+#iframeContainer {
+	height: 540px;
+	max-width: 100%;
+	padding: 0 10px;
+	width: 100%;
+	*width: 1px;
+}
+
+/*================================== FOOTER ================================*/
+.page-footer {
+	display: none;
+	font-size: 0;
+}
+
+.footer-left,
+.footer-right {
+	display: inline-block;
+	margin: 10px 0;
+	padding: 10px;
+	vertical-align: middle;
+	width: 50%;
+}
+.footer-right {
+	text-align: right;
+}
+
+
+#interested-section {
+	font-family: "clarendon-text-pro",Georgia,"Times New Roman",Times,serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.interested {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.links {
+	margin-left: 10px;
+}
+
+.links #arrangeAppointment,
+.links .orCall {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#arrangeAppointment {
+	padding: 12px 16px;
+	display: block;
+	border-radius: 4px;
+	background-color: #f47d21;
+	color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+	line-height: 1;
+	transition: background-color 0.4s;
+
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 20px;
+	}
+
+	&:hover {
+		@include gtTablet {
+			background-color: #017354;
+		}
+	}
+
+}
+
+.orCall {
+	margin-left: 10px;
+}
+#phone {
+	color: #0f8263;
+	font-size: 22px;
+	margin-left: 8px;
+}
+
+
+.footer-social {
+	margin: 10px 0;
+}
+
+#facebook {
+	display: inline-block;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+#facebook-inner {
+	height: 20px;
+	overflow: hidden;
+	width: 50px;
+}
+/*#fb-root iframe {
+	width:80px !important;
+}*/
+/*.fb_edge_widget_with_comment span.fb_edge_comment_widget {
+	display:none !important;
+}*/
+
+#twitter {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#poweredBy {
+	margin: 10px 0;
+}
+#copyrightRvLogo {
+	font-size: 12px;
+	color: inherit;
+}
+
+/*================================== POST-FOOTER ================================*/
+.disclaimer {
+	color: #999;
+	font-size: 9px;
+	margin-top: 10px;
+	padding: 7px;
+	text-align: left;
+	width: 960px;
+}
+
+/*================================== GENERIC ================================*/
+body.generic #development {
+	cursor: default;
+}
+body.generic .showhome-address {
+	display: none;
+}
+
+/*================================== MEDIA QUERIES ================================*/

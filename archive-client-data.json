@@ -1,0 +1,1304 @@
+[
+	{
+		"id": "harwood",
+		"name": "Harwood Homes",
+		"client_embed_width": 1100,
+		"include_gallery_files": true,
+		"gtm_code": "GTM-N4J536M",
+		"index_php": {
+			"custom": false
+		},
+		"index_html": {
+			"head_font": [
+				"<link href=\"https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap\" rel=\"stylesheet\">"
+			],
+			"client_logo_name": "client-logo.jpg",
+			"floorplan_settings": {
+				"welcomeTemplate": "harwood-details",
+				"startScreen": true,
+				"gallery": false,
+				"autoR": "start"
+			}
+		},
+		"welcome_html": {
+			"p": [
+				"<p class=\"showhome-desc\"></p>",
+				"<p>If you would like more information, you can get in touch using the following:<br> Phone: <a class=\"showhome-phone\" href=\"tel:0\"></a><br>Website: <a class=\"showhome-cta\" href=\"#\" target=\"_blank\" title=\"\"></a></p>"
+			],
+			"start_btn_text": "Start virtual tour"
+		},
+		"global_json": {
+			"text": {
+				"title": "Harwood Homes | Showhome | The Maple",
+				"property": "The Maple",
+				"clientName": "Harwood Homes",
+				"description": "4 bedroom home",
+				"address": "123",
+				"cta": [],
+				"phone": []
+			},
+			"tours": [
+				[
+					{
+						"id":1,
+						"heading":"Lounge",
+						"camera": {
+							"x": 81,
+							"y": 39
+						},
+						"settings": {
+							"startPan": 1,
+							"startTilt": 0,
+							"cameraAlign": 140
+						},
+						"hotspots": [
+							{
+								"id": 1,
+								"type": "info",
+								"heading": "[Text Content]",
+								"text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+								"position": {
+									"ath": -26.14,
+									"atv": 16
+								}
+							},
+							{
+								"id": 2,
+								"type": "video",
+								"heading": "[Video Title]",
+								"youtubeId": "AmuV5v80noI",
+								"position": {
+									"ath": 32.3,
+									"atv": 1.5
+								}
+							},
+							{
+								"id": 3,
+								"type": "gallery",
+								"heading": "[Gallery Title]",
+								"galleryId": 1,
+								"position": {
+									"ath": -69.1,
+									"atv": -8.5
+								}
+							},
+							{
+								"id": 4,
+								"type": "nav",
+								"heading": "Kitchen",
+								"target": {
+									"floor": 1,
+									"tour": 2
+								},
+								"position": {
+									"ath": 147.3,
+									"atv": -4,
+									"rotate": -90
+								}
+							},
+							{
+								"id": 5,
+								"type": "nav",
+								"heading": "Dining Room",
+								"target": {
+									"floor": 0,
+									"tour": 3
+								},
+								"position": {
+									"ath": 147.3,
+									"atv": 6,
+									"rotate": 90
+								}
+							}
+						]
+					},
+					{
+						"id":2,
+						"heading":"Kitchen",
+						"camera": {
+							"x": 33,
+							"y": 14
+						},
+						"settings": {
+							"startPan": 11,
+							"startTilt": -1,
+							"cameraAlign": 36
+						}
+					},
+					{
+						"id":3,
+						"heading":"Dining Room",
+						"camera": {
+							"x": 59,
+							"y": 9
+						},
+						"settings": {
+							"startPan": -70,
+							"startTilt": 11,
+							"cameraAlign": -111
+						}
+					},
+					{
+						"id":4,
+						"heading":"Family Room",
+						"camera": {
+							"x": 84,
+							"y": 8
+						},
+						"settings": {
+							"startPan": 18,
+							"startTilt": 12,
+							"cameraAlign": 125
+						}
+					},
+					{
+						"id":5,
+						"heading":"Dining Room",
+						"camera": {
+							"x": 36,
+							"y": 55
+						},
+						"settings": {
+							"startPan": 88,
+							"startTilt": 9,
+							"cameraAlign": -225
+						}
+					},
+					{
+						"id":6,
+						"heading":"Study",
+						"camera": {
+							"x": 25,
+							"y": 40
+						},
+						"settings": {
+							"startPan": -22,
+							"startTilt": 18,
+							"cameraAlign": -20
+						}
+					},
+					{
+						"id":7,
+						"heading":"Utility",
+						"camera": {
+							"x": 21,
+							"y": 17
+						},
+						"settings": {
+							"startPan": 84,
+							"startTilt": 0,
+							"cameraAlign": -85
+						}
+					},
+					{
+						"id":8,
+						"heading":"Hall",
+						"camera": {
+							"x": 65,
+							"y": 35
+						},
+						"settings": {
+							"startPan": -29,
+							"startTilt": 0,
+							"cameraAlign": -51
+						}
+					},
+					{
+						"id":9,
+						"heading":"Front Exterior",
+						"camera": {
+							"x": 58,
+							"y": 82
+						},
+						"settings": {
+							"startPan": 23,
+							"startTilt": -19,
+							"cameraAlign": -27,
+							"panlimit": {
+								"horizontal": {
+									"min": -100,
+									"max": 45
+								}
+							}
+						}
+					},
+					{
+						"id":10,
+						"heading":"Back Exterior",
+						"camera": {
+							"x": 45,
+							"y": 0
+						},
+						"settings": {
+							"startPan": -6,
+							"startTilt": 1,
+							"cameraAlign": -170
+						}
+					}
+				],
+				[
+					{
+						"id":1,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 83,
+							"y": 41
+						},
+						"settings": {
+							"startPan": -70,
+							"startTilt": -1,
+							"cameraAlign": 223
+						}
+					},
+					{
+						"id":2,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 30,
+							"y": 51
+						},
+						"settings": {
+							"startPan": 84,
+							"startTilt": 7,
+							"cameraAlign": 103
+						}
+					},
+					{
+						"id":3,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 28,
+							"y": 21
+						},
+						"settings": {
+							"startPan": -44,
+							"startTilt": 1,
+							"cameraAlign": 0
+						}
+					},
+					{
+						"id":4,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 65,
+							"y": 21
+						},
+						"settings": {
+							"startPan": 63,
+							"startTilt": 10,
+							"cameraAlign": -99
+						}
+					},
+					{
+						"id":5,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 41,
+							"y": 19
+						},
+						"settings": {
+							"startPan": 4,
+							"startTilt": 11,
+							"cameraAlign": 58
+						}
+					},
+					{
+						"id":6,
+						"heading":"En-suite",
+						"camera": {
+							"x": 84,
+							"y": 12
+						},
+						"settings": {
+							"startPan": -72,
+							"startTilt": 7,
+							"cameraAlign": -20
+						}
+					},
+					{
+						"id":7,
+						"heading":"En-suite",
+						"camera": {
+							"x": 22,
+							"y": 45
+						},
+						"settings": {
+							"startPan": -49,
+							"startTilt": 23,
+							"cameraAlign": -5
+						}
+					},
+					{
+						"id":8,
+						"heading":"Dressing room",
+						"camera": {
+							"x": 84,
+							"y": 26
+						},
+						"settings": {
+							"startPan": -92,
+							"startTilt": 0,
+							"cameraAlign": 207
+						}
+					},
+					{
+						"id":9,
+						"heading":"Bathroom",
+						"camera": {
+							"x": 25,
+							"y": 34
+						},
+						"settings": {
+							"startPan": -106,
+							"startTilt": 10,
+							"cameraAlign": -5
+						}
+					},
+					{
+						"id":10,
+						"heading":"Landing",
+						"camera": {
+							"x": 40,
+							"y": 31
+						},
+						"settings": {
+							"startPan": 13,
+							"startTilt": 0,
+							"cameraAlign": 106
+						}
+					}
+				]
+			]
+		}
+	},
+	{
+		"id": "mandale",
+		"name": "Mandale Homes",
+		"client_embed_width": 1100,
+		"include_gallery_files": true,
+		"gtm_code": "GTM-K3MD7ZB",
+		"index_php": {
+			"custom": false,
+			"filename": "ps"
+		},
+		"index_html": {
+			"head_font": [
+				"<link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,700\" rel=\"stylesheet\" type=\"text/css\">"
+			],
+			"client_logo_name": "client-logo.jpg",
+			"floorplan_settings": {
+				"startScreen": true,
+				"gallery": false,
+				"autoR": "start"
+			}
+		},
+		"welcome_html": {
+			"p": [
+				"<p>A stunning <span class=\"showhome-desc\">4 bedroom home</span> that is designed with both practicality and style at its core</p>",
+				"<p>For further information, book an appointment today and view our stunning show homes.</p>",
+				"<p id=\"motion-notice\">Tilt your phone to look around</p>"
+			],
+			"start_btn_text": "Start virtual tour"
+		},
+		"global_json": {
+			"text": {
+				"title": "Mandale Homes - Virtual Tour",
+				"clientName": "Mandale Homes",
+				"moreinfo": "http://mandalehomes.com/",
+				"description": "Main Office",
+				"address": "5 Neville Road, North Tees Industrial Estate, Stockton-on-Tees, TS18 2RD",
+				"floorplanText": {
+					"hide": ""
+				}
+			},
+			"tours": [
+				[
+					{
+						"id": 1,
+						"heading": "Lounge",
+						"camera": {
+							"x": 47,
+							"y": 49
+						},
+						"settings": {
+							"startPan": -1,
+							"startTilt": 7,
+							"cameraAlign": -127
+						},
+						"hotspots": [
+							{
+								"id": 1,
+								"type": "info",
+								"heading": "[Text Content]",
+								"text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+								"position": {
+									"ath": -15,
+									"atv": 0
+								}
+							},
+							{
+								"id": 2,
+								"type": "video",
+								"heading": "[Video Title]",
+								"youtubeId": "AmuV5v80noI",
+								"position": {
+									"ath": -5,
+									"atv": 0
+								}
+							},
+							{
+								"id": 3,
+								"type": "gallery",
+								"heading": "[Gallery Title]",
+								"galleryId": 1,
+								"position": {
+									"ath": 5,
+									"atv": 0
+								}
+							},
+							{
+								"id": 4,
+								"type": "nav",
+								"heading": "Kitchen",
+								"target": {
+									"floor": 1,
+									"tour": 2
+								},
+								"position": {
+									"ath": 147.3,
+									"atv": -4,
+									"rotate": -90
+								}
+							}
+						]
+					},
+					{
+						"id": 2,
+						"heading": "Kitchen",
+						"camera": {
+							"x": 50,
+							"y": 16
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": 48
+						}
+					},
+					{
+						"id": 3,
+						"heading": "Family Room",
+						"camera": {
+							"x": 40,
+							"y": 82
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": -142
+						}
+					},
+					{
+						"id": 4,
+						"heading": "Deck",
+						"camera": {
+							"x": 10,
+							"y": 50
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": -116
+						}
+					},
+					{
+						"id": 5,
+						"heading": "Utility",
+						"camera": {
+							"x": 65,
+							"y": 80
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": -26
+						}
+					}
+				],
+				[
+					{
+						"id": 1,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 15
+						},
+						"settings": {
+							"startPan": -8.1,
+							"startTilt": 7.2,
+							"cameraAlign": -32.8
+						}
+					},
+					{
+						"id": 2,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 40
+						},
+						"settings": {
+							"startPan": -8.4,
+							"startTilt": 14.4,
+							"cameraAlign": -48.3
+						}
+					},
+					{
+						"id": 3,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 63
+						},
+						"settings": {
+							"startPan": 345.8,
+							"startTilt": 10.9,
+							"cameraAlign": 190.3
+						}
+					},
+					{
+						"id": 4,
+						"heading": "Bathroom",
+						"camera": {
+							"x": 63,
+							"y": 12
+						},
+						"settings": {
+							"startPan": -122.3,
+							"startTilt": 9.6,
+							"cameraAlign": 25.8
+						}
+					},
+					{
+						"id": 5,
+						"heading": "En-suite",
+						"camera": {
+							"x": 68,
+							"y": 70
+						},
+						"settings": {
+							"startPan": -14.8,
+							"startTilt": 9,
+							"cameraAlign": -27.5
+						}
+					},
+					{
+						"id": 6,
+						"heading": "Landing",
+						"camera": {
+							"x": 66,
+							"y": 29
+						},
+						"settings": {
+							"startPan": -11.7,
+							"startTilt": 6.3,
+							"cameraAlign": -18.2
+						}
+					}
+				],
+				[
+					{
+						"id": 1,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 63
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 3.2,
+							"cameraAlign": 134.5
+						}
+					},
+					{
+						"id": 2,
+						"heading": "En-suite",
+						"camera": {
+							"x": 34,
+							"y": 13
+						},
+						"settings": {
+							"startPan": 29.4,
+							"startTilt": 10.7,
+							"cameraAlign": 78.5
+						}
+					},
+					{
+						"id": 3,
+						"heading": "Balcony",
+						"camera": {
+							"x": 10,
+							"y": 63
+						},
+						"settings": {
+							"startPan": 25.6,
+							"startTilt": 2.8,
+							"cameraAlign": -166.3
+						}
+					}
+				]
+			]
+		}
+	},
+	{
+		"id": "orbit",
+		"name": "Orbit Homes",
+		"client_embed_width": 1100,
+		"include_gallery_files": true,
+		"gtm_code": "GTM-WJFLM5M",
+		"index_php": {
+			"custom": true,
+			"filename": "index"
+		},
+		"index_html": {
+			"head_font": [
+				"<link href=\"//fonts.googleapis.com/css?family=Roboto+Condensed:400,700\" rel=\"stylesheet\" type=\"text/css\">"
+			],
+			"client_logo_name": "client-logo.jpg",
+			"floorplan_settings": {
+				"startScreen": true,
+				"gallery": false,
+				"autoR": "start"
+			}
+		},
+		"welcome_html": {
+			"p": [
+				"<p class=\"showhome-desc\">X bedroom home</p>",
+				"<p id=\"more-info-text\">For more information, please contact our sales executive at the development.</p>"
+			],
+			"start_btn_text": "Start the tour"
+		},
+		"global_json": {
+			"text": {
+				"title": "HTML5 Floorplan Template",
+				"property": "Rye B",
+				"clientName": "Orbit Homes",
+				"moreinfo": "http://www.orbithomes.org.uk",
+				"description": "4 Bedroom Home",
+				"address": "Horninglow Road, Burton Upon Trent DE14 2PT",
+				"phone": "0845 600 4072",
+				"floorplanText": {
+					"hide": ""
+				}
+			},
+			"tours": [
+				[
+					{
+						"id": 1,
+						"heading": "Lounge",
+						"camera": {
+							"x": 47,
+							"y": 49
+						},
+						"settings": {
+							"startPan": -1,
+							"startTilt": 7,
+							"cameraAlign": -127
+						},
+						"hotspots": [
+							{
+								"id": 1,
+								"type": "info",
+								"heading": "[Text Content]",
+								"text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+								"position": {
+									"ath": -15,
+									"atv": 0
+								}
+							},
+							{
+								"id": 2,
+								"type": "video",
+								"heading": "[Video Title]",
+								"youtubeId": "AmuV5v80noI",
+								"position": {
+									"ath": -5,
+									"atv": 0
+								}
+							},
+							{
+								"id": 3,
+								"type": "gallery",
+								"heading": "[Gallery Title]",
+								"galleryId": 1,
+								"position": {
+									"ath": 5,
+									"atv": 0
+								}
+							},
+							{
+								"id": 4,
+								"type": "nav",
+								"heading": "Kitchen",
+								"target": {
+									"floor": 1,
+									"tour": 2
+								},
+								"position": {
+									"ath": 147.3,
+									"atv": -4,
+									"rotate": -90
+								}
+							}
+						]
+					},
+					{
+						"id": 2,
+						"heading": "Kitchen",
+						"camera": {
+							"x": 50,
+							"y": 16
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": 48
+						}
+					},
+					{
+						"id": 3,
+						"heading": "Family Room",
+						"camera": {
+							"x": 40,
+							"y": 82
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": -142
+						}
+					},
+					{
+						"id": 4,
+						"heading": "Deck",
+						"camera": {
+							"x": 10,
+							"y": 50
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": -116
+						}
+					},
+					{
+						"id": 5,
+						"heading": "Utility",
+						"camera": {
+							"x": 65,
+							"y": 80
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 0,
+							"cameraAlign": -26
+						}
+					}
+				],
+				[
+					{
+						"id": 1,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 15
+						},
+						"settings": {
+							"startPan": -8.1,
+							"startTilt": 7.2,
+							"cameraAlign": -32.8
+						}
+					},
+					{
+						"id": 2,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 40
+						},
+						"settings": {
+							"startPan": -8.4,
+							"startTilt": 14.4,
+							"cameraAlign": -48.3
+						}
+					},
+					{
+						"id": 3,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 63
+						},
+						"settings": {
+							"startPan": 345.8,
+							"startTilt": 10.9,
+							"cameraAlign": 190.3
+						}
+					},
+					{
+						"id": 4,
+						"heading": "Bathroom",
+						"camera": {
+							"x": 63,
+							"y": 12
+						},
+						"settings": {
+							"startPan": -122.3,
+							"startTilt": 9.6,
+							"cameraAlign": 25.8
+						}
+					},
+					{
+						"id": 5,
+						"heading": "En-suite",
+						"camera": {
+							"x": 68,
+							"y": 70
+						},
+						"settings": {
+							"startPan": -14.8,
+							"startTilt": 9,
+							"cameraAlign": -27.5
+						}
+					},
+					{
+						"id": 6,
+						"heading": "Landing",
+						"camera": {
+							"x": 66,
+							"y": 29
+						},
+						"settings": {
+							"startPan": -11.7,
+							"startTilt": 6.3,
+							"cameraAlign": -18.2
+						}
+					}
+				],
+				[
+					{
+						"id": 1,
+						"heading": "Bedroom",
+						"camera": {
+							"x": 37,
+							"y": 63
+						},
+						"settings": {
+							"startPan": 0,
+							"startTilt": 3.2,
+							"cameraAlign": 134.5
+						}
+					},
+					{
+						"id": 2,
+						"heading": "En-suite",
+						"camera": {
+							"x": 34,
+							"y": 13
+						},
+						"settings": {
+							"startPan": 29.4,
+							"startTilt": 10.7,
+							"cameraAlign": 78.5
+						}
+					},
+					{
+						"id": 3,
+						"heading": "Balcony",
+						"camera": {
+							"x": 10,
+							"y": 63
+						},
+						"settings": {
+							"startPan": 25.6,
+							"startTilt": 2.8,
+							"cameraAlign": -166.3
+						}
+					}
+				]
+			]
+		}
+	},
+	{
+		"id": "redrow",
+		"name": "Redrow Homes",
+		"client_embed_width": 1100,
+		"include_gallery_files": true,
+		"gtm_code": "GTM-KSCT87F",
+		"index_php": {
+			"custom": false
+		},
+		"index_html": {
+			"head_font": [
+				"<link rel=\"stylesheet\" href=\"https://use.typekit.net/jhp1dyq.css\">"
+			],
+			"client_logo_name": "client-logo.jpg",
+			"floorplan_settings": {
+				"welcomeTemplate": "redrow-details",
+				"startScreen": true,
+				"gallery": false,
+				"autoR": "start"
+			},
+			"google_analytics_tracking_code": "UA-40888590-1"
+		},
+		"welcome_html": {
+			"p": [
+				"<p class=\"showhome-desc\"></p>",
+				"<p>If you would like more information, you can get in touch using the following:<br> Phone: <a class=\"showhome-phone\" href=\"tel:0\"></a><br>Website: <a class=\"showhome-cta\" href=\"#\" target=\"_blank\" title=\"\"></a></p>"
+			],
+			"start_btn_text": "Start virtual tour"
+		},
+		"global_json": {
+			"text": {
+				"title": "Redrow | Showhome | The Sandringham",
+				"property": "The Sandringham",
+				"clientName": "Redrow",
+				"description": "4 bedroom home",
+				"address": "123",
+				"cta": [],
+				"phone": []
+			},
+			"tours": [
+				[
+					{
+						"id":1,
+						"heading":"Lounge",
+						"camera": {
+							"x": 81,
+							"y": 39
+						},
+						"settings": {
+							"startPan": 1,
+							"startTilt": 0,
+							"cameraAlign": 140
+						},
+						"hotspots": [
+							{
+								"id": 1,
+								"type": "info",
+								"heading": "[Text Content]",
+								"text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+								"position": {
+									"ath": -26.14,
+									"atv": 16
+								}
+							},
+							{
+								"id": 2,
+								"type": "video",
+								"heading": "[Video Title]",
+								"youtubeId": "AmuV5v80noI",
+								"position": {
+									"ath": 32.3,
+									"atv": 1.5
+								}
+							},
+							{
+								"id": 3,
+								"type": "gallery",
+								"heading": "[Gallery Title]",
+								"galleryId": 1,
+								"position": {
+									"ath": -69.1,
+									"atv": -8.5
+								}
+							},
+							{
+								"id": 4,
+								"type": "nav",
+								"heading": "Kitchen",
+								"target": {
+									"floor": 1,
+									"tour": 2
+								},
+								"position": {
+									"ath": 147.3,
+									"atv": -4,
+									"rotate": -90
+								}
+							},
+							{
+								"id": 5,
+								"type": "nav",
+								"heading": "Dining Room",
+								"target": {
+									"floor": 0,
+									"tour": 3
+								},
+								"position": {
+									"ath": 147.3,
+									"atv": 6,
+									"rotate": 90
+								}
+							}
+						]
+					},
+					{
+						"id":2,
+						"heading":"Kitchen",
+						"camera": {
+							"x": 33,
+							"y": 14
+						},
+						"settings": {
+							"startPan": 11,
+							"startTilt": -1,
+							"cameraAlign": 36
+						}
+					},
+					{
+						"id":3,
+						"heading":"Dining Room",
+						"camera": {
+							"x": 59,
+							"y": 9
+						},
+						"settings": {
+							"startPan": -70,
+							"startTilt": 11,
+							"cameraAlign": -111
+						}
+					},
+					{
+						"id":4,
+						"heading":"Family Room",
+						"camera": {
+							"x": 84,
+							"y": 8
+						},
+						"settings": {
+							"startPan": 18,
+							"startTilt": 12,
+							"cameraAlign": 125
+						}
+					},
+					{
+						"id":5,
+						"heading":"Dining Room",
+						"camera": {
+							"x": 36,
+							"y": 55
+						},
+						"settings": {
+							"startPan": 88,
+							"startTilt": 9,
+							"cameraAlign": -225
+						}
+					},
+					{
+						"id":6,
+						"heading":"Study",
+						"camera": {
+							"x": 25,
+							"y": 40
+						},
+						"settings": {
+							"startPan": -22,
+							"startTilt": 18,
+							"cameraAlign": -20
+						}
+					},
+					{
+						"id":7,
+						"heading":"Utility",
+						"camera": {
+							"x": 21,
+							"y": 17
+						},
+						"settings": {
+							"startPan": 84,
+							"startTilt": 0,
+							"cameraAlign": -85
+						}
+					},
+					{
+						"id":8,
+						"heading":"Hall",
+						"camera": {
+							"x": 65,
+							"y": 35
+						},
+						"settings": {
+							"startPan": -29,
+							"startTilt": 0,
+							"cameraAlign": -51
+						}
+					},
+					{
+						"id":9,
+						"heading":"Front Exterior",
+						"camera": {
+							"x": 58,
+							"y": 82
+						},
+						"settings": {
+							"startPan": 23,
+							"startTilt": -19,
+							"cameraAlign": -27,
+							"panlimit": {
+								"horizontal": {
+									"min": -100,
+									"max": 45
+								}
+							}
+						}
+					},
+					{
+						"id":10,
+						"heading":"Back Exterior",
+						"camera": {
+							"x": 45,
+							"y": 0
+						},
+						"settings": {
+							"startPan": -6,
+							"startTilt": 1,
+							"cameraAlign": -170
+						}
+					}
+				],
+				[
+					{
+						"id":1,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 83,
+							"y": 41
+						},
+						"settings": {
+							"startPan": -70,
+							"startTilt": -1,
+							"cameraAlign": 223
+						}
+					},
+					{
+						"id":2,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 30,
+							"y": 51
+						},
+						"settings": {
+							"startPan": 84,
+							"startTilt": 7,
+							"cameraAlign": 103
+						}
+					},
+					{
+						"id":3,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 28,
+							"y": 21
+						},
+						"settings": {
+							"startPan": -44,
+							"startTilt": 1,
+							"cameraAlign": 0
+						}
+					},
+					{
+						"id":4,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 65,
+							"y": 21
+						},
+						"settings": {
+							"startPan": 63,
+							"startTilt": 10,
+							"cameraAlign": -99
+						}
+					},
+					{
+						"id":5,
+						"heading":"Bedroom",
+						"camera": {
+							"x": 41,
+							"y": 19
+						},
+						"settings": {
+							"startPan": 4,
+							"startTilt": 11,
+							"cameraAlign": 58
+						}
+					},
+					{
+						"id":6,
+						"heading":"En-suite",
+						"camera": {
+							"x": 84,
+							"y": 12
+						},
+						"settings": {
+							"startPan": -72,
+							"startTilt": 7,
+							"cameraAlign": -20
+						}
+					},
+					{
+						"id":7,
+						"heading":"En-suite",
+						"camera": {
+							"x": 22,
+							"y": 45
+						},
+						"settings": {
+							"startPan": -49,
+							"startTilt": 23,
+							"cameraAlign": -5
+						}
+					},
+					{
+						"id":8,
+						"heading":"Dressing room",
+						"camera": {
+							"x": 84,
+							"y": 26
+						},
+						"settings": {
+							"startPan": -92,
+							"startTilt": 0,
+							"cameraAlign": 207
+						}
+					},
+					{
+						"id":9,
+						"heading":"Bathroom",
+						"camera": {
+							"x": 25,
+							"y": 34
+						},
+						"settings": {
+							"startPan": -106,
+							"startTilt": 10,
+							"cameraAlign": -5
+						}
+					},
+					{
+						"id":10,
+						"heading":"Landing",
+						"camera": {
+							"x": 40,
+							"y": 31
+						},
+						"settings": {
+							"startPan": 13,
+							"startTilt": 0,
+							"cameraAlign": 106
+						}
+					}
+				]
+			]
+		}
+	}
+]

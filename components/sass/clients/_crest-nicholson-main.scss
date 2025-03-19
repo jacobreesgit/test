@@ -1,0 +1,324 @@
+$crest-blue: #1d3465;
+$crest-blue-light: lighten($crest-blue, 15);
+$crest-gold: #a2905e;
+
+html,
+body {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-weight: 400;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+  #forwarder-inner {
+    img {
+      width: 100px;
+    }
+
+    a {
+      background-color: $crest-gold;
+    }
+  }
+}
+
+/* =====================================
+WELCOME SCREEN
+===================================== */
+#welcome-container {
+  #welcome-default {
+    #welcome-vc {
+      #welcome-hc {
+        max-width: 640px;
+        padding: 30px;
+        background-color: transparentize($white, 0.05);
+
+        #welcome-top {
+          margin-bottom: 16px;
+
+          @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+          }
+
+          #client-logo {
+            max-width: 100px;
+
+            @media screen and (max-width: 767px) {
+              float: none;
+              margin: 0 auto 12px;
+              width: 140px;
+              display: block;
+            }
+
+            @media screen and (min-width: 768px) {
+              -webkit-box-ordinal-group: 1;
+              -ms-flex-order: 0;
+              order: 0;
+              margin-right: 30px;
+            }
+          }
+
+          #welcome-title {
+            line-height: 1.2;
+
+            @media screen and (max-width: 767px) {
+              font-size: 26px;
+            }
+
+            @media screen and (min-width: 768px) {
+              width: auto;
+              font-size: 28px;
+
+              span {
+                display: block;
+                font-size: 32px;
+              }
+            }
+          }
+        }
+
+        #welcome-content {
+          p {
+            @media screen and (max-width: 767px) {
+              margin-bottom: 10px;
+              font-size: 14px;
+            }
+
+            @media screen and (min-width: 768px) {
+              margin-bottom: 14px;
+            }
+          }
+
+          .btn-container {
+            @media screen and (max-width: 767px) {
+              margin-top: 20px;
+            }
+
+            @media screen and (min-width: 768px) {
+              margin-top: 28px;
+              text-align: center;
+            }
+
+            #start-tour {
+              padding: 13px 16px 11px;
+              border-radius: 4px;
+              background-color: $crest-blue;
+              color: $white;
+              line-height: 1;
+              font-weight: 400;
+
+              @media screen and (max-width: 767px) {
+                font-size: 18px;
+              }
+
+              @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+
+              @media screen and (min-width: 1025px) {
+                -webkit-transition: background-color .6s;
+                transition: background-color .6s;
+
+                &:hover { background-color: $crest-gold; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $crest-blue;
+  color: $white;
+  text-transform: none;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $crest-gold;
+      color: $white;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  #floorplan-switch-container {
+    .fp-switch {
+      border-width: 0;
+      background-color: transparent;
+      color: $crest-blue;
+
+      &.active {
+        background-color: $crest-blue;
+        color: $white;
+      }
+
+      @include gtTablet {
+        &:hover {
+          background-color: $crest-gold;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    #floorplan-close-btn {
+      background-color: $crest-blue;
+      color: $white;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $crest-gold;
+          color: $white;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $crest-blue;
+
+            &.visited {
+              color: $crest-blue;
+            }
+
+            &.active {
+              color: $crest-gold;
+            }
+          }
+
+          .camera-label {
+            background-color: $crest-blue;
+            color: $white;
+            text-transform: none;
+
+            .label-after {
+              border-color: $crest-blue transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: linear-gradient(135deg, $crest-blue 0%, transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+      }
+    }
+  }
+}
+
+/* =================== GUI ===================== */
+.editor .button {
+  background-color:rgba(0,196,150,.8);
+  color: $white;
+}
+
+.button,
+.fs-close {
+  background-color: $crest-blue;
+  color: $white;
+  text-transform: none;
+}
+
+.button.enabled {
+  background-color: $crest-blue-light;
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv { background-color: transparentize($crest-gold, 0.15); }
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+  background-color: rgba(33,33,33,.85);
+
+  #info-inner {
+    #info-close {
+      .icon {
+        font-size: 23px;
+      }
+
+      @media (min-width: 768px) {
+        background-color: $crest-blue;
+      }
+
+      @media screen and (min-width: 1025px) {
+        &:hover {
+          background-color: $crest-gold;
+        }
+      }
+    }
+  }
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: $crest-blue;
+  text-transform: none;
+}
+
+/* =================== HELP SCREEN ===================== */
+#help-screen {
+  background-color: rgba(33,33,33,.85);
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) and (max-height: 400px) {
+  #more-info-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* ============================
+  WELCOME SCREEN
+  ============================ */
+  #motion-notice {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #start-tour:hover {
+    background-color:$crest-gold
+  }
+
+  .gui-container .button:hover,
+  .button.button-gallery:hover {
+    background-color: $crest-gold;
+    color: $white;
+  }
+
+  .fs-close:hover {
+    background-color: $crest-gold;
+  }
+
+  .hotspot.article-rv:hover,
+  .hotspot.gallery-rv:hover,
+  .hotspot.video-rv:hover,
+  .hotspot.nav-rv:hover { background-color: transparentize($crest-blue, 0.15); }
+}

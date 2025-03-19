@@ -1,0 +1,366 @@
+$black: #212121;
+$rr-red: #c61a41;
+$rr-grey: #3e3e3e;
+$rr-grey-light: #565656;
+
+html,
+body {
+  font-family: "proxima-nova", sans-serif;
+}
+
+body {
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-weight: 400;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+  #forwarder-inner {
+    a {
+      background-color: $rr-red;
+    }
+  }
+}
+
+/* =================== WELCOME SCREEN ===================== */
+#welcome-container {
+  #welcome-vc {
+    @include verticalCenter;
+    left: 0;
+    width: 100%;
+    -webkit-overflow-scroll: touch;
+    z-index: 30002;
+
+    #welcome-hc {
+      width: 96%;
+      max-width: 720px;
+      margin: 2vh auto;
+      background-color: $white;
+
+      @media screen and (max-width: 767px) {
+        padding: 40px 32px;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 36px 44px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      .welcome-cols {
+        @media screen and (min-width: 768px) {
+          width: 50%;
+        }
+      }
+
+      #welcome-left {
+        @media screen and (min-width: 768px) {
+          padding-right: 10px;
+        }
+
+        #welcome-website-link {
+          display: inline-block;
+          margin-bottom: 16px;
+        }
+
+        #welcome-title {
+          font-size: 22px;
+
+          @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+          }
+
+          @media screen and (min-width: 768px) {
+          }
+        }
+      }
+
+      #welcome-right {
+        @media screen and (min-width: 768px) {
+          padding: 4% 0 4% 40px;
+          border-left: 1px solid #ddd;
+        }
+
+        p {
+          margin-bottom: 20px;
+          color: $rr-grey-light;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        a {
+          color: $rr-red;
+          text-decoration: underline;
+
+          @media screen and (min-width: 1025px) {
+            -webkit-transition: color .2s;
+            transition: color .2s;
+
+            &:hover {
+              color: $rr-grey;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      #start-tour {
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+        color: $rr-red;
+        font-weight: 300;
+        text-decoration: none !important;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 360px) {
+          font-size: 20px;
+        }
+
+        @media screen and (min-width: 361px) {
+          font-size: 24px;
+        }
+
+        @media screen and (min-width: 1025px) {
+          -webkit-transition: color .2s;
+          transition: color .2s;
+
+          &:hover {
+            color: $rr-grey;
+          }
+        }
+      }
+    }
+
+    &.details {
+      #welcome-hc {
+        #start-tour {
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+}
+
+/* =================== FLOORPLAN ===================== */
+#floorplan-content {
+  border-width: 1px;
+  left: 10px;
+}
+
+#floorplan-close-btn {
+  background-color: $off-white;
+  color: $rr-grey;
+
+  .icon {
+    border-left: 1px solid #ddd;
+    font-size: 22px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 18px;
+      width: 32px;
+    }
+
+    @media screen and (max-width: 767px) {
+      background-color: $rr-grey;
+      color: $white;
+      border-width: 0;
+      line-height: 40px;
+      padding: 0;
+
+      &:before {
+        display: block;
+      }
+    }
+  }
+
+
+  @include gtTablet {
+    transition: border-color .4s, background-color .4s, color .4s;
+
+    .icon {
+      transition: border-color .4s;
+    }
+
+    &:hover {
+      border-color: $rr-grey-light;
+      background-color: $rr-grey;
+      color: $white;
+
+      .icon {
+        border-color: $rr-grey-light;
+      }
+    }
+  }
+}
+
+.camera-icon {
+  color: $rr-grey;
+}
+.camera-icon.visited {
+  color: $rr-grey-light;
+}
+.camera-icon.active,
+.camera-icon.visited.active {
+  color: $rr-red;
+}
+.camera-label {
+  border-radius: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#fov-radar {
+  background: -webkit-linear-gradient(-45deg, $rr-red 0%, transparent 50%); /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, $rr-red 0%, transparent 50%);
+  background: linear-gradient(135deg, $rr-red 0%, transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.fp-switch {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+
+  &.active {
+    &,
+    &:hover {
+      color: $rr-red;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    line-height: 28px;
+  }
+
+  @media screen and (max-width: 767px) {
+    line-height: 48px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    line-height: 38px;
+
+    &:hover {
+      color: $rr-grey;
+    }
+  }
+}
+
+/* =================== GUI ===================== */
+.button,
+.fs-close,
+#floorplan-open-btn {
+  background-color: $off-white;
+  color: $rr-grey;
+}
+
+.button.button-motion {
+  width: 90px;
+}
+
+.button.enabled {
+  background-color: $rr-red;
+  color: $white;
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv {background-color:rgba(62,62,62,.85)}
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+  background-color: rgba(62,62,62,.4);
+
+  #info-inner {
+    #info-close {
+      @media (min-width: 768px) {
+        background-color: $rr-red;
+      }
+
+      @media (min-width: 1025px) {
+        &:hover {
+          background-color: $rr-grey;
+        }
+      }
+
+      .icon {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: $rr-grey;
+  color: $white;
+}
+
+/* =================== HELP SCREEN ===================== */
+#help-screen {
+  background-color: rgba(62,62,62,.4);
+
+  #help-inner {
+    .header {
+      .background {
+        background-color: $off-white;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+
+    .examples {
+      .background {
+        background-color: $rr-grey;
+        color: $white;
+      }
+    }
+  }
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media screen and (max-width: 767px) {
+  #more-info-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .gui-container .button,
+  .button.button-gallery,
+  .fs-close,
+  #floorplan-open-btn {
+    transition: background-color 0.4s, color 0.4s;
+    &:hover {
+      background-color: $rr-grey;
+      color: $white;
+    }
+  }
+
+  .hotspot.article-rv:hover,
+  .hotspot.gallery-rv:hover,
+  .hotspot.video-rv:hover,
+  .hotspot.nav-rv:hover {background-color:rgba(62,62,62,.85)}
+}

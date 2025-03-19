@@ -1,0 +1,44 @@
+/* VERSION_HEADER */
+$motion-btn-height: 62px;
+$motion-btn-spacing: 10px;
+
+$black: #000;
+$white: #fff;
+$off-white: #f8f8f8;
+
+$rv-green: #00c496;
+$rv-digital-green: #00ffcf;
+$rv-dark-blue: #232d64;
+$rv-purple: #605ac5;
+$rv-yellow: #ffc200;
+$rv-light-blue: #08d1e6;
+$rv-red: #f5005e;
+$rv-grey: #999;
+
+$list-background: #212121;
+$list-transparency: .85;
+
+$button-background: #212121;
+$button-transparency: .75;
+
+$modal-overlay: $black;
+$modal-background: $white;
+$modal-color: $black;
+$modal-topbar-background: #f6f6f6;
+
+$hotspot-background: #333;
+$hotspot-color: $white;
+
+$embed-width: 768px;
+
+@import "mixins";
+/* ==========================================================================
+DEFAULT STYLES
+========================================================================== */
+@import "welcome-default";
+@import "slideout";
+
+/* ==========================================================================
+{{CLIENT_NAME}} - CUSTOM STYLES
+========================================================================== */
+@import "clients/{{CLIENT_ID}}-main";

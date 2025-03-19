@@ -1,0 +1,343 @@
+$story-text: #262626;
+$story-dark-blue: #003b5c;
+$story-light-blue: #5599bd;
+$story-red: #7c4d55;
+$story-red-hover: #6c434a;
+$story-grey: #666;
+$story-font-heading: bodoni-urw, serif;
+$story-font-body: Lato, Arial, Helvetica, sans-serif;
+
+$btn-bg: $story-red;
+$btn-color: $white;
+$btn-bg-hover: $story-red-hover;
+$btn-color-hover: $white;
+
+html,
+body,
+.hotspot,
+.pin-hotspot {
+  font-family: $story-font-body;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  color: $story-text;
+}
+
+h1,
+h2,
+.title {
+  font-family: $story-font-heading;
+  font-weight: 400;
+}
+
+h2,
+.title {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+  #forwarder-inner {
+    h1 {
+      text-transform: uppercase;
+    }
+
+    a {
+      background-color: $btn-bg;
+    }
+  }
+}
+
+/* =====================================
+WELCOME SCREEN
+===================================== */
+#welcome-container {
+  #welcome-default {
+    #welcome-vc {
+      #welcome-hc {
+        max-width: 580px;
+        padding: 22px 28px;
+        background-color: transparentize($white, 0.05);
+
+        #welcome-top {
+          margin-bottom: 16px;
+
+          @media (min-width: 768px) {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+          }
+
+          #client-logo {
+            @media (max-width: 767px) {
+              width: 160px;
+              margin: 0 auto 12px;
+            }
+
+            @media (min-width: 768px) {
+              width: 180px;
+            }
+          }
+
+          #welcome-title {
+            color: $story-dark-blue;
+            font-family: $story-font-heading;
+            line-height: 1.2;
+
+            @media (max-width: 767px) {
+              margin-bottom: 12px;
+              font-size: 22px;
+            }
+
+            @media (min-width: 768px) {
+              margin-bottom: 10px;
+              font-size: 32px;
+              span { display: block; }
+            }
+          }
+        }
+
+        #welcome-content {
+          color: $story-grey;
+
+          p {
+            margin-bottom: 14px;
+          }
+
+          .btn-container {
+            margin-top: 20px;
+
+            @media (min-width: 768px) {
+              text-align: center;
+            }
+
+            #start-tour {
+              padding: 11px 16px 13px;
+              border-radius: 4px;
+              background-color: $btn-bg;
+              color: $btn-color;
+              line-height: 1;
+
+              @media screen and (max-width: 767px) {
+                font-size: 18px;
+              }
+
+              @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+
+              @media (min-width: 1025px) {
+                -webkit-transition: background-color .6s;
+                transition: background-color .6s;
+
+                &:hover {
+                  background-color: $btn-bg-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $btn-bg;
+  color: $btn-color;
+  text-transform: none;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $btn-bg-hover;
+      color: $btn-color-hover;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  #floorplan-switch-container {
+    .fp-switch {
+      border-width: 0;
+      background-color: $btn-bg;
+      color: $btn-color;
+
+      &.active {
+        background-color: $story-dark-blue;
+        color: $btn-color;
+      }
+
+      @include gtTablet {
+        &:hover {
+          background-color: $btn-bg-hover;
+          color: $btn-color-hover;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    #floorplan-close-btn {
+      background-color: $btn-bg;
+      color: $btn-color;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $btn-bg-hover;
+          color: $btn-color-hover;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $btn-bg;
+
+            &.visited {
+              color: $btn-bg;
+            }
+
+            &.active {
+              color: $story-dark-blue;
+            }
+          }
+
+          .camera-label {
+            background-color: $story-dark-blue;
+            color: $white;
+            text-transform: none;
+
+            .label-after {
+              border-color: $story-dark-blue transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: -webkit-linear-gradient(-45deg, $story-dark-blue 0%, transparent 50%); /* Chrome10-25,Safari5.1-6 */
+          background: -webkit-linear-gradient(315deg, $story-dark-blue 0%, transparent 50%);
+          background: linear-gradient(135deg, $story-dark-blue 0%, transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+      }
+    }
+  }
+}
+
+
+/* =================== GUI ===================== */
+.editor .button {
+  background-color:rgba(0,196,150,.8);
+  color: $btn-color;
+}
+
+.button,
+.fs-close {
+  background-color: $btn-bg;
+  color: $btn-color;
+  text-transform: none;
+}
+
+.gui-container .button,
+.button.button-gallery,
+.fs-close {
+  transition: background-color 0.4s, color 0.4s;
+
+  @media (min-width: 1025px) {
+    &:hover {
+      background-color: $btn-bg-hover;
+      color: $btn-color-hover;
+    }
+  }
+}
+
+.button.enabled {
+  background-color: $story-dark-blue;
+  color: $white;
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot {
+  &.article-rv,
+  &.gallery-rv,
+  &.video-rv,
+  &.nav-rv {
+    background-color: $btn-bg;
+    color: $btn-color;
+
+    @media (min-width: 1025px) {
+      &:hover {
+        background-color: $btn-bg-hover;
+        color: $btn-color-hover;
+      }
+    }
+  }
+}
+
+.pin-hotspot {
+  .tooltip {
+    .inner {
+      h2 {
+        color: $story-dark-blue;
+      }
+      .p {
+        margin-top: 10px;
+        color: $story-grey;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+  background-color: transparentize($story-grey, 0.15);
+
+  #info-inner {
+    #info-close {
+      @media (min-width: 768px) {
+        background-color: $btn-bg-hover;
+        color: $btn-color-hover;
+      }
+
+      @media (min-width: 1025px) {
+        &:hover {
+          background-color: $btn-bg-hover;
+          color: $btn-color-hover;
+        }
+      }
+
+      .icon {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: $story-dark-blue;
+  text-transform: none;
+}
+
+/* =================== HELP SCREEN ===================== */
+#help-screen {
+  background-color: rgba(33, 33, 33, .85);
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media (max-height: 400px) {
+  #more-info-text {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<juiceboxgallery
+	backgroundColor="#222222"
+	captionPosition="NONE"
+	galleryTitlePosition="NONE"
+	imageNavPosition="STAGE"
+	imageQuality="90"
+	imageTransitionType="SLIDE"
+	maxImageHeight="667"
+	maxImageWidth="1000"
+	showExpandButton="false"
+	showOpenButton="false"
+	showSplashPage="NEVER"
+	stagePadding="20"
+	thumbFrameColor="#fff"
+	thumbFrameWidth="2"
+	thumbHeight="60"
+	thumbHoverFrameWidth="5"
+	thumbQuality="40"
+	thumbSelectedFrameWidth="4"
+	thumbsPosition="TOP"
+	thumbWidth="90"
+	topAreaHeight="60"
+>
+	<image imageURL="images/gallery/web/1.jpg" thumbURL="images/gallery/thumbs/1.jpg"></image>
+	<image imageURL="images/gallery/web/2.jpg" thumbURL="images/gallery/thumbs/2.jpg"></image>
+	<image imageURL="images/gallery/web/3.jpg" thumbURL="images/gallery/thumbs/3.jpg"></image>
+	<image imageURL="images/gallery/web/4.jpg" thumbURL="images/gallery/thumbs/4.jpg"></image>
+	<image imageURL="images/gallery/web/5.jpg" thumbURL="images/gallery/thumbs/5.jpg"></image>
+	<image imageURL="images/gallery/web/6.jpg" thumbURL="images/gallery/thumbs/6.jpg"></image>
+	<image imageURL="images/gallery/web/7.jpg" thumbURL="images/gallery/thumbs/7.jpg"></image>
+	<image imageURL="images/gallery/web/8.jpg" thumbURL="images/gallery/thumbs/8.jpg"></image>
+	<image imageURL="images/gallery/web/9.jpg" thumbURL="images/gallery/thumbs/9.jpg"></image>
+	<image imageURL="images/gallery/web/10.jpg" thumbURL="images/gallery/thumbs/10.jpg"></image>
+	<image imageURL="images/gallery/web/11.jpg" thumbURL="images/gallery/thumbs/11.jpg"></image>
+	<image imageURL="images/gallery/web/12.jpg" thumbURL="images/gallery/thumbs/12.jpg"></image>
+</juiceboxgallery>

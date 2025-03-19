@@ -1,0 +1,257 @@
+{
+	"text": {
+		"title": "Canal Place",
+		"property": "RVHQ2",
+		"clientName": "Revolution Viewing",
+		"moreinfo": "http://www.revolutionviewing.com/",
+		"description": "2 Floor Office",
+		"address": "1 Canal Place, Leeds, LS12 2DU",
+		"floorplanText": {
+			"show": "Show Floor Plan",
+			"hide": ""
+		},
+		"phone": [],
+		"cta": [],
+		"version": "3.9.0"
+	},
+	"settings": {
+		"classic": false,
+		"roomTitles": true,
+		"floorNames": ["G", "1", "2", "3", "4"]
+	},
+	"tours": [
+		[{
+			"id": 1,
+			"heading": "Front Exterior",
+			"camera": {
+				"x": 27,
+				"y": 66
+			},
+			"settings": {
+				"startPan": 221.8,
+				"startTilt": -3.3,
+				"cameraAlign": -92.6
+			},
+			"hotspots": [{
+				"id": 1,
+				"type": "info",
+				"heading": "[Text Content]",
+				"text": "This is an example info spot. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+				"position": {
+					"ath": 201.8,
+					"atv": 0
+				}
+			}, {
+				"id": 2,
+				"type": "video",
+				"heading": "[Video Title]",
+				"youtubeId": "AmuV5v80noI",
+				"position": {
+					"ath": 241.8,
+					"atv": 0
+				}
+			}, {
+				"id": 3,
+				"type": "gallery",
+				"heading": "[Gallery Title]",
+				"galleryId": 1,
+				"position": {
+					"ath": 221.8,
+					"atv": 15
+				}
+			}, {
+				"id": 4,
+				"type": "nav",
+				"heading": "RV Entrance",
+				"target": {
+					"floor": 1,
+					"tour": 6
+				},
+				"position": {
+					"ath": 221.8,
+					"atv": -15,
+					"rotate": 45
+				}
+			}, {
+				"id": 5,
+				"type": "pin",
+				"heading": "Awesome new pin hotspot",
+				"text": "This is an example tooltip text. You can even add links to [external content|https://www.revolutionviewing.com/|Revolution Viewing Ltd.] to increase conversions.",
+				"position": {
+					"ath": 221.8,
+					"atv": 0
+				}
+			}]
+		}, {
+			"id": 2,
+			"heading": "Entrance",
+			"camera": {
+				"x": 45,
+				"y": 65
+			},
+			"settings": {
+				"startPan": -52,
+				"startTilt": -23,
+				"cameraAlign": 44
+			}
+		}],
+		[{
+			"id": 7,
+			"heading": "Meeting Room One",
+			"camera": {
+				"x": 33,
+				"y": 70
+			},
+			"settings": {
+				"startPan": -122,
+				"startTilt": 3,
+				"cameraAlign": 93
+			}
+		}, {
+			"id": 2,
+			"heading": "Meeting Room Two",
+			"camera": {
+				"x": 30,
+				"y": 50
+			},
+			"settings": {
+				"startPan": -236,
+				"startTilt": 2,
+				"cameraAlign": 185
+			}
+		}, {
+			"id": 6,
+			"heading": "Shower Room",
+			"camera": {
+				"x": 56,
+				"y": 56
+			},
+			"settings": {
+				"startPan": 155,
+				"startTilt": -15,
+				"cameraAlign": -4
+			}
+		}, {
+			"id": 1,
+			"heading": "Mezzanine",
+			"camera": {
+				"x": 52,
+				"y": 21
+			},
+			"settings": {
+				"startPan": 39,
+				"startTilt": 0,
+				"cameraAlign": -144
+			}
+		}],
+		[{
+			"id": 1,
+			"heading": "1st Floor Lobby",
+			"camera": {
+				"x": 51,
+				"y": 65
+			},
+			"settings": {
+				"startPan": -326,
+				"startTilt": 3,
+				"cameraAlign": 157
+			}
+		}, {
+			"id": 2,
+			"heading": "1st Floor Balcony",
+			"camera": {
+				"x": 49,
+				"y": 93
+			},
+			"settings": {
+				"startPan": 326,
+				"startTilt": 0,
+				"cameraAlign": -13
+			}
+		}, {
+			"id": 3,
+			"heading": "1st Floor General Area One",
+			"camera": {
+				"x": 46,
+				"y": 75
+			},
+			"settings": {
+				"startPan": -29,
+				"startTilt": 2,
+				"cameraAlign": 74
+			}
+		}, {
+			"id": 4,
+			"heading": "1st Floor General Area Two",
+			"camera": {
+				"x": 56,
+				"y": 75
+			},
+			"settings": {
+				"startPan": 40,
+				"startTilt": 6,
+				"cameraAlign": -283
+			}
+		}, {
+			"id": 5,
+			"heading": "1st Floor General Area - VR",
+			"camera": {
+				"x": 55,
+				"y": 85
+			},
+			"settings": {
+				"startPan": 115,
+				"startTilt": 7,
+				"cameraAlign": 84
+			}
+		}, {
+			"id": 6,
+			"heading": "1st Floor Reception",
+			"camera": {
+				"x": 40,
+				"y": 65
+			},
+			"settings": {
+				"startPan": -211,
+				"startTilt": 6,
+				"cameraAlign": 223
+			}
+		}, {
+			"id": 7,
+			"heading": "1st Floor Office One",
+			"camera": {
+				"x": 49,
+				"y": 51
+			},
+			"settings": {
+				"startPan": -181,
+				"startTilt": 2,
+				"cameraAlign": 70
+			}
+		}, {
+			"id": 8,
+			"heading": "1st Floor Office Two",
+			"camera": {
+				"x": 48,
+				"y": 36
+			},
+			"settings": {
+				"startPan": -74,
+				"startTilt": 4,
+				"cameraAlign": 22
+			}
+		}, {
+			"id": 9,
+			"heading": "1st Floor Office Three",
+			"camera": {
+				"x": 49,
+				"y": 19
+			},
+			"settings": {
+				"startPan": 286,
+				"startTilt": 4,
+				"cameraAlign": 75
+			}
+		}]
+	]
+}

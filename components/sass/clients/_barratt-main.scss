@@ -1,0 +1,318 @@
+/* Place custom 360 styles here */
+/*
+Grey
+#6b7581
+
+Green
+#a3ca35
+
+Red
+#c74c4b
+*/
+$grey: #6b7581;
+$green: #a3ca35;
+$red: #c74c4b;
+
+/* =================== ROOT ===================== */
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-weight: 400;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder-inner {
+  position: static;
+  top:0;
+  -webkit-transform: none;
+  transform: none;
+}
+
+#forwarder {
+  #forwarder-inner {
+    a {
+      background-color: $grey;
+    }
+  }
+}
+
+/* =================== WELCOME SCREEN ===================== */
+#welcome-container {
+  #welcome-default {
+    #welcome-vc {
+      #welcome-hc {
+        max-width: 580px;
+        padding: 22px 36px;
+        background-color: $white;
+
+        #welcome-top {
+          margin-bottom: 16px;
+
+          #welcome-title {
+            line-height: 1.2;
+            text-transform: uppercase;
+
+            @media screen and (max-width: 767px) {
+              margin-bottom: 12px;
+            }
+
+            @media screen and (min-width: 768px) {
+              width: 100%;
+              margin-bottom: 8px;
+              span { display: block; }
+            }
+          }
+        }
+
+        #welcome-content {
+          p {
+            margin-bottom: 14px;
+          }
+
+          .btn-container {
+            margin-top: 28px;
+
+            @media screen and (min-width: 768px) {
+              text-align: center;
+            }
+
+            #start-tour {
+              padding: 12px 16px;
+              border-radius: 4px;
+              background-color: $grey;
+              color: $white;
+              line-height: 1;
+              font-weight: 400;
+              text-transform: uppercase;
+
+              @media screen and (max-width: 767px) {
+                font-size: 18px;
+              }
+
+              @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+
+              @media screen and (min-width: 1025px) {
+                -webkit-transition: background-color .6s;
+                transition: background-color .6s;
+
+                &:hover { background-color: $green; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $grey;
+  color: $white;
+  font-weight: 400;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  @include gtMobile {
+    left: 0;
+  }
+
+  #floorplan-switch-container {
+    border-color: $black;
+
+    .fp-switch {
+      background-color: $grey;
+      color: $white;
+
+      &.active {
+        background-color: $green;
+        color: $white;
+      }
+
+      @include gtTablet {
+        &:hover {
+          background-color: $green;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    border-left-width: 0;
+    border-color: $black;
+
+    @include gtMobile {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    #floorplan-close-btn {
+      background-color: $grey;
+      color: $white;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $green;
+          color: $white;
+        }
+      }
+
+      &.inline {
+        @include gtMobile {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $grey;
+
+            &.visited {
+              color: #999;
+            }
+
+            &.active {
+              color: $green;
+            }
+          }
+
+          .camera-label {
+            background-color: $grey;
+            border-radius: 0;
+
+            .label-after {
+              border-color: $grey transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: -webkit-linear-gradient(-45deg, $green 0%,transparentize(#fff, 1) 50%); /* Chrome10-25,Safari5.1-6 */
+          background: -webkit-linear-gradient(315deg, $green 0%,transparentize(#fff, 1) 50%);
+          background: linear-gradient(135deg, $green 0%,transparentize(#fff, 1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+      }
+    }
+  }
+}
+
+/* =================== GUI ===================== */
+.button {
+  span {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}
+
+.editor .button {
+  background-color: transparentize(#00c496, 0.2);
+  color: $white;
+}
+
+.button,
+.fs-close {
+  background-color: $grey;
+  color: $white;
+  font-weight: 400;
+}
+
+.button.enabled {
+  background-color: $green;
+}
+
+#info-spot {
+  #info-inner {
+    #info-close {
+      .icon {
+        font-size: 23px;
+      }
+
+      @media screen and (min-width: 768px) {
+        background-color: $grey;
+      }
+
+      @media screen and (min-width: 1025px) {
+        &:hover {
+          background-color: $green;
+        }
+      }
+    }
+  }
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv {
+  background-color: transparentize($grey, 0.15);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: $grey;
+  font-weight: 400;
+}
+
+/* =================== HELP SCREEN ===================== */
+#help-screen {
+  #help-inner {
+    .header {
+      h1 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media screen and (min-width: 1025px) {
+  .fs-close:hover,
+  #floorplan-close-btn:hover,
+  #floorplan-open-btn:hover,
+  .gui-container .button:hover,
+  .button.button-gallery:hover,
+  .button.enabled {
+    background-color: $green;
+  }
+
+  .hotspot.article-rv:hover,
+  .hotspot.gallery-rv:hover,
+  .hotspot.video-rv:hover,
+  .hotspot.nav-rv:hover {
+    background-color: $green;
+  }
+}

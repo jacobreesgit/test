@@ -1,0 +1,33 @@
+{
+	"settings": {
+		"startFloor": 0,
+		"startTour": 1,
+		"classic": false,
+		"fov": 72,
+		"startScreen": true,
+		"gallery": false,
+		"stillsNumber": 12,
+		"autoR": false,
+		"krpanoMouseMode": "moveto",
+		"panoType": "equi",
+		"ccph": false
+	},
+	"text": {
+		"clientName": false,
+		"version": "{{FP_VERSION}}",
+		"title": false,
+		"property": false,
+		"description": false,
+		"address": false,
+		"phone": "",
+		"moreinfo": false,
+		"cta": [],
+		"floorplanText": {
+			"show": "Show Floor Plan",
+			"hide": ""
+		}
+	},
+	"floors": false,
+	"tours": false,
+	"content": false
+}

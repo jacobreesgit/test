@@ -1,0 +1,317 @@
+$cc-grey: #696969;
+$cc-red: #c5252e;
+$cc-teal: #254c5b;
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+}
+
+/* =================== OVERLAYS ===================== */
+#help-screen {
+  background-color: transparentize($cc-grey, 0.15);
+}
+/* =================== FORWARDER ===================== */
+#forwarder {
+  #forwarder-inner {
+    a {
+      background-color: $cc-grey;
+    }
+  }
+}
+
+/* =====================================
+WELCOME SCREEN
+===================================== */
+#welcome-container {
+  #welcome-default {
+    #welcome-vc {
+      #welcome-hc {
+        max-width: 580px;
+        padding: 22px 36px;
+        background-color: $white;
+
+        #welcome-top {
+          margin-bottom: 16px;
+
+          #client-logo {
+            @media screen and (min-width: 768px) {
+              width: 35%;
+            }
+          }
+
+          #welcome-title {
+            line-height: 1.2;
+
+            @media screen and (max-width: 767px) {
+              margin-bottom: 12px;
+            }
+
+            @media screen and (min-width: 768px) {
+              width: 65%;
+              margin-bottom: 8px;
+              span { display: block; }
+            }
+          }
+        }
+
+        #welcome-content {
+          p {
+            margin-bottom: 14px;
+          }
+
+          .btn-container {
+            margin-top: 12px;
+
+            @media screen and (min-width: 768px) {
+              text-align: center;
+            }
+
+            #start-tour {
+              padding: 13px 16px 11px;
+              border-radius: 4px;
+              background-color: $cc-red;
+              color: $white;
+              line-height: 1;
+
+              @media screen and (max-width: 767px) {
+                font-size: 18px;
+              }
+
+              @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+
+              @media screen and (min-width: 1025px) {
+                -webkit-transition: background-color .6s;
+                transition: background-color .6s;
+
+                &:hover { background-color: $cc-grey; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $cc-red;
+  color: $white;
+  text-transform: none;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $cc-grey;
+      color: $white;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  #floorplan-switch-container {
+    border-width: 0;
+
+    .fp-switch {
+      border-color: $cc-red;
+      background-color: $cc-red;
+      color: $white;
+
+      &.active {
+        border-color: $cc-teal;
+        background-color: $cc-teal;
+        color: $white;
+      }
+
+      @include gtTablet {
+        &:hover {
+          border-color: $cc-grey;
+          background-color: $cc-grey;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    border-width: 0;
+    background-color: $white;
+
+    @include gtMobile {
+      margin-left: 0;
+    }
+
+    #floorplan-close-btn {
+      background-color: $cc-red;
+      color: $white;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $cc-grey;
+          color: $white;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $cc-red;
+
+            &.visited {
+              color: $cc-grey;
+            }
+
+            &.active {
+              color: $cc-teal;
+            }
+          }
+
+          .camera-label {
+            background-color: $cc-grey;
+            color: $white;
+            text-transform: none;
+
+            .label-after {
+              border-color: $cc-grey transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: linear-gradient(135deg, $cc-teal 0%, transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+      }
+    }
+  }
+}
+
+/* =================== FLOORPLAN ===================== */
+
+
+/* =================== GUI ===================== */
+.editor .button {
+  background-color:rgba(0,196,150,.8);
+  color: $white;
+}
+
+.button,
+.fs-close {
+  background-color: $cc-red;
+  color: $white;
+  text-transform: none;
+}
+
+.button.enabled {
+  background-color: $cc-teal;
+}
+
+#fov-container {
+  top: 0;
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv {background-color: transparentize($cc-red, 0.15); }
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+  background-color: transparentize($cc-grey, 0.15);
+
+  #info-inner {
+    #info-close {
+      .icon {
+        font-size: 23px;
+      }
+
+      @media screen and (min-width: 768px) {
+        background-color: $cc-red;
+      }
+
+      @media screen and (min-width: 1025px) {
+        &:hover {
+          background-color: $cc-grey;
+        }
+      }
+    }
+  }
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: #0e4050;
+  text-transform: none;
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media screen and (max-width: 767px) {
+  #client-logo {
+    display: block;
+    float: none;
+    margin: 0 auto 12px;
+  }
+  #welcome-title h1 {
+    float: none;
+    margin-bottom: 0;
+    text-align: center;
+    width: auto;
+  }
+
+  #welcome-screen p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  #more-info-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #room-title {
+    line-height: 40px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .gui-container .button:hover,
+  .button.button-gallery:hover {
+    background-color: $cc-grey;
+    color: $white;
+  }
+  .fs-close:hover {
+    background-color: $cc-grey;
+  }
+  .hotspot.article-rv:hover,
+  .hotspot.gallery-rv:hover,
+  .hotspot.video-rv:hover,
+  .hotspot.nav-rv:hover {background-color: transparentize($cc-grey, 0.15); }
+}
+
+#floorplan-close-btn {
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+}

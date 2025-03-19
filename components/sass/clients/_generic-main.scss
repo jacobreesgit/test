@@ -1,0 +1,326 @@
+$black: #212121;
+
+/* ==========================================================================
+Generic page styles
+========================================================================== */
+html,
+body {
+  color: $black;
+}
+
+/* =====================================
+BUTTONS
+===================================== */
+.button {
+  background-color: $rv-dark-blue;
+  color: $rv-digital-green;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+
+  &.enabled {
+    background-color: $rv-digital-green;
+    color: $rv-dark-blue;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .gui-container .button:hover,
+  .button.button-gallery:hover {
+    background-color: $rv-green;
+    color: $rv-dark-blue;
+    opacity: 1;
+  }
+}
+
+.fs-close {
+  background-color: $rv-dark-blue;
+  color: $white;
+
+  @media only screen and (min-width: 1025px) {
+    &:hover {
+      background-color: $rv-green;
+      color: $rv-dark-blue;
+    }
+  }
+}
+
+/* =====================================
+WELCOME SCREEN
+===================================== */
+#welcome-container {
+  #welcome-default {
+    #welcome-vc {
+      #welcome-hc {
+        max-width: 540px;
+        background-color: $white;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+          padding: 20px 32px;
+        }
+
+        @media screen and (min-width: 1025px) {
+          padding: 36px 40px;
+        }
+
+        #welcome-top {
+          margin-bottom: 16px;
+
+          #client-logo {
+            display: none !important;
+          }
+
+          #welcome-title {
+            color: $rv-dark-blue;
+            line-height: 1.2;
+
+            @media only screen and (max-width: 767px) {
+              margin-bottom: 12px;
+            }
+
+            @media screen and (min-width: 768px) {
+              width: 100%;
+              margin-bottom: 8px;
+              span { display: block; }
+            }
+          }
+        }
+
+        #welcome-content {
+          @media only screen and (max-width: 1024px) {
+          }
+
+          p {
+            margin-bottom: 10px;
+          }
+
+          #start-tour {
+            margin-top: 12px;
+            padding: 12px 16px;
+            border-radius: 4px;
+            background-color: $rv-dark-blue;
+            color: $rv-digital-green;
+
+            @media only screen and (max-width: 767px) {
+            }
+
+            @media only screen and (min-width: 768px) {
+              font-size: 18px;
+            }
+
+            @media only screen and (min-width: 1025px) {
+              -webkit-transition: background-color .4s, color .4s;
+              transition: background-color .4s, color .4s;
+
+              &:hover {
+                background-color: $rv-green;
+                color: $rv-dark-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* =====================================
+FULLSCREEN EXIT BUTTON
+===================================== */
+
+/* ==========================================================================
+OVERLAYS
+========================================================================== */
+#help-screen {
+  background-color: transparentize($black, 0.35);
+}
+
+/* ==========================================================================
+INFO SPOT
+========================================================================== */
+#info-spot {
+  background-color: transparentize($black, 0.35);
+
+  #info-inner {
+    #info-close {
+      color: $rv-dark-blue;
+
+      @media only screen and (min-width: 768px) {
+        border-radius: 50%;
+        background-color: $rv-dark-blue;
+        color: $rv-digital-green;
+      }
+
+      @media only screen and (min-width: 1025px) {
+        &:hover {
+          background-color: $rv-green;
+          color: $rv-dark-blue;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $rv-dark-blue;
+  color: $rv-digital-green;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $rv-green;
+      color: $rv-dark-blue;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  #floorplan-switch-container {
+    border-width: 0;
+
+    @include gtMobile {
+      margin-left: 0;
+      background-color: transparentize($off-white, 0.1);
+    }
+
+    .fp-switch {
+      border-color: $rv-dark-blue;
+      background-color: $rv-dark-blue;
+      color: $rv-digital-green;
+
+      &.active {
+        border-color: $rv-dark-blue;
+        background-color: $rv-green;
+        color: $rv-dark-blue;
+      }
+
+      @include gtTablet {
+        &:hover {
+          border-color: $rv-dark-blue;
+          background-color: $rv-green;
+          color: $rv-dark-blue;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    border-width: 0;
+    background-color: $off-white;
+    color: $black;
+
+    @include gtMobile {
+      background-color: transparentize($off-white, 0.1);
+    }
+
+    #floorplan-close-btn {
+      background-color: $rv-dark-blue;
+      color: $rv-digital-green;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $rv-green;
+          color: $rv-dark-blue;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $rv-dark-blue;
+
+            &.visited {
+              color: $rv-dark-blue;
+            }
+
+            &.active {
+              color: $rv-green;
+            }
+          }
+
+          .camera-label {
+            background-color: #3e3e3e;
+            color: $white;
+
+            .label-after {
+              border-color: #3e3e3e transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: linear-gradient(135deg, $rv-green 0%, transparent 50%);
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+ROOM TITLES
+========================================================================== */
+#room-title {
+  background-color: transparentize($white, 0.15);
+  color: $rv-dark-blue;
+}
+
+/* ==========================================================================
+HOTSPOTS
+========================================================================== */
+.hotspot {
+  &,
+  &.enabled {
+    color: $white;
+  }
+
+  &.article-rv {
+    background-color: transparentize($rv-red, 0.15);
+    @media screen and (min-width: 1025px) {
+      &:hover { background-color: $rv-red; }
+    }
+  }
+  &.gallery-rv {
+    background-color: transparentize($rv-light-blue, 0.15);
+    @media screen and (min-width: 1025px) {
+      &:hover { background-color: $rv-light-blue; }
+    }
+  }
+  &.video-rv {
+    background-color: transparentize($rv-yellow, 0.15);
+    @media screen and (min-width: 1025px) {
+      &:hover { background-color: $rv-yellow; }
+    }
+  }
+  &.nav-rv {
+    background-color: transparentize($rv-purple, 0.15);
+    @media screen and (min-width: 1025px) {
+      &:hover { background-color: $rv-purple; }
+    }
+  }
+}
+
+.tooltip {
+  color: $white;
+}
+
+/* ==========================================================================
+FORWARDER
+========================================================================== */
+#forwarder {
+  #forwarder-inner {
+    img {
+      display: none !important;
+    }
+
+    a {
+      background-color: $rv-dark-blue;
+      color: $rv-digital-green;
+    }
+  }
+}

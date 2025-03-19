@@ -1,0 +1,41 @@
+{
+  "name": "workflows",
+  "version": "0.0.1",
+  "description": "Lorem",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Revolution Viewing",
+  "license": "ISC",
+  "scripts": {
+    "clearsingle": "SINGLE_ID=generic",
+    "dev": "cross-env NODE_ENV=development gulp",
+    "preview": "cross-env NODE_ENV=preview gulp",
+    "prod": "cross-env NODE_ENV=production gulp",
+    "docker:start": "docker compose up -d",
+    "docker:stop": "docker compose down",
+    "docker:server": "docker exec -it php_server bash",
+    "docker:node": "docker exec -it node bash",
+    "docker:dev": "docker-compose exec node npm run dev",
+    "docker:preview": "docker-compose exec node npm run preview",
+    "docker:prod": "docker-compose exec node npm run prod"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.0",
+    "gulp-buble": "^0.9.0",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.9",
+    "gulp-if": "^2.0.2",
+    "gulp-json-editor": "^2.5.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {}
+}

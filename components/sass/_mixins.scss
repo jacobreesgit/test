@@ -1,0 +1,299 @@
+@mixin unsplashBg($image, $dimensions: '1600x900') {
+  background-image: url(https://source.unsplash.com/#{$image}/#{$dimensions});
+}
+
+@mixin backgroundOverlay($image: '../images/start-screen.jpg', $overlay: 'rgba(0,0,0,0.8)') {
+  background-image: -webkit-gradient( linear,left top, left bottom,from(#{$overlay}),to(#{$overlay}) ), url(#{$image});
+  background-image: -webkit-linear-gradient( #{$overlay},#{$overlay} ), url(#{$image});
+  background-image: linear-gradient( #{$overlay},#{$overlay} ), url(#{$image});
+}
+
+@mixin absoluteCover() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin relativeCover() {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin horizontalCenter($left: 50%, $offset: -50%) {
+  position: absolute;
+  left: $left;
+  -webkit-transform: translateX($offset);
+  transform: translateX($offset);
+}
+
+@mixin verticalCenter($top: 50%, $offset: -50%) {
+  position: absolute;
+  top: $top;
+  -webkit-transform: translateY($offset);
+  transform: translateY($offset);
+}
+
+@mixin screenCenter($offsetX: -50%, $offsetY: -50%) {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate($offsetX, $offsetY);
+  transform: translate($offsetX, $offsetY);
+}
+
+@mixin backfaceVisibility() {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@mixin hideForGreensock() {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin fixInlineIcon($offset: 2px) {
+  [class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    -webkit-transform: translateY($offset);
+    transform: translateY($offset);
+  }
+}
+
+@mixin clearfix() {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin lteMobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin gtMobile() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onlyTablet() {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin lteTablet() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin gtTablet() {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+
+@mixin userSelectNone {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin pointerEventsNone {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+}
+
+@mixin pointerEventsAuto {
+  -webkit-pointer-events: auto;
+  pointer-events: auto;
+}
+
+@mixin scrollingTouch {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin inlineFlex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flexRow {
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+@mixin flexColumn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flexRowReverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+@mixin flexC {
+  @include flex;
+  @include justifyCenter;
+  @include itemsCenter;
+}
+
+@mixin inlineFlexC {
+  @include inlineFlex;
+  @include justifyCenter;
+  @include itemsCenter;
+}
+
+@mixin flex1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+
+@mixin flexWrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin flexShrink0 {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@mixin flexGrow1 {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@mixin justifyCenter {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin justifyStart {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@mixin justifyEnd {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@mixin justifyBetween {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin justifyAround {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@mixin itemsStart {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+@mixin itemsEnd {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@mixin itemsCenter {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin itemsStretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin translateXMin50 {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin translateYMin50 {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin translateMin50 {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin boxShadow($x: 0px, $y: 0px, $b: 2px, $rgba: rgba(0, 0, 0, 0.4)) {
+  -webkit-box-shadow: $x $y $b $rgba;
+  box-shadow: $x $y $b $rgba;
+}
+
+@mixin truncate() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin appearanceNone {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@mixin transitionColors($transitionDuration: $GAD) {
+  -webkit-transition: border-color $transitionDuration ease-in, background-color $transitionDuration ease-in, color $transitionDuration ease-in;
+  transition: border-color $transitionDuration ease-in, background-color $transitionDuration ease-in, color $transitionDuration ease-in;
+}
+
+@mixin transitionOpacity($transitionDuration: $GAD) {
+  -webkit-transition: opacity $transitionDuration ease-in;
+  transition: opacity $transitionDuration ease-in;
+}
+
+@mixin transitionAll($transitionDuration: $GAD) {
+  -webkit-transition: all $transitionDuration ease-in;
+  transition: all $transitionDuration ease-in;
+}

@@ -1,0 +1,202 @@
+/* VERSION_HEADER */
+$black: #000;
+$white: #fff;
+$off-white: #f8f8f8;
+
+$rv-green: #00c496;
+$rv-digital-green: #00ffcf;
+$rv-dark-blue: #232d64;
+$rv-purple: #605ac5;
+$rv-yellow: #ffc200;
+$rv-light-blue: #08d1e6;
+$rv-red: #f5005e;
+$rv-grey: #999;
+
+/* Dusty Gray */
+$rv-black: #212121;
+$rv-grey: #999;
+
+$embed-width: 768px;
+
+@import "mixins";
+/* ==========================================================================
+DEFAULT STYLES
+========================================================================== */
+
+*,
+:before,
+:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $off-white;
+	color: $rv-grey;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: $rv-grey;
+	text-decoration: none;
+}
+
+.vertical-container {
+	@include verticalCenter;
+	left: 0;
+	width: 100%;
+	max-height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.horizontal-container {
+	width: 90%;
+	max-width: $embed-width;
+	margin: 20px auto 60px;
+}
+
+.header {
+	margin-bottom: 20px;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.logo-link {
+		width: 260px;
+		display: block;
+
+		@media screen and (max-width: 767px) {
+			margin: 0 auto 12px;
+		}
+
+		svg {
+			@include pointerEventsNone;
+
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.header-details {
+		padding: 10px;
+
+		@media screen and (min-width: 768px) {
+			text-align: right;
+		}
+
+		h1 {
+			color: $rv-black;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		p {
+			color: $rv-grey;
+			font-size: 18px;
+			font-weight: 400;
+		}
+	}
+}
+
+.iframe-container {
+	position: relative;
+	width: 100%;
+	margin-bottom: 28px;
+	-webkit-box-shadow: 0 2px 4px transparentize($rv-black, 0.85);
+	box-shadow: 0 2px 4px transparentize($rv-black, 0.85);
+
+	&:before {
+		content: ' ';
+		position: relative;
+		width: 100%;
+		display: block;
+
+		@media screen and (max-width: 767px) {
+			padding-bottom: 66.66vh;
+		}
+
+		@media screen and (min-width: 768px) {
+			padding-bottom: 62.5%;
+		}
+	}
+
+	iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 1px;
+		min-width: 100%;
+		*width: 100%;
+		height: 100%;
+		display: block;
+		border: 0;
+		overflow: hidden;
+	}
+}
+
+.footer {
+	padding-top: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-top: 1px solid $rv-grey;
+	font-size: 14px;
+
+	p {
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	a {
+
+		@media screen and (min-width: 1025px) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.copyright {
+	}
+}
+
+/* ==========================================================================
+{{CLIENT_NAME}} - CUSTOM STYLES
+========================================================================== */
+/* LOADED IF CLIENT-DATA USES CUSTOM PAGE-SURROUND */
+/*@import "clients/{{CLIENT_ID}}-ps";*/

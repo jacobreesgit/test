@@ -1,0 +1,425 @@
+$black: #212121;
+$harwood-dark-green: #4d5a31;
+$harwood-light-green: #9bae88;
+$grey: #4a4a4a;
+
+html,
+body {
+	font-family: "Muli", sans-serif;
+	color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-weight: 400;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+	#forwarder-inner {
+		a {
+			background-color: $harwood-dark-green;
+    }
+  }
+}
+
+/* =================== WELCOME SCREEN ===================== */
+#welcome-container {
+	#welcome-harwood {
+		#welcome-vc {
+			@include verticalCenter;
+			left: 0;
+			width: 100%;
+			-webkit-overflow-scroll: touch;
+			z-index: 30002;
+
+			#welcome-hc {
+				width: 96%;
+				max-width: 720px;
+				margin: 2vh auto;
+				background-color: $white;
+
+				@media (max-width: 767px) {
+					padding: 40px 32px;
+					text-align: center;
+				}
+
+				@media (min-width: 768px) {
+					padding: 36px 44px;
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-box-pack: center;
+					-ms-flex-pack: center;
+					justify-content: center;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					align-items: center;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+				}
+
+				// .welcome-cols {}
+
+				#welcome-left {
+					@media (min-width: 768px) {
+						width: 45%;
+						text-align: center;
+					}
+
+					#welcome-website-link {
+						display: inline-block;
+						margin-bottom: 16px;
+					}
+
+					#welcome-title {
+						font-size: 22px;
+
+						@media (max-width: 767px) {
+							margin-bottom: 20px;
+						}
+
+						@media (min-width: 768px) {
+						}
+					}
+				}
+
+				#welcome-right {
+					@media (min-width: 768px) {
+						width: 55%;
+						padding: 4% 0 4% 40px;
+						border-left: 1px solid $harwood-dark-green;
+					}
+
+					p {
+						margin-bottom: 20px;
+						color: $grey;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+
+					a {
+						color: $harwood-dark-green;
+						text-decoration: underline;
+
+						@media (min-width: 1025px) {
+							-webkit-transition: color .2s;
+							transition: color .2s;
+
+							&:hover {
+								color: $grey;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+
+				#start-tour {
+					margin-top: 20px;
+					display: inline-block;
+					-webkit-box-flex: 0;
+					-ms-flex: none;
+					flex: none;
+					color: $harwood-dark-green;
+					font-weight: 300;
+					text-decoration: none !important;
+
+					@media (max-width: 360px) {
+						font-size: 20px;
+					}
+
+					@media (min-width: 361px) {
+						font-size: 24px;
+					}
+
+					@media (min-width: 1025px) {
+						-webkit-transition: color .2s;
+						transition: color .2s;
+
+						&:hover {
+							color: $harwood-light-green;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#welcome-default {
+		#welcome-vc {
+			#welcome-hc {
+				max-width: 540px;
+				background-color: $white;
+				text-align: center;
+
+				@media (max-width: 1024px) {
+					padding: 20px 32px;
+				}
+
+				@media (min-width: 1025px) {
+					padding: 36px 40px;
+				}
+
+				#welcome-top {
+					margin-bottom: 16px;
+
+					#client-logo {
+						display: none !important;
+					}
+
+					#welcome-title {
+						color: $harwood-dark-green;
+						line-height: 1.2;
+
+						@media (max-width: 767px) {
+							margin-bottom: 12px;
+						}
+
+						@media (min-width: 768px) {
+							width: 100%;
+							margin-bottom: 8px;
+							span { display: block; }
+						}
+					}
+				}
+
+				#welcome-content {
+					@media (max-width: 1024px) {
+					}
+
+					p {
+						margin-bottom: 10px;
+					}
+
+					#start-tour {
+						margin-top: 12px;
+						color: $harwood-light-green;
+
+						@media (max-width: 767px) {
+							font-size: 20px;
+						}
+
+						@media (min-width: 768px) {
+							display: inline-block;
+							font-size: 24px;
+						}
+
+						@media (min-width: 1025px) {
+							-webkit-transition: background-color .4s, color .4s;
+							transition: background-color .4s, color .4s;
+
+							&:hover {
+								color: $harwood-dark-green;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* =================== FLOORPLAN ===================== */
+#floorplan-content {
+	border-width: 0;
+	left: 10px;
+}
+
+#floorplan-close-btn {
+	border-color: #ddd;
+	background-color: $white;
+	transition: background-color .4s, color .4s;
+
+	.icon {
+		border-left: 1px solid #ddd;
+		font-size: 22px;
+
+		@media (min-width: 768px) and (max-width: 1024px) {
+			font-size: 18px;
+			width: 32px;
+		}
+
+		@media (max-width: 767px) {
+			padding: 0;
+			border-width: 0;
+			background-color: $harwood-light-green;
+			color: $white;
+			line-height: 40px;
+
+			&:before {
+				display: block;
+			}
+		}
+	}
+
+	@media (min-width: 1025px) {
+		&:hover {
+			background-color: $harwood-light-green;
+			color: $white;
+		}
+	}
+}
+
+.camera-icon {
+	color: $harwood-light-green;
+}
+.camera-icon.visited {
+	color: $harwood-light-green;
+}
+.camera-icon.active,
+.camera-icon.visited.active {
+	color: $harwood-dark-green;
+}
+.camera-label {
+	border-radius: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#fov-radar {
+	background: -webkit-linear-gradient(-45deg, $harwood-dark-green 0%, transparent 50%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(315deg, $harwood-dark-green 0%, transparent 50%);
+	background: linear-gradient(135deg, $harwood-dark-green 0%, transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#floorplan-switch-container {
+	@media (min-width: 768px) {
+		margin-left: 0;
+	}
+}
+
+.fp-switch {
+	-webkit-transition: all .4s;
+	transition: all .4s;
+
+	&.active {
+		&,
+		&:hover {
+			color: $harwood-dark-green;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		line-height: 28px;
+	}
+
+	@media (max-width: 767px) {
+		line-height: 48px;
+	}
+
+	@media (min-width: 1025px) {
+		line-height: 38px;
+
+		&:hover {
+			color: $harwood-light-green;
+		}
+	}
+}
+
+/* =================== GUI ===================== */
+.button,
+.fs-close,
+#floorplan-open-btn {
+	background-color: $white;
+	color: $harwood-light-green;
+}
+
+.button.button-motion {
+	width: 90px;
+}
+
+.button.button-help {
+	font-weight: 700;
+}
+
+.button.enabled {
+	background-color: $grey;
+	color: $white;
+}
+
+@media (min-width: 1025px) {
+	.gui-container .button,
+	.button.button-gallery,
+	.fs-close,
+	#floorplan-open-btn {
+		transition: background-color 0.4s, color 0.4s;
+
+		&:hover {
+			background-color: $harwood-light-green;
+			color: $white;
+		}
+	}
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv {
+	background-color: transparentize($harwood-dark-green, 0.15);
+
+	@media (min-width: 1025px) {
+		&:hover {
+			background-color: $harwood-dark-green;
+		}
+	}
+}
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+	background-color: transparentize($black, 0.6);
+
+	#info-inner {
+		#info-close {
+			@media (min-width: 768px) {
+				background-color: $harwood-light-green;
+			}
+
+			@media (min-width: 1025px) {
+				&:hover {
+					background-color: $harwood-dark-green;
+				}
+			}
+
+			.icon {
+				font-size: 23px;
+			}
+		}
+	}
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+	background-color: $harwood-light-green;
+	color: $white;
+}
+
+/* =================== HELP SCREEN ===================== */
+#help-screen {
+	background-color: transparentize($black, 0.6);
+
+  #help-inner {
+    .header {
+			.background {
+				background-color: $white;
+			}
+
+      h1 {
+				font-size: 34px;
+      }
+    }
+
+		.examples {
+			.background {
+				background-color: $harwood-light-green;
+				color: $white;
+			}
+		}
+  }
+}

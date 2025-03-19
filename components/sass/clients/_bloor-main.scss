@@ -1,0 +1,232 @@
+/* Place custom 360 styles here */
+
+/*
+Dark Blue
+#00275d
+rgb(0,39,93)
+
+Light Blue
+#4776b6
+rgb(71,118,182)
+*/
+
+/* =================== ROOT ===================== */
+html,
+body {
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+  #forwarder-inner {
+    a {
+      background-color: #00275d;
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: #00275d;
+  color: $white;
+  text-transform: none;
+
+  @include gtTablet {
+    &:hover {
+      background-color: #4776b6;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  @include gtMobile {
+    left: 0;
+  }
+
+  #floorplan-switch-container {
+    border-color: $black;
+
+    .fp-switch {
+      border-width: 0;
+      background-color: #00275d;
+      color: $white;
+
+      &.active {
+        background-color: #4776b6;
+        color: $white;
+      }
+
+      @include gtTablet {
+        &:hover {
+          background-color: #4776b6;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    border-left-width: 0;
+    border-color: $black;
+
+    @include gtMobile {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    #floorplan-close-btn {
+      background-color: #00275d;
+      color: $white;
+
+      @include gtTablet {
+        &:hover {
+          background-color: #4776b6;
+          color: $white;
+        }
+      }
+
+      &.inline {
+        @include gtMobile {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: #00275d;
+
+            &.visited {
+              color: #999;
+            }
+
+            &.active {
+              color: #4776b6;
+            }
+          }
+
+          .camera-label {
+            border-radius: 0;
+            background-color: #00275d;
+
+            .label-after {
+              border-color: #00275d transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: -webkit-linear-gradient(-45deg, #4776b6 0%,rgba(255,255,255,0) 50%); /* Chrome10-25,Safari5.1-6 */
+          background: -webkit-linear-gradient(315deg, #4776b6 0%,rgba(255,255,255,0) 50%);
+          background: linear-gradient(135deg, #4776b6 0%,rgba(255,255,255,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+      }
+    }
+  }
+}
+
+/* =================== FLOORPLAN ===================== */
+
+
+/* =================== GUI ===================== */
+.editor .button {
+  background-color:rgba(0,196,150,.8);
+  color: $white;
+}
+
+.button,
+.fs-close {
+  background-color: #00275d;
+  color: $white;
+  text-transform: none;
+}
+
+.button.enabled {
+  background-color: #4776b6;
+}
+
+#info-spot {
+  #info-inner {
+    #info-close {
+      .icon {
+        font-size: 23px;
+      }
+
+      @media screen and (min-width: 768px) {
+        background-color: #00275d;
+      }
+
+      @media screen and (min-width: 1025px) {
+        &:hover {
+          background-color: #4776b6;
+        }
+      }
+    }
+  }
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv {
+  background-color: rgba(0,39,93,.85);
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: #00275d;
+  text-transform: none;
+}
+
+
+/* =================== MEDIA QUERIES ===================== */
+@media screen and (max-width: 741px) and (max-height: 400px) {
+  #more-info-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 742px) {
+  #floorplan-close-btn {
+    right: -20px;
+    top: -20px;
+  }
+
+  #motion-notice {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #start-tour {
+    -webkit-transition: background-color .6s;
+    transition: background-color .6s;
+  }
+
+  .fs-close {
+    background-color: #00275d;
+  }
+
+  #start-tour:hover,
+  .fs-close:hover,
+  .gui-container .button:hover,
+  .button.button-gallery:hover,
+  .button.enabled {
+    background-color: #4776b6;
+  }
+
+  .hotspot.article-rv:hover,
+  .hotspot.gallery-rv:hover,
+  .hotspot.video-rv:hover,
+  .hotspot.nav-rv:hover {
+    background-color: #4776b6;
+  }
+}

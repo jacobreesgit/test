@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	backgroundColor="#222222"
+	captionPosition="NONE"
+	galleryTitlePosition="NONE"
+	imageNavPosition="STAGE"
+	imageQuality="90"
+	imageTransitionType="SLIDE"
+	maxImageHeight="667"
+	maxImageWidth="1000"
+	showExpandButton="false"
+	showOpenButton="false"
+	showSplashPage="NEVER"
+	stagePadding="20"
+	thumbFrameColor="#fff"
+	thumbFrameWidth="2"
+	thumbHeight="60"
+	thumbHoverFrameWidth="5"
+	thumbQuality="40"
+	thumbSelectedFrameWidth="4"
+	thumbsPosition="TOP"
+	thumbWidth="90"
+	topAreaHeight="20"
+>
+  <image imageURL="images/example_1.jpg"
+	thumbURL="thumbs/example_1.jpg"
+	linkURL="images/example_1.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\xampp\htdocs\dev\bangor-university-vt-2017\dev\Gallery\JPEG\example_1.jpg">
+    <title><![CDATA[example_1]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/example_2.jpg"
+	thumbURL="thumbs/example_2.jpg"
+	linkURL="images/example_2.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\xampp\htdocs\dev\bangor-university-vt-2017\dev\Gallery\JPEG\example_2.jpg">
+    <title><![CDATA[example_2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/example_3.jpg"
+	thumbURL="thumbs/example_3.jpg"
+	linkURL="images/example_3.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\xampp\htdocs\dev\bangor-university-vt-2017\dev\Gallery\JPEG\example_3.jpg">
+    <title><![CDATA[example_3]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/example_4.jpg"
+	thumbURL="thumbs/example_4.jpg"
+	linkURL="images/example_4.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\xampp\htdocs\dev\bangor-university-vt-2017\dev\Gallery\JPEG\example_4.jpg">
+    <title><![CDATA[example_4]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/example_5.jpg"
+	thumbURL="thumbs/example_5.jpg"
+	linkURL="images/example_5.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\xampp\htdocs\dev\bangor-university-vt-2017\dev\Gallery\JPEG\example_5.jpg">
+    <title><![CDATA[example_5]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/example_6.jpg"
+	thumbURL="thumbs/example_6.jpg"
+	linkURL="images/example_6.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\xampp\htdocs\dev\bangor-university-vt-2017\dev\Gallery\JPEG\example_6.jpg">
+    <title><![CDATA[example_6]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

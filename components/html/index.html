@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{CLIENT_NAME}}</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CLIENT_FONT -->
+    <script src="https://kit.fontawesome.com/8fd80a932b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v={{FP_VERSION}}" />
+    <script class="gtm-script">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{GTM_CODE}}');</script>
+    <!--
+      hello
+      Produced with love by the team at Revolution Viewing.
+      https://www.revolutionviewing.com/
+    -->
+  </head>
+  <body>
+    <noscript class="gtm-script"><iframe src="https://www.googletagmanager.com/ns.html?id={{GTM_CODE}}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="container">
+
+      <div id="tour-content">
+        <div id="pano">
+          <noscript>
+            <p>If you can see this message rather than a virtual tour then please email Revolution Viewing at <a href="mailto:support@revolutionviewing.com">support@revolutionviewing.com</a></p>
+          </noscript>
+        </div>
+        <div id="desktop-gui-container" class="noselect gui-container">
+          <button id="button-fs" class="button button-fs gtm-button-fullscreen-toggle" title="Toggle Fullscreen">
+            <span class="icon fa-regular fa-maximize innate"></span>
+            <span class="icon fa-regular fa-minimize active"></span>
+          </button>
+          <button id="button-zoomin" class="button button-zoomin gtm-button-zoom-in" title="Zoom in"><span class="icon fa-regular fa-magnifying-glass-plus"></span></button>
+          <button id="button-zoomout" class="button button-zoomout gtm-button-zoom-out" title="Zoom out"><span class="icon fa-regular fa-magnifying-glass-minus"></span></button>
+          <button id="button-auto" class="button button-auto gtm-button-autorotate-toggle" title="Toggle automatic rotation"><span class="icon fa-regular fa-rotate"></span></button>
+          <button id="button-help" class="button button-help gtm-button-help-open" title="Show help screen"><span class="icon fa-regular fa-question"></span></button>
+        </div>
+        <div id="mobile-gui-container" class="noselect gui-container">
+          <button id="button-vr" class="button button-vr gtm-button-vr-toggle" title="Launch VR"><span class="icon fa-regular fa-head-side-goggles"></span></button>
+          <button id="button-motion" class="button button-motion gtm-button-motion-toggle" title="Toggle motion/gyroscope control"><span class="icon fa-regular fa-globe"></span></button>
+        </div>
+        <button id="fs-close" class="fs-close icon fa-regular fa-xmark gtm-button-fullscreen-close" title="Exit Fullscreen"></button>
+        <button id="button-gallery" class="button button-gallery gtm-button-gallery-toggle" title="Toggle gallery">
+          <span class="text innate">Photo Gallery</span>
+          <span class="icon fa-regular fa-images innate"></span>
+          <span class="icon fa-regular fa-rotate activated"></span>
+          <span class="text activated">Back to 360</span>
+        </button>
+      </div>
+
+      <div id="room-title" class="noselect"></div>
+
+      <button id="floorplan-open-btn" class="noselect button gtm-button-open-fp"><span class="text"></span></button>
+
+      <div id="floorplan-wrapper" class="noselect">
+        <div id="floorplan-switch-container"></div>
+        <div id="floorplan-wrapper-inner">
+          <button id="floorplan-close-btn" class="button gtm-button-close-fp"><span class="text desktop-only"></span><span class="icon fa-regular fa-xmark"></span></button>
+          <div id="floors-container">
+            <div id="floorplans"></div>
+            <div id="fov-container">
+              <div id="fov-radar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="editor-container">
+        <p id="editor-message">Editor Enabled</p>
+        <div id="editor-crosshair"></div>
+        <div id="editor-readout">
+          <p class="instruction">Click a number to automatically copy the position to clipboard</p>
+          <div id="values">
+            <div class="item">
+              <label for="editor-position-h">Horizontal</label>
+              <input type="text" id="editor-position-h" readonly />
+            </div>
+            <div class="item">
+              <label for="editor-position-v">Vertical</label>
+              <input type="text" id="editor-position-v" readonly />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="info-spot">
+        <div id="info-inner" class="main-copy">
+          <button id="info-close" class="gtm-contentspot-close gtm-button-info-close" title="Close content"><span class="icon fa-regular fa-xmark"></span><span class="text">Close</span></button>
+          <div id="info-topbar"><span class="title"></span></div>
+          <div id="info-content"></div>
+        </div>
+      </div>
+
+      <div id="gallery"></div>
+
+      <div id="help-screen">
+        <div id="help-inner">
+          <div class="header row">
+            <div class="col">
+              <div class="background">
+                <h1>This 360 is interactive! Click and drag to explore.</h1>
+                <p>Click anywhere to dismiss this screen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="examples row">
+            <div id="col-fs" class="col">
+              <div class="background">
+                <div class="button-container">
+                  <span class="button button-fs"><span class="icon fa-regular fa-maximize"></span></span>
+                  <span class="button button-fs"><span class="icon fa-regular fa-minimize"></span></span>
+                </div>
+                <p>Click to enter "Full Screen" mode, allowing the 360 to take up the full size of your monitor.</p>
+              </div>
+            </div>
+            <div id="col-zoom" class="col">
+              <div class="background">
+                <div class="button-container">
+                  <span class="button button-zoomin"><span class="icon fa-regular fa-magnifying-glass-plus"></span></span>
+                  <span class="button button-zoomout"><span class="icon fa-regular fa-magnifying-glass-minus"></span></span>
+                </div>
+                <p>Use these buttons to zoom in and out of the 360. You can also use your mouse wheel.</p>
+              </div>
+            </div>
+            <div id="col-autoR" class="col">
+              <div class="background">
+                <div class="button-container"><span class="button button-auto"><span class="icon fa-regular fa-rotate"></span></span></div>
+                <p>Use this button to disable the automatic movement of the 360.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="welcome-container"></div>
+
+      <div id="forwarder">
+        <div id="forwarder-inner">
+          <img src="images/gui/{{CLIENT_LOGO_NAME}}" alt="Client Logo" />
+          <h1>360 tour for <span class="showhome-name">The Showhome</span></h1>
+          <a href="index.html?fs=true" class="gtm-open-in-new-tab" target="_blank" title="{{FORWARDER_BTN_TEXT}}">{{FORWARDER_BTN_TEXT}}</a>
+          <p>Opens in a new tab</p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/animations.min.js"></script>
+    <script src="js/krpano.js"></script>
+    <script src="js/jbcore/juicebox.js"></script>
+
+    <!-- RV Scripts -->
+    <script src="js/rv.floorplan.js?v={{FP_VERSION}}"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', rv.start)
+      window.ontouchmove = function(e) { e.preventDefault() }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,337 @@
+$blue: #003a5d;
+$green_1: #cad200;
+$green_2: #c0c701;
+$gray: #f1f0ea;
+
+/* ==========================================================================
+Generic page styles
+========================================================================== */
+html,
+body {
+  color: $blue;
+  font-family: "Roboto", sans-serif;
+}
+
+.button,
+#help-screen #help-inner .header h1,
+#info-spot #info-inner #info-topbar .title,
+#floorplan-open-btn,
+#floorplan-wrapper #floorplan-switch-container .fp-switch,
+#floorplan-wrapper #floorplan-wrapper-inner #floorplan-close-btn,
+#floorplan-wrapper #floorplan-wrapper-inner #floors-container #floorplans .floorplan .camera-label,
+#room-title,
+.tooltip,
+#forwarder h1,
+#forwarder #forwarder-inner a {
+  font-family: "Bovis Sans", sans-serif;
+}
+
+.pin-hotspot .tooltip .inner .p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* =====================================
+BUTTONS
+===================================== */
+.button {
+  background-color: $blue;
+  color: $white;
+
+  &.enabled {
+    background-color: $green_1;
+    color: $blue;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .gui-container .button:hover,
+  .button.button-gallery:hover {
+    background-color: $green_2;
+    color: $blue;
+    opacity: 1;
+  }
+}
+
+.fs-close {
+  background-color: $blue;
+  color: $white;
+
+  @media only screen and (min-width: 1025px) {
+    &:hover {
+      background-color: $green_2;
+      color: $blue;
+    }
+  }
+}
+
+/* ==========================================================================
+OVERLAYS
+========================================================================== */
+#help-screen {
+  background-color: transparentize($black, 0.35);
+}
+
+/* ==========================================================================
+INFO SPOT
+========================================================================== */
+#info-spot {
+  background-color: transparentize($black, 0.35);
+
+  #info-inner {
+    color: $blue;
+
+    #info-close {
+      color: $blue;
+
+      @media only screen and (min-width: 768px) {
+        border-radius: 50%;
+        background-color: $blue;
+        color: $white;
+      }
+
+      @media only screen and (min-width: 1025px) {
+        &:hover {
+          background-color: $green_2;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $blue;
+  color: $white;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $green_2;
+      color: $blue;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  #floorplan-switch-container {
+    border-width: 0;
+
+    @include gtMobile {
+      margin-left: 0;
+      background-color: transparentize($gray, 0.1);
+    }
+
+    .fp-switch {
+      border-color: $blue;
+      background-color: $blue;
+      color: $white;
+
+      &.active {
+        border-color: $blue;
+        background-color: $green_1;
+        color: $blue;
+      }
+
+      @include gtTablet {
+        &:hover {
+          border-color: $blue;
+          background-color: $green_2;
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    border-width: 0;
+    background-color: $gray;
+    color: $black;
+
+    @include gtMobile {
+      background-color: transparentize($gray, 0.1);
+    }
+
+    #floorplan-close-btn {
+      background-color: $blue;
+      color: $white;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $green_2;
+          color: $blue;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $blue;
+
+            &.visited {
+              color: $blue;
+            }
+
+            &.active {
+              background-color: $green_1;
+            }
+          }
+
+          .camera-label {
+            background-color: $blue;
+            color: $white;
+
+            .label-after {
+              border-color: $blue transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: linear-gradient(135deg, $green_1 0%, transparent 50%);
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+ROOM TITLES
+========================================================================== */
+#room-title {
+  background-color: transparentize($blue, 0.15);
+  color: $white;
+}
+
+/* ==========================================================================
+HOTSPOTS
+========================================================================== */
+.tooltip {
+  color: $blue;
+}
+
+.hotspot {
+  &,
+  &.enabled {
+    color: $white;
+  }
+
+  &.article-rv,
+  &.gallery-rv,
+  &.video-rv,
+  &.nav-rv {
+    background-color: transparentize($blue, 0.15);
+
+    @media screen and (min-width: 1025px) {
+      &:hover {
+        background-color: $green_2;
+        color: $blue;
+      }
+    }
+  }
+}
+
+.pin-hotspot {
+  .tooltip {
+    .inner {
+      color: $blue;
+    }
+  }
+}
+
+/* ==========================================================================
+FORWARDER
+========================================================================== */
+#forwarder {
+  background-color: $gray;
+
+  &:before {
+    @media (orientation: landscape) and (min-width: 420px) {
+      @include absoluteCover;
+      content: " ";
+      display: block;
+      background-image: url("../images/gui/forwarder-landscape-curve.png");
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  #forwarder-inner {
+    @media (orientation: landscape) and (min-width: 420px) {
+      padding: 0;
+    }
+
+    img {
+      @media (orientation: portrait), (max-width: 419px) {
+        width: 92px;
+        margin-bottom: 10vh;
+      }
+
+      @media (orientation: landscape) and (min-width: 420px) {
+        position: absolute;
+        left: 50%;
+        top: 46%;
+        width: 120px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin-bottom: 0;
+      }
+    }
+
+    h1 {
+      @media (orientation: landscape) and (min-width: 420px) {
+        display: none !important;
+      }
+    }
+
+    a {
+      padding: 12px 16px;
+      @include inlineFlexC;
+      line-height: 1;
+
+      @media screen and (max-width: 767px) {
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
+
+      @media (orientation: portrait), (max-width: 419px) {
+        padding-right: 14px;
+        background-color: $blue;
+      }
+
+      @media (orientation: landscape) and (min-width: 420px) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+      }
+
+      &:after {
+        content: ">";
+        width: 16px;
+        margin-left: 0.75em;
+        background-image: url("../images/gui/caret-right.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        text-indent: -999999px;
+      }
+    }
+
+    p {
+      @media (orientation: landscape) and (min-width: 420px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+$black: #111;
+$miller-dark-blue: #002859;
+$miller-light-blue: #00aec5;
+
+html,
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+	color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-weight: 400;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+	#forwarder-inner {
+		a {
+			background-color: $miller-dark-blue;
+		}
+	}
+}
+
+/* =================== WELCOME SCREEN ===================== */
+#welcome-container {
+	#welcome-default {
+		#welcome-vc {
+			#welcome-hc {
+				max-width: 580px;
+				padding: 22px 36px;
+				background-color: $white;
+
+				#welcome-top {
+					margin-bottom: 16px;
+
+					#client-logo {
+						@media only screen and (max-width: 767px) {
+							margin-bottom: 12px;
+						}
+
+						img { width: 280px; }
+					}
+
+					#welcome-title {
+						@media only screen and (max-width: 767px) {
+							margin-bottom: 12px;
+							font-size: 22px;
+							line-height: 1.4;
+						}
+
+						@media screen and (min-width: 768px) {
+							font-size: 32px;
+							line-height: 43px;
+							span { display: block; }
+						}
+					}
+				}
+
+				#welcome-content {
+					p {
+						margin-bottom: 14px;
+					}
+
+					.btn-container {
+						margin-top: 20px;
+
+						@media only screen and (min-width: 768px) {
+							text-align: center;
+						}
+
+						#start-tour {
+							padding: 12px 16px;
+							border-radius: 4px;
+							background-color: $miller-light-blue;
+							color: $white;
+							font-weight: 300;
+              line-height: 1;
+
+              @media screen and (max-width: 767px) {
+                font-size: 18px;
+              }
+
+              @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+
+							@media only screen and (min-width: 1025px) {
+								-webkit-transition: background-color .6s;
+								transition: background-color .6s;
+
+								&:hover { background-color: $miller-dark-blue; }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+	background-color: $miller-light-blue;
+	color: $white;
+	text-transform: none;
+
+  @include gtTablet {
+    &:hover {
+			background-color: $miller-dark-blue;
+			color: $white;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  #floorplan-switch-container {
+    .fp-switch {
+			border-width: 0;
+			background-color: transparent;
+			color: $miller-light-blue;
+
+      &.active {
+				background-color: $miller-light-blue;
+				color: $white;
+      }
+
+      @include gtTablet {
+        &:hover {
+					background-color: $miller-dark-blue;
+					color: $white;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    #floorplan-close-btn {
+			background-color: $miller-light-blue;
+			color: $white;
+
+      @include gtTablet {
+        &:hover {
+					background-color: $miller-dark-blue;
+					color: $white;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+						color: $miller-dark-blue;
+
+            &.visited {
+							color: $miller-light-blue;
+            }
+
+            &.active {
+							color: $miller-light-blue;
+            }
+          }
+
+          .camera-label {
+						background-color: $miller-dark-blue;
+						color: $white;
+						text-transform: none;
+
+            .label-after {
+							border-color: $miller-dark-blue transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+					background: -webkit-linear-gradient(-45deg, $miller-light-blue 0%, transparent 50%);
+					background: -webkit-linear-gradient(315deg, $miller-light-blue 0%, transparent 50%);
+					background: linear-gradient(135deg, $miller-light-blue 0%, transparent 50%);
+        }
+      }
+    }
+  }
+}
+
+/* =================== GUI ===================== */
+.editor .button {
+	background-color: rgba(0, 196, 150, 0.8);
+	color: $white;
+}
+
+.button,
+.fs-close {
+	background-color: $miller-light-blue;
+	color: $white;
+	text-transform: none;
+}
+
+.button.enabled {
+	background-color: $miller-dark-blue;
+	color: $white;
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot {
+	&.article-rv,
+	&.gallery-rv,
+	&.video-rv,
+	&.nav-rv {
+		background-color: transparentize($miller-light-blue, 0.15);
+
+		@media screen and (min-width: 1025px) {
+			&:hover { background-color: transparentize($miller-dark-blue, 0.15); }
+		}
+	}
+}
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+	background-color: rgba(33, 33, 33, .85);
+
+	#info-inner {
+		#info-close {
+			.icon {
+				font-size: 23px;
+			}
+
+			@media only screen and (min-width: 768px) {
+				background-color: $miller-light-blue;
+			}
+
+			@media only screen and (min-width: 1025px) {
+				&:hover {
+					background-color: $miller-dark-blue;
+				}
+			}
+	}
+}
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+	background-color: $miller-light-blue;
+	text-transform: none;
+}
+
+/* =================== HELP SCREEN ===================== */
+#help-screen {
+	background-color: rgba(33, 33, 33, .85);
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media only screen and (max-height: 400px) {
+	#more-info-text {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.gui-container .button:hover,
+	.button.button-gallery:hover {
+		background-color: $miller-dark-blue;
+		color: $white;
+	}
+	.fs-close:hover {
+		background-color: $miller-dark-blue;
+	}
+}

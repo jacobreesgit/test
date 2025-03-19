@@ -1,0 +1,359 @@
+$bellway-navy: #00263a;
+$bellway-navy-hover: #00476d;
+$bellway-orange: #ec6608;
+$bellway-orange-hover: #f99148;
+$bellway-text: #00263a;
+$font-family: 'Mada', sans-serif;
+
+$btn-bg: $bellway-orange;
+$btn-color: $white;
+$btn-bg-hover: $bellway-orange-hover;
+$btn-color-hover: $bellway-navy;
+
+html,
+body,
+.hotspot,
+.pin-hotspot {
+  font-family: $font-family;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  color: $bellway-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-weight: 600;
+}
+
+h1 {
+  color: $bellway-navy;
+}
+
+/* ==========================================================================
+MAIN COPY - tooltips and info-inner
+========================================================================== */
+.main-copy {
+  h2,
+  .title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  p,
+  .p {
+    font-family: $font-family;
+  }
+}
+
+/* =================== OVERLAYS ===================== */
+#help-screen {
+  background-color: rgba(33, 33, 33, .85);
+}
+/* =================== FORWARDER ===================== */
+#forwarder {
+  #forwarder-inner {
+    img {
+      width: 145px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    a {
+      background-color: $btn-bg;
+    }
+  }
+}
+
+/* =====================================
+WELCOME SCREEN
+===================================== */
+#welcome-container {
+  #welcome-default {
+    #welcome-vc {
+      #welcome-hc {
+        max-width: 580px;
+        padding: 22px 28px;
+        background-color: $white;
+
+        #welcome-top {
+          margin-bottom: 16px;
+
+          @media (min-width: 768px) {
+            @include itemsStart;
+          }
+
+          #client-logo {
+            width: 146px;
+
+            @media (max-width: 767px) {
+              margin: 0 auto 12px;
+            }
+          }
+
+          #welcome-title {
+            line-height: 1.2;
+
+            @media (max-width: 767px) {
+              margin-bottom: 12px;
+              font-size: 22px;
+            }
+
+            @media (min-width: 768px) {
+              margin-bottom: 10px;
+              font-size: 32px;
+              span { display: block; }
+            }
+          }
+        }
+
+        #welcome-content {
+          p {
+            margin-bottom: 14px;
+          }
+
+          .btn-container {
+            margin-top: 20px;
+
+            @media (min-width: 768px) {
+              text-align: center;
+            }
+
+            #start-tour {
+              padding: 13px 16px 11px;
+              border-radius: 4px;
+              background-color: $btn-bg;
+              color: $btn-color;
+              line-height: 1;
+
+              @media screen and (max-width: 767px) {
+                font-size: 18px;
+              }
+
+              @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+
+              @media (min-width: 1025px) {
+                -webkit-transition: background-color .4s, color .4s;
+                transition: background-color .4s, color .4s;
+
+                &:hover {
+                  background-color: $btn-bg-hover;
+                  color: $btn-color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $bellway-orange;
+  color: $white;
+  text-transform: none;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $btn-bg-hover;
+      color: $btn-color-hover;
+    }
+  }
+}
+
+#floorplan-wrapper {
+  #floorplan-switch-container {
+    .fp-switch {
+      border-width: 0;
+      background-color: $btn-bg;
+      color: $btn-color;
+
+      &.active {
+        background-color: $bellway-navy;
+        color: $btn-color;
+      }
+
+      @include gtTablet {
+        &:hover {
+          background-color: $btn-bg-hover;
+          color: $btn-color-hover;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    #floorplan-close-btn {
+      background-color: $bellway-orange;
+      color: $white;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $btn-bg-hover;
+          color: $btn-color-hover;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $btn-bg;
+
+            &.visited {
+              color: $btn-bg;
+            }
+
+            &.active {
+              color: $bellway-navy;
+            }
+          }
+
+          .camera-label {
+            background-color: $bellway-navy;
+            color: $white;
+            text-transform: none;
+
+            .label-after {
+              border-color: $bellway-navy transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: -webkit-linear-gradient(-45deg, $bellway-navy 0%, transparent 50%); /* Chrome10-25,Safari5.1-6 */
+          background: -webkit-linear-gradient(315deg, $bellway-navy 0%, transparent 50%);
+          background: linear-gradient(135deg, $bellway-navy 0%, transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+      }
+    }
+  }
+}
+
+/* =================== GUI ===================== */
+.editor .button {
+  background-color:rgba(0,196,150,.8);
+  color: $btn-color;
+}
+
+#help-screen .button {
+  text-transform: none;
+}
+
+.button,
+.fs-close {
+  background-color: $bellway-orange;
+  color: $white;
+}
+
+.button.enabled {
+  background-color: $bellway-navy;
+}
+
+.gui-container .button,
+.fs-close {
+  @media (min-width: 1025px) {
+    &:hover {
+      background-color: $btn-bg-hover;
+      color: $btn-color-hover;
+    }
+  }
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot {
+  &.article-rv,
+  &.gallery-rv,
+  &.video-rv,
+  &.nav-rv {
+    background-color: $btn-bg;
+    color: $btn-color;
+
+    .tooltip {
+      color: $btn-color-hover;
+      font-weight: 600;
+    }
+
+    @media (min-width: 1025px) {
+      &:hover {
+        background-color: $btn-bg-hover;
+      }
+    }
+  }
+}
+
+.pin-hotspot {
+  .tooltip {
+    .inner {
+      h2 {
+        color: $bellway-navy;
+      }
+      .p {
+        margin-top: 10px;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+  #info-inner {
+    #info-close {
+      @media (min-width: 768px) {
+        background-color: $btn-bg-hover;
+        color: $btn-color-hover;
+      }
+
+      @media (min-width: 1025px) {
+        &:hover {
+          background-color: $btn-bg-hover;
+          color: $btn-color-hover;
+        }
+      }
+
+      .icon {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: $bellway-navy;
+  text-transform: none;
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media (max-height: 400px) {
+  #more-info-text {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #motion-notice {
+    display: none !important;
+  }
+}

@@ -1,0 +1,245 @@
+$mandale-dark-grey: #60666e;
+$mandale-beige: #c1b79e;
+$mandale-light-blue: #81a2be;
+$mandale-light-blue-highlight: #95bad9;
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.title {
+  font-weight: 400;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+	#forwarder-inner {
+		a {
+			background-color: $mandale-light-blue;
+    }
+  }
+}
+
+/* =================== WELCOME SCREEN ===================== */
+#welcome-container {
+	#welcome-default {
+		#welcome-vc {
+			#welcome-hc {
+				max-width: 720px;
+				background-color: $white;
+				color: $mandale-dark-grey;
+
+				@media screen and (max-width: 1024px) {
+					padding: 40px 60px 36px;
+				}
+
+				@media screen and (min-width: 1025px) {
+					padding: 40px 60px 36px;
+				}
+
+				#welcome-top {
+					margin-bottom: 16px;
+
+					#client-logo {
+						display: none !important;
+					}
+
+					#welcome-title {
+						line-height: 1.2;
+
+						@media only screen and (max-width: 767px) {
+							margin-bottom: 12px;
+						}
+
+						@media screen and (min-width: 768px) {
+							width: 100%;
+							margin-bottom: 8px;
+							span { display: block; }
+						}
+					}
+				}
+
+				#welcome-content {
+					@media only screen and (max-width: 1024px) {
+					}
+
+					p {
+						margin-bottom: 10px;
+					}
+
+					#start-tour {
+						margin-top: 12px;
+						color: $mandale-light-blue;
+						font-weight: 300;
+						text-transform: uppercase;
+
+						@media only screen and (max-width: 767px) {
+							font-size: 20px;
+						}
+
+						@media only screen and (min-width: 768px) {
+							display: inline-block;
+							font-size: 24px;
+						}
+
+						@media only screen and (min-width: 1025px) {
+							-webkit-transition: color .6s;
+							transition: color .6s;
+
+							&:hover { color: $mandale-light-blue-highlight; }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* =================== FLOORPLAN ===================== */
+#fov-radar {
+	background: -webkit-linear-gradient(-45deg, rgba(129,162,190,1) 0%,rgba(129,162,190,0) 50%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(315deg, rgba(129,162,190,1) 0%,rgba(129,162,190,0) 50%);
+	background: linear-gradient(135deg, rgba(129,162,190,1) 0%,rgba(129,162,190,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.camera-icon,
+.camera-icon.visited {
+	color: $mandale-dark-grey;
+}
+.camera-icon.active,
+.camera-icon.visited.active {
+	color: $mandale-light-blue-highlight;
+}
+.fp-switch.active {
+	color: $mandale-light-blue;
+}
+
+
+/* =================== GUI ===================== */
+.editor .button {
+	background-color:rgba(129,162,190,.8);
+	color: $white;
+}
+.button,
+#help-screen .button {
+	background-color: rgba(129,162,190,1);
+	color: $white;
+}
+.button.enabled,
+.gui-container .button:hover,
+.button.button-gallery:hover {
+	background-color: rgba(149,186,217,1);
+	color: $white;
+}
+.button.button-zoomout:before,
+#help-screen .button.button-zoomout:before,
+.button.button-zoomin:before,
+#help-screen .button.button-zoomin:before,
+.button.button-auto:before,
+#help-screen .button.button-auto:before {
+	font-size: 30px;
+}
+.button.button-zoomin:after,
+.button.button-zoomout:after {
+	text-indent: -9999px;
+}
+.button:before {
+	display: block;
+}
+.button-motion {
+	width: 100px;
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv {background-color:rgba(129,162,190,.85)}
+.hotspot.article-rv:hover,
+.hotspot.gallery-rv:hover,
+.hotspot.video-rv:hover,
+.hotspot.nav-rv:hover {background-color:rgba(149,186,217,1)}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+	background-color: $mandale-beige;
+}
+
+/* =================== CONTENT WINDOW ===================== */
+#info-spot {
+	#info-inner {
+		#info-close {
+			@media (min-width: 768px) {
+				background-color: $mandale-light-blue;
+			}
+			@media (min-width: 1025px) {
+				&:hover {
+					background-color: $mandale-light-blue-highlight;
+				}
+			}
+		}
+	}
+}
+
+/* =================== MEDIA QUERIES ===================== */
+@media only screen and (max-width: 767px) {
+	#welcome-screen {
+		padding: 40px 30px;
+	}
+	#welcome-text {
+		padding: 6% 0 6% 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	#welcome-screen {
+		height: auto;
+		left: 0;
+		margin: 0 auto;
+		padding: 40px 10%;
+		right: 0;
+		text-align: center;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		width: 90%;
+	}
+	#client-logo {
+		display: block;
+		width: 140px;
+	}
+	#welcome-title,
+	#welcome-text {
+		border: none;
+		float: none;
+		height: auto;
+		padding: 0;
+		position: static;
+		-webkit-transform: none;
+		transform: none;
+		width: auto;
+	}
+	#welcome-title h1 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	#welcome-screen p {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#welcome-title h1 {
+		font-size: 30px;
+	}
+	#start-tour {
+		font-size: 20px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	#welcome-title h1 span {
+		display: block;
+	}
+}

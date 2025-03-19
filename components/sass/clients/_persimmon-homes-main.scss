@@ -1,0 +1,303 @@
+$ph-orange: #f47d21;
+$ph-blue: #35566d;
+$ph-dark-green: #017354;
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+.title {
+  font-family: "clarendon-text-pro", Georgia, "Times New Roman",Times, serif;
+  font-weight: 400;
+}
+
+/* =================== FORWARDER ===================== */
+#forwarder {
+  #forwarder-inner {
+    a {
+      background-color: $ph-orange;
+    }
+  }
+}
+
+/* =====================================
+WELCOME SCREEN
+===================================== */
+#welcome-container {
+  #welcome-default {
+    #welcome-vc {
+      #welcome-hc {
+        max-width: 580px;
+        padding: 22px 36px;
+        background-color: $white;
+
+        #welcome-top {
+          margin-bottom: 16px;
+
+          #client-logo {
+            @media screen and (min-width: 768px) {
+              width: 35%;
+            }
+          }
+
+          #welcome-title {
+            line-height: 1.2;
+
+            @media screen and (max-width: 767px) {
+              margin-bottom: 12px;
+            }
+
+            @media screen and (min-width: 768px) {
+              width: 65%;
+              margin-bottom: 8px;
+              span { display: block; }
+            }
+          }
+        }
+
+        #welcome-content {
+          p {
+            margin-bottom: 14px;
+          }
+
+          .btn-container {
+            margin-top: 4px;
+
+            @media screen and (min-width: 768px) {
+              text-align: center;
+            }
+
+            #start-tour {
+              border-radius: 4px;
+              padding: 13px 16px 11px;
+              background-color: $ph-orange;
+              color: $white;
+              line-height: 1;
+
+              @media screen and (max-width: 767px) {
+                font-size: 18px;
+              }
+
+              @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+
+              @media screen and (min-width: 1025px) {
+                -webkit-transition: background-color .6s;
+                transition: background-color .6s;
+
+                &:hover { background-color: $ph-dark-green; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Floorplan
+========================================================================== */
+#floorplan-open-btn {
+  background-color: $ph-orange;
+  color: $white;
+  text-transform: none;
+
+  @include gtTablet {
+    &:hover {
+      background-color: $ph-dark-green;
+      color: $white;
+    }
+  }
+}
+
+#floorplan-wrapper {
+
+  #floorplan-switch-container {
+    .fp-switch {
+      border-width: 0;
+      background-color: $ph-dark-green;
+      color: $white;
+
+      &.active {
+        background-color: $ph-orange;
+        color: $white;
+      }
+
+      @include gtTablet {
+        &:hover {
+          background-color: $ph-blue;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  #floorplan-wrapper-inner {
+    #floorplan-close-btn {
+      background-color: $ph-orange;
+      color: $white;
+
+      @include gtTablet {
+        &:hover {
+          background-color: $ph-dark-green;
+          color: $white;
+        }
+      }
+    }
+
+    #floors-container {
+      #floorplans {
+        .floorplan {
+          .camera-icon {
+            color: $ph-dark-green;
+
+            &.visited {
+              color: #999;
+            }
+
+            &.active {
+              color: $ph-orange;
+            }
+          }
+
+          .camera-label {
+            background-color: $ph-blue;
+            color: $white;
+            text-transform: none;
+
+            .label-after {
+              border-color: $ph-blue transparent transparent;
+            }
+          }
+        }
+      }
+
+      #fov-container {
+        #fov-radar {
+          background: -webkit-linear-gradient(-45deg, $ph-orange 0%, transparent 50%); /* Chrome10-25,Safari5.1-6 */
+          background: -webkit-linear-gradient(315deg, $ph-orange 0%, transparent 50%);
+          background: linear-gradient(135deg, $ph-orange 0%, transparent 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+      }
+    }
+  }
+}
+
+/* =================== GUI ===================== */
+.editor .button {
+  background-color:rgba(0,196,150,.8);
+  color: $white;
+}
+
+.button,
+.fs-close {
+  background-color: $ph-orange;
+  color: $white;
+  text-transform: none;
+}
+
+.button.enabled {
+  background-color: $ph-blue;
+  color: $white;
+}
+
+/* =================== HOTSPOTS ===================== */
+.hotspot.article-rv,
+.hotspot.gallery-rv,
+.hotspot.video-rv,
+.hotspot.nav-rv { background-color: transparentize($ph-orange, 0.15); }
+
+/* =================== INFOSPOTS ===================== */
+#info-spot {
+  #info-inner {
+    color: #3a3a3a;
+
+    #info-close {
+      @media (min-width: 768px) {
+        background-color: $ph-orange;
+      }
+
+      @media (min-width: 1025px) {
+        &:hover {
+          background-color: $ph-blue;
+        }
+      }
+
+      .icon {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+/* =================== ROOM TITLE ===================== */
+#room-title {
+  background-color: $ph-orange;
+  text-transform: none;
+}
+
+/* =================== HELP SCREEN ===================== */
+#help-screen {
+  .background {
+    color: #3a3a3a;
+  }
+}
+
+
+/* =================== MEDIA QUERIES ===================== */
+@media screen and (max-width: 767px) {
+  #client-logo {
+    float: none;
+    margin: 0 auto 12px;
+    width: 140px;
+    display: block;
+  }
+  #welcome-title h1 {
+    float: none;
+    font-size: 22px;
+    margin-bottom: 0;
+    text-align: center;
+    width: auto;
+  }
+  #welcome-screen p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #start-tour {
+    font-size: 20px;
+    margin-top: 12px;
+    width: auto;
+  }
+}
+@media screen and (max-height: 400px) {
+  #more-info-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #start-tour:hover {
+    background-color:$ph-blue;
+  }
+  .gui-container .button:hover,
+  .button.button-gallery:hover,
+  .fs-close:hover {
+    background-color: $ph-blue;
+    color: $white;
+  }
+  .hotspot.article-rv:hover,
+  .hotspot.gallery-rv:hover,
+  .hotspot.video-rv:hover,
+  .hotspot.nav-rv:hover { background-color: transparentize($ph-blue, 0.15); }
+}
+
+#start-tour {
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+}
